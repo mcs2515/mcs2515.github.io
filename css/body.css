@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre');
+
+body{
+    margin: 0; 
+}
+
+.content{
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 6em;
+    width:70%;
+
+}
+
+p{
+    color: #545454; 
+    LINE-HEIGHT: normal;
+}
+
+.desc{
+    font-size: 14pt;
+    font-family: "Abhaya Libre";
+    font-weight: 100;
+    text-indent: 1em;
+}
+
+h2{
+    font-family: "Lato";
+    color: #4E8DFF;
+    font-size: 25pt;
+    letter-spacing: 2px;
+    margin-bottom: 40pt;
+    margin-top: 3em;
+    font-weight: bold;
+}
+
+h3{
+    font-family: "Lato";
+    color: #545454;
+    font-size: 14pt;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.break{
+        position: relative;
+    margin: 0 auto;
+        margin-top: 40pt;
+    margin-bottom: 20pt;
+}
+
+.circles{
+    width: 5px;
+    height: 5px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 10pt;
+
+}
+
+.circles:first-child{
+    margin-left: 0;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 930px) {
+    
+    .content{
+        width: 100%;
+    }
+    
+    .desc{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 430px) {
+    
+    .me{
+        width: 100px;
+        height: auto;
+        font-size: 12pt;
+        transition:all .5s ease;
+    }
+    
+    .icons{
+        width: 60px;
+        height: auto;
+        transition:all .5s ease;
+    }
+    
+    #aboutMe{
+        width: 90%;
+    }
+    
+    h2{
+        font-size: 20pt;
+        transition:all .5s ease;
+    }
+    
+    #design, #development{
+        width: 90%;
+        margin-bottom: 30pt;
+        transition:all .5s ease;
+    }
+    
+    #design h3, #development h3{
+        margin: 0pt auto;
+        margin-bottom: 10pt;
+    }
+    
+    #design img{
+        margin-top: 0pt;
+    }
+    
+    #development img{
+        margin-top: 0pt;
+    }
+
+
+}

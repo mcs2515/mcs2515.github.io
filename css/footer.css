@@ -1,0 +1,41 @@
+footer{
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 5em;
+    width: 100%;
+    text-align: center;
+    height: 15em;
+    padding-top: 2em;
+    background-color: #e6efff;
+    font-family: "Abhaya Libre";
+}
+
+#copyright{
+    font-size: 12pt;
+    font-weight: 100;
+    margin-top: 40pt;
+}
+
+#ssi{
+    font-size: 10pt;
+    margin-top: 20pt;
+    margin-bottom: -20pt;
+}
+
+.connections img{
+    width: 40px;
+    margin-top: 70pt;
+}
+
+
+footer a{
+    text-decoration: none;
+    margin-left: 25pt;
+    
+}
+
+.connections a:first-child{
+  margin-left: 0;
+}
+

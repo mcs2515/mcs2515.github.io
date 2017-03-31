@@ -1,0 +1,45 @@
+.me{
+    border-radius: 100pt;
+    border-style: dotted;
+    border-width: 3px;
+    width: 150px;
+    height: auto;
+    margin-top: 40pt;
+    border-color: slateblue;
+}
+
+#goalTitle{
+    margin-top: 0em;
+}
+
+#motto{
+    font-size: 12pt;
+    font-family: "Abhaya Libre";
+    font-weight: bold;
+}
+
+.desc{
+    position: relative;
+    margin: 0 auto;
+    width: 350pt;
+    text-align: center;
+}
+
+@media screen and (max-width: 430px) {
+    
+    .me{
+        width: 100px;
+        height: auto;
+        font-size: 12pt;
+        transition:all .5s ease;
+    }
+    
+    
+    .desc{
+        width: 90%;
+    }
+    
+}
+
+
+

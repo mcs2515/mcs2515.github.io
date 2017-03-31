@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+.gradient{
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 3.5em;
+    top:2.5em;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1)/*, inset 0 0 1px rgba(255, 255, 255, 0.6)*/;
+    border-top: 1px solid white;
+}
+
+header{
+    position: fixed;
+    top:0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 6em;
+    z-index: 1;
+    background-color: #e6efff;
+}
+
+.navbar{
+    position: relative;
+    margin: 0 auto;
+    width: 70%;
+    height: 6em;   
+}
+
+.logo{
+    position: relative;
+    width: 7em;
+    padding: .5em;
+    height: auto;
+    border-radius: 6em;
+    background-color: rgba(255,255,255, .5);
+    margin: 0;
+    margin-top: 1em;
+    margin-left: 2em;
+    border: 1px solid white;
+    transition:all .5s ease;
+}
+
+.logo:hover{
+    cursor: pointer;
+    transition:all .5s ease;
+    transform: scale(1.1);
+}
+
+.mainMenu{ 
+    margin-top: 35pt;
+    padding-left: 0;
+    position: relative;
+    float: right;
+    display: block;
+}
+
+.mainMenu li{
+    list-style: none;
+    display: inline;
+    margin-right: 1em;
+    font-family: "Lato";
+    text-transform:uppercase;
+    font-weight: bold;
+    font-size: 10pt;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+    padding-left: 12pt;
+    border-left: 1px solid white;
+}
+
+.mainMenu li:first-child{
+    border: none;
+}
+
+.mainMenu li:last-child{
+    margin-right: 20pt;
+}
+
+.mainMenu a{
+    text-decoration: none;
+    color: #4E8DFF;
+    transition:all .5s ease;
+}
+
+.mainMenu a:hover{
+    color: #A99AFF;
+    cursor:pointer;
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 40pt;
+}
+
+h1 img{
+    max-width: 420px;
+    height: auto;
+}
+
+.memo{
+    text-align: center;
+    font-family: "Lato";
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+    .navbar{
+        width: 100%;
+        transition:all .5s ease;
+    }
+    
+    h1 img{
+        width: 80%;
+        transition:all .5s ease;
+    }
+    
+    .mainMenu ul{
+        padding-left: 0pt;
+    }   
+}
+
+
+@media screen and (max-width: 430px) {
+    
+    header{
+        height: 25em;
+    }
+    
+    .logo{
+        display: block;
+        margin: 0 auto;
+        top: 3em;
+    }
+    
+    .gradient{
+        top:68px;
+    }
+    
+    .mainMenu{
+        width: 100%;
+        position: absolute;
+        margin-top: 2em;
+        background-color: rgba(255,255,255, .1);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        height: 40pt;
+        transition:all .5s ease;
+    }
+    
+    .mainMenu ul{
+        padding-top: 2pt;
+        padding-bottom: 5pt;
+    }
+
+    .mainMenu ul li{
+        padding-left: 10pt;
+    }
+    
+    .mainMenu ul li:last-child{
+        margin: 0em;
+    }
+    
+    h1 img{
+        width: 90%;
+        margin-top: 3.5em;
+        margin-bottom: -10pt;
+    }
+    
+    .memo{
+        font-size: 10pt;
+        transition:all .5s ease;
+    }
+    
+}
+
+@media screen and (max-width: 300px) {
+    .mainMenu ul{
+        padding-top: 2pt;
+        padding-bottom: 5pt;
+    }
+    
+    .mainMenu ul li{
+        padding-left: 7pt;
+        margin-right: 7pt;
+    }
+
+}
+
+
+
+

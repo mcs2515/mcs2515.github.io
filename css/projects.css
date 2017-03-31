@@ -1,0 +1,133 @@
+.desc{
+    position: relative;
+    margin: 0 auto;
+    width: 350pt;
+    text-align: center;
+}
+
+.imageThumb{
+    border-radius: 50em;
+    width: 125px;
+    height: auto;
+    border: solid rgba(0,0,0,.1);
+    border-width: 5px;
+    margin-top: 2em;
+    box-shadow: 1px 1px 10px #545454;
+    transition:all .5s ease
+}
+
+.myImg{
+    margin-bottom: 2em;
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+    border: 2px solid rgb(229, 229, 229);
+}
+
+video{
+    max-width: 550px;
+    width: 100%;
+    border: 2px solid rgb(229, 229, 229);
+}
+
+.thumbs img{
+    margin-right: 1em;
+}
+
+.thumbs img:hover{
+    cursor: pointer;
+}
+
+.thumbs img:last-child{
+    margin-right: auto;
+}
+
+.thumbs img:hover{
+    transition:all .5s ease;
+    transform: scale(1.1);
+}
+/*Modal Window*/
+.modal-header{
+    border: none;
+    
+}
+.modal-title{
+    font-family: "Lato";
+    color: #545454;
+    font-size: 18pt;
+    font-weight: bold;
+    margin-top: 10pt;
+    margin-bottom: -10pt;
+}
+.modal-body p{
+    text-align: left;
+    font-size: 14pt;
+    font-family: "Abhaya Libre";
+    font-weight: 100;
+    text-indent: 1em;
+    padding: 0pt 8pt;
+}
+
+.modal-footer p{
+    text-align: left;
+    font-family: "Lato";
+    color: #545454;
+    font-size: 9pt;
+    margin-top: 0pt;
+}
+
+.modal-footer button{
+    font-family: "Lato";
+    font-weight: bold;
+    color: #545454;
+}
+
+@media screen and (max-width: 430px) {
+    
+   .imageThumb{  
+        width: 90px;
+        height: auto;
+        transition:all .5s ease;
+    }
+
+    .modal-title{
+        font-size: 13pt;
+    }
+    .modal-body p{
+        font-size: 12pt;
+        text-indent: 5pt;
+        padding: 0pt;
+    }
+    
+    .modal-footer p{
+        text-align: center;
+    }
+    .modal-footer{
+        text-align: center;
+    }
+
+    
+    .desc{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 350px) {
+
+    .thumbs img:nth-child(odd){
+        margin-right: 1em;
+    }
+    
+    .thumbs img:nth-child(even){
+        margin-right: 0em;
+    }
+
+    .thumbs img:last-child{
+        margin-right: auto;
+    }
+    
+    .thumbs img:nth-child(n+3){
+        margin-top: .5em;
+    }
+}
