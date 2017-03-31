@@ -1,28 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Abhaya+Libre');
 
 body{
-    margin: 0; 
+    margin: 0;
+    width: 100%;
+    height: auto;
 }
 
 .content{
     margin: 0 auto;
     position: relative;
-    text-align: center;
     top: 6em;
     width:70%;
+}
 
+#main{
+    margin-left: 10em;
 }
 
 p{
     color: #545454; 
-    LINE-HEIGHT: normal;
 }
 
 .desc{
     font-size: 14pt;
     font-family: "Abhaya Libre";
     font-weight: 100;
-    text-indent: 1em;
+    padding-left: 1em;
 }
 
 h2{
@@ -30,7 +33,6 @@ h2{
     color: #4E8DFF;
     font-size: 25pt;
     letter-spacing: 2px;
-    margin-bottom: 40pt;
     margin-top: 3em;
     font-weight: bold;
 }
@@ -44,10 +46,11 @@ h3{
 }
 
 .break{
-        position: relative;
+    position: relative;
     margin: 0 auto;
-        margin-top: 40pt;
+    margin-top: 40pt;
     margin-bottom: 20pt;
+    text-align: center;
 }
 
 .circles{
@@ -57,7 +60,6 @@ h3{
     border-radius: 10px;
     display: inline-block;
     margin-left: 10pt;
-
 }
 
 .circles:first-child{
@@ -74,34 +76,37 @@ h3{
         width: 100%;
     }
     
+    h2{
+        text-align: 
+    }
     .desc{
         width: 90%;
+        padding: 0;
+        margin-top: -1em;
     }
     
+    #main{
+        margin-left: 9em;
+    }
 }
 
 @media screen and (max-width: 430px) {
-    
-    .me{
-        width: 100px;
-        height: auto;
-        font-size: 12pt;
-        transition:all .5s ease;
+    .content{
+        top: 10em;
+        width:90%;
     }
     
-    .icons{
-        width: 60px;
-        height: auto;
-        transition:all .5s ease;
-    }
-    
-    #aboutMe{
-        width: 90%;
-    }
+    #main{
+        margin: 0em;
+    }   
     
     h2{
         font-size: 20pt;
         transition:all .5s ease;
+    }
+    
+    .desc{
+        padding-left: 1em;
     }
     
     #design, #development{

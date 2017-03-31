@@ -32,7 +32,7 @@ header{
 
 .logo{
     position: relative;
-    width: 7em;
+    width: 6em;
     padding: .5em;
     height: auto;
     border-radius: 6em;
@@ -125,27 +125,27 @@ h1 img{
     }   
 }
 
+@media screen and (max-width: 930px) {
+    .logo{
+        width: 6em;
+        margin-left: 1em;
+    }
+}
 
 @media screen and (max-width: 430px) {
-    
-    header{
-        height: 25em;
-    }
+
     
     .logo{
         display: block;
         margin: 0 auto;
-        top: 3em;
-    }
-    
-    .gradient{
-        top:68px;
+        top:1em;
+        width: 5em;
     }
     
     .mainMenu{
         width: 100%;
         position: absolute;
-        margin-top: 2em;
+        margin-top: 0em;
         background-color: rgba(255,255,255, .1);
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         text-align: center;
@@ -165,18 +165,6 @@ h1 img{
     .mainMenu ul li:last-child{
         margin: 0em;
     }
-    
-    h1 img{
-        width: 90%;
-        margin-top: 3.5em;
-        margin-bottom: -10pt;
-    }
-    
-    .memo{
-        font-size: 10pt;
-        transition:all .5s ease;
-    }
-    
 }
 
 @media screen and (max-width: 300px) {
