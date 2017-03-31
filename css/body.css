@@ -8,13 +8,13 @@ body{
 
 .content{
     margin: 0 auto;
-    position: relative;
     top: 6em;
     width:70%;
 }
 
 #main{
     margin-left: 10em;
+    padding-left: 1em;
 }
 
 p{
@@ -25,7 +25,6 @@ p{
     font-size: 14pt;
     font-family: "Abhaya Libre";
     font-weight: 100;
-    padding-left: 1em;
 }
 
 h2{
@@ -87,28 +86,34 @@ h3{
     
     #main{
         margin-left: 9em;
+        padding-left: 0em;
     }
 }
 
 @media screen and (max-width: 430px) {
     .content{
         top: 10em;
-        width:90%;
-    }
-    
-    #main{
-        margin: 0em;
-    }   
-    
-    h2{
-        font-size: 20pt;
-        transition:all .5s ease;
     }
     
     .desc{
-        padding-left: 1em;
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
     }
     
+    #main{
+        position: relative;
+        margin: 0 auto;
+    }   
+    
+    h2{
+
+        font-size: 20pt;
+        transition:all .5s ease;
+        text-align: center;
+    }
+    
+
     #design, #development{
         width: 90%;
         margin-bottom: 30pt;

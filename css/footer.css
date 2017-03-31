@@ -2,40 +2,38 @@ footer{
     position: relative;
     margin: 0 auto;
     padding: 0;
-    margin-top: 5em;
     width: 100%;
     text-align: center;
-    height: 15em;
-    padding-top: 2em;
+    height: 6em;
     background-color: #e6efff;
     font-family: "Abhaya Libre";
+    margin-top: 5em;
 }
+
+
+
+#gradientBottom{
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 3.5em;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
 
 #copyright{
     font-size: 12pt;
     font-weight: 100;
-    margin-top: 40pt;
+    padding-top: 15pt;
+    z-index: 1;
 }
 
 #ssi{
     font-size: 10pt;
     margin-top: 20pt;
     margin-bottom: -20pt;
-}
-
-.connections img{
-    width: 40px;
-    margin-top: 70pt;
-}
-
-
-footer a{
-    text-decoration: none;
-    margin-left: 25pt;
-    
-}
-
-.connections a:first-child{
-  margin-left: 0;
 }
 

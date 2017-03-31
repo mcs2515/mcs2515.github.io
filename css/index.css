@@ -8,6 +8,7 @@
     font-size: 12pt;
     font-family: "Abhaya Libre";
     font-weight: bold;
+    padding-top: 5em;
 }
 
 @media screen and (max-width: 430px) {
