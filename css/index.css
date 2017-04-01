@@ -1,31 +1,73 @@
-
-#goal, #hobbies{
-    margin-top: 0em;
+#about{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2em;
 }
 
-#motto{
+#about p{
+    position: relative;
+
+    margin: 0 auto;
+}
+#signature{
+    width: 35%;
+    height: auto;
+}
+#goal{
+    margin-top: 0em;
+    width: 34em;
+    position: relative;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: aliceblue;
+    border: 1px solid white;
+    border-bottom: 1px solid #d4d4d4;
+    border-top: none;
+}
+
+#start{
     text-align: center;
     font-size: 12pt;
     font-family: "Abhaya Libre";
     font-weight: bold;
-    padding-top: 5em;
+    padding-top: 8em;
 }
 
-@media screen and (max-width: 430px) {
-    
-    .me{
-        width: 100px;
-        height: auto;
-        font-size: 12pt;
-        transition:all .5s ease;
-    }
-    
-    
-    .desc{
-        width: 80%;
-    }
+#skills{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2em 0em;
+    background-color: aliceblue;
+}
+
+.codingSkills{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.codingSkills .summary{
+    display:inline-block;
+    margin-left: 15%;
+    width: 15em;
+}
+
+.summary:first-child{
+    margin-left: 0;
     
 }
+
+.summary img{
+    position: relative;
+    width: 5em;
+    height: auto;
+}
+
+#contact{
+    margin-bottom: 10em;
+}
+
 
 
 

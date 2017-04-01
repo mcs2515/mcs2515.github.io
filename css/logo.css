@@ -1,8 +1,11 @@
 .logos{
-    top: 20em;
+    top: 30em;
     position: fixed;
-    width: 100%;
-    z-index: 1;
+    margin: 0 auto;
+    padding: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .logos img{
@@ -10,26 +13,38 @@
     display: inline-block;
     vertical-align: middle;
     margin-top: 1em;
-    margin-left:4.5em;
+    margin-left:1.5em;
+    opacity: .2;
 }
 
+
+#linkedin{
+    margin-left: 0;
+
+}
 .logos img:hover{
-   
     cursor: pointer;
+    opacity: .3;
 }
 
-@media screen and (max-width: 930px) {
-    .logos{
-       top: 12em; 
-    }
+.codingSkills img:first-child{
+    margin-left: 0em;
+}
+
+@media screen and (max-width: 960px) {
     
     .logos img{
-        margin-left: 3em;
+        margin-left: 0em;
     }
 }
 
-@media screen and (max-width: 430px) {
-    .logos{
-        display: none;
+@media screen and (max-width: 700px) {
+
+    .logos img{
+        margin-left: 2.5em;
+    }
+    
+    .logos #linkedin{
+        margin-left: 0;
     }
 }

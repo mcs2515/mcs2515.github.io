@@ -9,12 +9,11 @@
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/index.css">
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/logo.css">
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/body.css">  
+	<link REL="StyleSheet" TYPE="text/css" HREF="css/projects.css">  
     <link REL="StyleSheet" TYPE="text/css" HREF="css/footer.css">
 </head>
     
 <body>
-    <!--#include file="header.shtml"-->
-
     <header>
         <div class="gradient"></div>
         <div id= "gloss"></div>
@@ -39,53 +38,155 @@
         </section>
     </header>
 
-    
-
-    
-    
     <section class="content">
             
+        <p id="start"></p>
+
         <section class= "logos">
-
             <a href="https://www.linkedin.com/in/meganchunyusmith/" target = "_blank"><img id= "linkedin" src="media/logos/linkedin.png" alt="linkedin" height="42" width="42"></a>
-            <br>
-            <a href="https://github.com/mcs2515" target = "_blank"><img id= "github" src="media/logos/github.png" alt="linkedin" height="42" width="42"></a>
-            <br>
-            <img id= "email" src="media/logos/email.png" alt="linkedin" height="42" width="42">
 
+            <a href="https://github.com/mcs2515" target = "_blank"><img id= "github" src="media/logos/github.png" alt="linkedin" height="42" width="42"></a>
+
+            <a href="#"><img id= "email" src="media/logos/email.png" alt="linkedin" height="42" width="42"></a>
         </section>
 
-        <section id = "main">
-            <p id="motto">"ahhh"</p>
+        <section id="about">
+            <img id= "signature" src="media/name.png" alt="linkedin" height="211" width="999">
+            <p class="desc">A student in Interactive New Media whos passionate about front-end web development.</p>
+        </section>
 
-            <h2 id="about">Hello.</h2>
-            <p class="desc">Welcome to my online portfolio! I am an energetic web / front-end developer living in Rochester, New York. I major in Interactive New Media Developement and minor in Game Design and Development.</p>
+        <section id="goal"> 
+            <h2>Ultimate Goal.</h2>
+                <h3>As a developer -</h3>
+                <p class= "desc">I strongly want use my skills for the medical field to to save precious time for doctors and nurses alike in order for them to give care to their patients efficiently.</p>
+        </section>
+
+        <section class="break">
+            <p class= "circles"> </p>
+            <p class= "circles"> </p>
+            <p class= "circles"> </p>
+            <p class= "circles"> </p>
+            <p class= "circles"> </p>
+        </section>
+
+        <section id="skills">
+            <h2>What I Know</h2>
+                <h3>These are skills that I have aquired while exploring and practicing.</h3>
+                <section class="codingSkills">         
+                    <section class= "summary">
+                        <img id= "html" src="media/logos/html.png" alt="linkedin" height="42" width="42">
+                        <p class= "desc"> I can give structure ans simple animations to a web page easily with HTML and CSS. </p>
+                    </section>
+                    
+                    <section class= "summary">
+                        <img id= "javascript" src="media/logos/javascript.png" alt="linkedin" height="42" width="42">
+                        <p class= "desc">There is a handful JavaScript libraries I have used to give interative design to a website.</p>
+                    </section>
+                    
+                    <section class= "summary">
+                        <img id= "jquery" src="media/logos/jquery.png" alt="linkedin" height="42" width="42">
+                        <p class= "desc">jQuery helps me simplfy task that would take multiple lines to do with JavaScript.</p>
+                    </section>
+            </section>
+        </section>
+
+
+        <section class="break">
+            <p class= "circles"> </p>
+            <p class= "circles"> </p>
+            <p class= "circles"> </p>
+            <p class= "circles"> </p>
+            <p class= "circles"> </p>
+        </section>
+
+        <section id = "projects">
+            <h2>Projects</h2>
+
+            <h3>Development</h3>
+            <p class="desc">Most of these projects have been done with the Canvas API. JavaScript was also used to create user interactivity. Some projects focus on user experience and some projects are simple games made in Canvas. </p>
+            
+            <div class="imgWrap">
+                <img class="projImg" src="media/cook_page.jpg" alt="To Cook or Not to Cook">
+                <div class= "projectDesc">
+                    <p>To <strong>Cook</strong> or <strong>Not to Cook</strong></p>
+                    <p >To Cook or Not to Cook uses the Yummly API and Google Places API. This website allows for hungry and indecisive users to find a dish to make/cook for themselves or to find restaurants near them instead. The user has several options to play with in order to get several specific dishes to choose from.</p>
+                    <a class= "proj-link" href="https://people.rit.edu/mcs2515/330/projects/project3/" target="_blank"><button type="button" class="btn"> Link</button></a>
+                    <p class ="dateStamp">Fall 2016</p>
+                </div>
+            </div>
+
+
+            <div class="imgWrap">
+                <img class="projImg" src="media/canvas_game.jpg" alt="I Like to Eat Too!!">
+                <div class= "projectDesc">
+                    <p>I Like to <strong>Eat</strong> Too!!<p>
+                    <p>I Like to Eat Too is a side-scrolling digital game created with the Canvas API. The user is a caterpillar whose goal is to eat leaves all while trying not to get eaten by the birds. All art and animations were created from scratch. The project heavily focused on the mastery of JavaScript.  </p>
+                    <a class= "proj-link" href="https://people.rit.edu/mcs2515/330/projects/project2/" target="_blank"><button type="button" class="btn"> Link</button></a>
+                    <p class ="dateStamp">Fall 2016</p>
+                </div>
+            </div>
+
+
+            <div class="imgWrap">
+                <img class="myImg" src="media/audioV2.jpg" alt="Magical Visualizer">
+                <div class= "projectDesc">
+                    <p>Magical <strong>Visualizer</strong></p>
+                    <p>Magical Visualizer uses both the Canvas API and Web Audio API. The project is an audio visualizer made with HTML/CSS and JavaScript. Visuals are presented to the user based on the waveform and frequency of the music file. The user has several options in the controller to change how the music is represented on the canvas.</p>
+                    <a class= "proj-link" href="https://people.rit.edu/mcs2515/330/projects/project1/audio-visualizer.html" target="_blank"><button type="button" class="btn"> Link</button></a>
+                    <p class ="dateStamp">Fall 2016</p>
+                </div>
+            </div>
+
+
+
+            <!--
+                <img class="imageThumb" data-toggle="modal" data-target="#audioModal" src="media/audioV2_thumb.jpg" alt="Audio Visualizer">
+
+                <img class="imageThumb" data-toggle="modal" data-target="#eatModal" src="media/canvas_game_thumb.jpg" alt="I like to Eat Too!!">
+
+               <img class="imageThumb" data-toggle="modal" data-target="#toCookModal" src="media/cook_icon.png" alt="To Cook or Not to Cook">
+    -->
 
             <section class="break">
-                <p class= "circles"> </p>
-                <p class= "circles"> </p>
-                <p class= "circles"> </p>
-                <p class= "circles"> </p>
-                <p class= "circles"> </p>
-            </section>
-
-            <h2 id="goal">Current Goal.</h2>
-            <p class= "desc" id="goal" >To obtain a co-op that will provide me more experience with web / front-end development. My ultimate goal is to use my skills for the medical field in order to save precious time for doctors and nurses alike</p>
-            
-             <section class="break">
-                <p class= "circles"> </p>
-                <p class= "circles"> </p>
-                <p class= "circles"> </p>
-                <p class= "circles"> </p>
-                <p class= "circles"> </p>
-            </section>
-            
-            <h2 id="hobbies">Hobbies.</h2>
-            <p class= "desc" id="goal" >To obtain a co-op that will provide me more experience with web / front-end development. My ultimate goal is to use my skills for the medical field in order to save precious time for doctors and nurses alike</p>
-
-        </section>
+        <p class= "circles"> </p>
+        <p class= "circles"> </p>
+        <p class= "circles"> </p>
+        <p class= "circles"> </p>
+        <p class= "circles"> </p>
     </section>
-    
+
+            <h3>Design</h3>
+            <p class="desc"> Using photoshop, I can create web page and mobile app designs that focus on the look, feel, structure and navigation of the page that appeal to different audiences. </p>
+            <section class="thumbs">
+
+            <!--
+                <img class="imageThumb" data-toggle="modal" data-target="#aquariumModal" src="media/event_page_thumb.jpg" alt="Aquarium E-vite">
+
+                <img class="imageThumb" data-toggle="modal" data-target="#monstersModal" src="media/monsters_menu_thumb.jpg" alt="Monsters and Ladders">
+    -->
+
+            </section>
+
+            <div class="imgWrap">
+                <img class="myImg" src="media/event_page.jpg" alt="e-vite">
+                <div class= "projectDesc">
+                    <h4>Aquarium E-vite</h4>
+                    <p>The Aquarium E-vite is a web splash page event page made in Photoshop. This project focused on using several tools in Photoshop all while paying attention to composition, aesthetics,  and details.</p>
+                    <p class="dateStamp">Fall 2016</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="break">
+            <p class= "circles"> </p>
+            <p class= "circles"> </p>
+            <p class= "circles"> </p>
+            <p class= "circles"> </p>
+            <p class= "circles"> </p>
+        </section>
+        
+        <h2 id="contact">Get in touch.</h2>
+    </section>
     <footer>
         <div id="gradientBottom"></div>
         <p id= "copyright">&copy; Copyright 2016 Megan C. Smith </p>
@@ -94,6 +195,5 @@
         <!--#echo var="LAST_MODIFIED"-->
         </p>
     </footer>
-    <!--#include file="footer.shtml"-->
 </body>
 </html>

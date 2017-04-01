@@ -1,47 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre');
+@import url('https://fonts.googleapis.com/css?family=Raleway+Libre');
 
 body{
+
     margin: 0;
     width: 100%;
     height: auto;
+    background-color: #eaeef7;
+    overflow-x: hidden;
 }
 
 .content{
     margin: 0 auto;
     top: 6em;
-    width:70%;
+    width:100%;
 }
 
-#main{
-    margin-left: 10em;
-    padding-left: 1em;
-}
 
 p{
     color: #545454; 
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .desc{
-    font-size: 14pt;
-    font-family: "Abhaya Libre";
-    font-weight: 100;
+    font-size: 10pt;
 }
 
 h2{
-    font-family: "Lato";
+    font-family: 'Lato', sans-serif;
     color: #4E8DFF;
     font-size: 25pt;
     letter-spacing: 2px;
-    margin-top: 3em;
     font-weight: bold;
+    text-align: center;
 }
 
 h3{
-    font-family: "Lato";
+    font-family: 'Lato', sans-serif;
     color: #545454;
-    font-size: 14pt;
+    font-size: 12pt;
     letter-spacing: 2px;
     font-weight: bold;
+    text-align: center;
 }
 
 .break{
@@ -69,24 +70,16 @@ h3{
     font-weight: bold;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 700px) {
     
     .content{
         width: 100%;
     }
-    
-    h2{
-        text-align: 
-    }
+
     .desc{
         width: 90%;
         padding: 0;
         margin-top: -1em;
-    }
-    
-    #main{
-        margin-left: 9em;
-        padding-left: 0em;
     }
 }
 
@@ -99,11 +92,13 @@ h3{
         position: relative;
         text-align: center;
         margin: 0 auto;
+        
     }
     
     #main{
         position: relative;
         margin: 0 auto;
+        padding-left: 1em;
     }   
     
     h2{

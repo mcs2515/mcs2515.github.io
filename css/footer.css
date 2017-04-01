@@ -1,13 +1,15 @@
 footer{
     position: relative;
-    margin: 0 auto;
-    padding: 0;
+    bottom: 0;
+
+
     width: 100%;
-    text-align: center;
+    
     height: 6em;
     background-color: #e6efff;
     font-family: "Abhaya Libre";
-    margin-top: 5em;
+    text-align: center;
+    
 }
 
 
