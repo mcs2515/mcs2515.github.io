@@ -2,36 +2,34 @@
     position: relative;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 5em;
 }
 
 #about p{
+    font-size: 12pt;
+    width: 30em;
     position: relative;
-
     margin: 0 auto;
 }
 #signature{
-    width: 35%;
+    width: 35em;
     height: auto;
 }
 #goal{
-    margin-top: 0em;
-    width: 34em;
+    width: 37em;
     position: relative;
     margin: 0 auto;
     padding: 1em;
+    padding-bottom: 3em;
     background-color: aliceblue;
     border: 1px solid white;
     border-bottom: 1px solid #d4d4d4;
     border-top: none;
 }
 
-#start{
-    text-align: center;
-    font-size: 12pt;
-    font-family: "Abhaya Libre";
-    font-weight: bold;
-    padding-top: 8em;
+#goal .desc{
+    margin: 0 auto;
+    width: 90%;
 }
 
 #skills{
@@ -44,7 +42,7 @@
 
 .codingSkills{
     text-align: center;
-    margin-bottom: 2em;
+    margin: 4em;
 }
 
 .codingSkills .summary{
@@ -55,7 +53,6 @@
 
 .summary:first-child{
     margin-left: 0;
-    
 }
 
 .summary img{
@@ -64,9 +61,64 @@
     height: auto;
 }
 
-#contact{
-    margin-bottom: 10em;
+.label{
+    font-size: 11pt;
+    font-weight: bold;
 }
+
+@media screen and (max-width: 1180px) {
+    #signature{
+        width: 30em;
+        height: auto;
+    }
+    
+    .codingSkills .summary:last-child{
+        display: block;
+        position: relative;
+        margin: 0 auto;
+     
+    }
+    
+    .codingSkills{
+        text-align: center;
+        margin: 0em;
+    }
+    
+    .summary img{
+        width: 3em;
+        margin-top: 1em;
+    }   
+}
+
+@media screen and (max-width: 700px) {
+    .codingSkills .summary{
+        margin-left: 0;
+    }
+    
+    #signature{
+        width: 90%;
+        max-width: 30em;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 590px){
+    #goal{
+        text-align: center;
+        width: 100%;
+        padding: 1em 0em;
+        border: none;
+        border-bottom: 1px solid #d4d4d4;
+    }
+    
+    #about p{
+        width: 90%; 
+        font-size: 12pt;
+    }
+}
+
+
+
 
 
 

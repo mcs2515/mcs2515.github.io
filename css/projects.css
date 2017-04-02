@@ -1,16 +1,16 @@
 #projects{
     text-align: center;
-    margin-bottom: 5em;
+    margin-bottom: -2em;
 }
 
 .imgWrap{
     position: relative;
-    width: 400pt;
     height: auto;
     display: inline-block;
     text-align: center;
     overflow: hidden;
-    border-radius: 10pt;
+    width: 450pt;
+    border-radius: 5pt;
 }
 
 .imgWrap img {
@@ -30,8 +30,17 @@
     opacity: 0;
     transition: .5s ease;
     background-color:rgba(143,188,143, .8);
-    font-family: "Lato";
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.border{
+    border: 1pt solid white;
+    width: 90%;
+    height: 90%;
+    align-self: center;
+    background: rgba(0,0,0, .1);
 }
 
 .projectDesc p{
@@ -44,10 +53,8 @@
 }
 
 .projectDesc p:last-child{
-    text-align: right;
     bottom: 0;
     padding-top: 1em;
-    font-size: 8pt;
 }
 
 .imgWrap:hover .projectDesc {
@@ -78,3 +85,26 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.leftSide{
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+.rightSide{
+    width: 40%;
+    display: inline-block;
+    margin-left: -10em;
+}
+
+.leftSide .imgWrap{
+    margin-bottom: 2em;
+    margin-right: 2em;
+    float: right; 
+}
+
+.rightSide .imgWrap{
+    margin-bottom: 2em;
+    float: left;
+}
+

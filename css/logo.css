@@ -1,5 +1,5 @@
 .logos{
-    top: 30em;
+    top: 25em;
     position: fixed;
     margin: 0 auto;
     padding: 0;
@@ -22,7 +22,7 @@
     margin-left: 0;
 
 }
-.logos img:hover{
+.logos img:hover {
     cursor: pointer;
     opacity: .3;
 }
@@ -48,3 +48,4 @@
         margin-left: 0;
     }
 }
+

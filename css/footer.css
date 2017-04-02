@@ -1,18 +1,13 @@
 footer{
     position: relative;
     bottom: 0;
-
-
     width: 100%;
-    
     height: 6em;
     background-color: #e6efff;
     font-family: "Abhaya Libre";
     text-align: center;
-    
+    margin-top: 3em;
 }
-
-
 
 #gradientBottom{
     position: absolute;
@@ -29,13 +24,44 @@ footer{
 #copyright{
     font-size: 12pt;
     font-weight: 100;
-    padding-top: 15pt;
+    padding-top: 5pt;
     z-index: 1;
+    margin-bottom: 3em;
 }
 
-#ssi{
-    font-size: 10pt;
-    margin-top: 20pt;
-    margin-bottom: -20pt;
+.contact{
+    position: relative;
+    margin:  0 auto;
+    padding: 1em 1em 3em 1em;
+    background-color: white;
+    margin-bottom: 0;
+}
+
+.logos2 img{
+    opacity: .5;
+    margin-left:6.5em;
+    width: 45px;
+    height: auto;
+}
+
+.logos2 img:hover{
+    cursor: pointer;
+    opacity: .6;
+}
+
+.logos2{
+    text-align: center;
+}
+
+@media screen and (max-width: 430px) {
+    .logos2 img{
+        margin-left:1em;
+        width: 30pt;
+    }
+    
+    #copyright{
+        font-size: 10pt;
+    }
+
 }
 
