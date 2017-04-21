@@ -11,17 +11,18 @@
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/body.css">  
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/projects.css">  
     <link REL="StyleSheet" TYPE="text/css" HREF="css/footer.css">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/reactons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="js/reactions.js"></script>
 </head>
     
 <body>
+
+    
     <header>
         <div class="gradient"></div>
         <div id= "gloss"></div>
         <section class="navbar">
-            <a id="index" href="index.html"><img class="logo" src="media/logo.png" alt="Logo"  width="1800" height="1692"/></a>
+            <a id="contentLink" href="#content"><img class="logo" src="media/logo.png" alt="Logo"  width="1800" height="1692"/></a>
 
             <nav class="mainMenu">
                 <ul>
@@ -41,7 +42,7 @@
         </section>
     </header>
 
-    <section class="content">
+    <section id="content">
         <section class= "logos">
             <a href="https://www.linkedin.com/in/meganchunyusmith/" target = "_blank"><img id= "linkedin" src="media/logos/linkedin.png" alt="linkedin" height="42" width="42"></a>
 
@@ -146,7 +147,7 @@
                     <div class= "projectDesc">
                         <div class = "border">
                             <p>Magical <strong>Visualizer</strong></p>
-                            <p>Magical Visualizer uses both the Canvas API and Web Audio API. The project is an audio visualizer made with HTML/CSS and JavaScript. Visuals are presented to the user based on the waveform and frequency of the music file. The user has several options in the controller to change how the music is represented on the canvas.</p>
+                            <p>Magical Visualizer uses both the Canvas API and Web Audio API. Visuals are presented to the user based on the waveform and frequency of the music file. The user has several options in the controller to change how the music is represented on the canvas.</p>
                             <a class= "proj-link" href="https://people.rit.edu/mcs2515/330/projects/project1/audio-visualizer.html" target="_blank"><button type="button" class="btn"> Link</button></a>
 <!--                            <p class ="dateStamp">Fall 2016</p>-->
                         </div>
@@ -194,7 +195,7 @@
     </section>
 
     <footer>     
-        <section class= "contact">
+        <section id= "contact">
             <h2>Get in touch.</h2>
             <section class= "logos2">
                 <a href="https://www.linkedin.com/in/meganchunyusmith/" target = "_blank"><img id= "linkedin" src="media/logos/linkedin.png" alt="linkedin" height="42" width="42"></a>
