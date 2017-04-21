@@ -101,11 +101,12 @@
     width: 50%;
     display: inline-block;
     float: left;
+    margin-left: 1.5em;
 }
 .rightSide{
     width: 40%;
     display: inline-block;
-    margin-left: -10em;
+    margin-left: -8em;
 }
 
 .leftSide .imgWrap{
@@ -117,5 +118,40 @@
 .rightSide .imgWrap{
     margin-bottom: 2em;
     float: left;
+}
+
+@media screen and (max-width: 700px) {
+    .leftSide{
+        display: block;
+        float:none;
+        position: relative;
+        margin: 0 auto;
+        padding: none;
+        width: 100%;
+    }
+    
+    .rightSide{
+        position: relative;
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        
+    }
+    
+    .rightSide .imgWrap, .leftSide .imgWrap{
+        width: 90%;
+        float: none;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 1em;
+    }
+
+
+
+}
+
+@media screen and (max-width: 430px) {
+
 }
 
