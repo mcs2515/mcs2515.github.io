@@ -3,18 +3,24 @@
     margin-bottom: -2em;
 }
 
-.imgWrap{
+.masonry { /* Masonry container */
+    width: 95%;
     position: relative;
-    height: auto;
-    display: inline-block;
-    text-align: center;
-    overflow: hidden;
-    width: 450pt;
+    margin: 0 auto;
+    column-count: 3;
+    column-gap: 0em;
+}
+
+.imgWrap { /* Masonry bricks or child elements */
+    position: relative;
     border-radius: 5pt;
+    display: inline-block;
+    margin: 0 0 1em;
+    overflow: hidden;
+    width: 95%;
 }
 
 .imgWrap img {
-    display: block;
     width: 100%;
     height: auto;
 }
@@ -60,13 +66,6 @@
     font-size: 18pt;
 }
 
-#visualizer .projectDesc p:first-child{
-     margin-top: 1em;
-}
-
-#evite .projectDesc p:first-child{
-     margin-top: 5em;
-}
 
 .imgWrap:hover .projectDesc {
   opacity: 1;
@@ -75,7 +74,7 @@
 .imgWrap:hover img {
   filter: blur(5px);
   transition: 1s ease;
-
+   
 }
 
 .btn {
@@ -97,56 +96,9 @@
     cursor: pointer;
 }
 
-.leftSide{
-    width: 50%;
-    display: inline-block;
-    float: left;
-    margin-left: 1.5em;
-}
-.rightSide{
-    width: 40%;
-    display: inline-block;
-    margin-left: -8em;
-}
 
-.leftSide .imgWrap{
-    margin-bottom: 2em;
-    margin-right: 2em;
-    float: right; 
-}
-
-.rightSide .imgWrap{
-    margin-bottom: 2em;
-    float: left;
-}
 
 @media screen and (max-width: 700px) {
-    .leftSide{
-        display: block;
-        float:none;
-        position: relative;
-        margin: 0 auto;
-        padding: none;
-        width: 100%;
-    }
-    
-    .rightSide{
-        position: relative;
-        float: none;
-        margin: 0 auto;
-        padding: 0;
-        width: 100%;
-        
-    }
-    
-    .rightSide .imgWrap, .leftSide .imgWrap{
-        width: 90%;
-        float: none;
-        position: relative;
-        margin: 0 auto;
-        margin-top: 1em;
-    }
-
 
 
 }
