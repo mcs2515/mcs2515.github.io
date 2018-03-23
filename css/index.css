@@ -11,25 +11,47 @@
     position: relative;
     margin: 0 auto;
 }
+
 #signature{
     width: 35em;
     height: auto;
 }
-#goal{
-    width: 37em;
+
+#card{
+    width: 30em;
+		height: 15em;
     position: relative;
     margin: 0 auto;
-    padding: 1em;
-    padding-bottom: 3em;
-    background-color: aliceblue;
-    border: 1px solid white;
-    border-bottom: 1px solid #d4d4d4;
-    border-top: none;
 }
 
-#goal .desc{
-    margin: 0 auto;
-    width: 90%;
+#card .desc{
+	text-align: left;
+	padding-top: 2em;
+	width: 90%; 
+}
+
+#card h2{
+	margin: 0;
+	padding-top: 2.5em;
+}
+
+#card h3{
+	width: 90%;
+	position: relative;
+  margin: 0 auto;
+	text-align: left;
+	padding-top: 3em;
+}
+
+#card:hover{
+    cursor: pointer;
+}
+
+.front, .back{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    border-radius: 5px;
 }
 
 #skills{
@@ -107,8 +129,6 @@
         text-align: center;
         width: 100%;
         padding: 1em 0em;
-        border: none;
-        border-bottom: 1px solid #d4d4d4;
     }
     
     #about p{

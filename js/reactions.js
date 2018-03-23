@@ -10,6 +10,9 @@ const init = () =>{
         }
     });
     
+	
+	
+		$("#card").flip();
 //        //fade top on scroll
 //    $(window).scroll(function(){
 //        

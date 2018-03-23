@@ -10,9 +10,29 @@
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/logo.css">
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/body.css">  
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/projects.css">  
-    <link REL="StyleSheet" TYPE="text/css" HREF="css/footer.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="js/reactions.js"></script>
+	<link REL="StyleSheet" TYPE="text/css" HREF="css/footer.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!--	https://nnattawat.github.io/flip/-->
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
+	
+	<script>
+	$(document.body).ready(function() {
+//	    $('a[href^="#"]').on('click', function(event) {
+//        var target = $(this.getAttribute('href'));
+//        if( target.length ) {
+//            event.preventDefault();
+//            $('html, body').stop().animate({
+//                scrollTop: target.offset().top-120
+//            }, 'slow');
+//					}
+//			});
+    
+		$("#card").flip();
+	});
+	
+	</script>
 </head>
     
 <body>
@@ -26,17 +46,9 @@
 
             <nav class="mainMenu">
                 <ul>
-                    <li>
-                        <a id="resumeLink" href="resume.html">Resume </a>
-                    </li>
-
-                    <li>
-                        <a id="projectsLink" href="#projects"> Projects</a>
-                    </li>
-
-                     <li>
-                        <a id="contactLink" href="#contact"> Contact</a>
-                    </li>
+                    <li><a id="resumeLink" href="resume.html">Resume </a></li>
+                    <li><a id="projectsLink" href="#projects"> Projects</a></li>
+                    <li><a id="contactLink" href="#contact"> Contact</a></li>
                 </ul>		
             </nav>
         </section>
@@ -53,14 +65,17 @@
 
         <section id="about">
             <img id= "signature" src="media/name.png" alt="linkedin" height="211" width="999">
-            <p class="desc">A student in Interactive New Media whos passionate about front-end web development.</p>
-        </section>
-
-        <section id="goal"> 
-            <h2>Ultimate Goal.</h2>
-                <h3>As a developer -</h3>
-                <p class= "desc">I strongly want to use my skills for the medical field to to save precious time for doctors and nurses alike in order for them to give care to their patients efficiently.</p>
-        </section>
+            
+						<div id="card"> 
+								<div class="front"> 
+									<h2>Who am I? </h2>
+								</div> 
+								<div class="back">
+									<h3>My Major: New Media Interactive Development</h3>
+									<p class= "desc">I am a student who strengths lies in <strong>front-end development</strong>. I create projects that helps others to do their task more efficiently and be an enjoyable experience.</p>
+								</div> 
+						</div>
+				</section>
 
         <section class="break">
             <p class= "circles"> </p>
@@ -72,10 +87,9 @@
 
         <section id="skills">
             <h2>What I Know</h2>
-                <h3>These are skills that I have aquired while exploring and practicing.</h3>
+                <h3>These are coding skills that I have aquired through exploration and with practice.</h3>
                 <section class="codingSkills">         
                     <section class= "summary">
-                        
                         <img id= "html" src="media/logos/html.png" alt="linkedin" height="42" width="42">
                         <p class = "label">HTML5/CSS</p>
                         <p class= "desc"> I can give structure and responsive design to a web page easily with HTML5/CSS. </p>
@@ -91,6 +105,12 @@
                         <img id= "jquery" src="media/logos/jquery.png" alt="linkedin" height="42" width="42">
                         <p class = "label">JQuery</p>
                         <p class= "desc">jQuery helps me simplfy task that would take multiple lines to do with JavaScript.</p>
+                    </section>
+									
+										<section class= "summary">
+                        <img id= "html" src="media/logos/csharp.png" alt="linkedin" height="42" width="42">
+                        <p class = "label">C++</p>
+                        <p class= "desc"> I can give structure and responsive design to a web page easily with HTML5/CSS. </p>
                     </section>
             </section>
         </section>
@@ -226,7 +246,7 @@
             </section>
         </section>
         <div id="gradientBottom"></div>
-        <p id= "copyright">&copy; Copyright 2017 Megan C. Smith </p>
+        <p id= "copyright">&copy; Copyright 2018 Megan C. Smith </p>
     </footer>
 
 </body>

@@ -3,9 +3,8 @@
 body{
     margin: 0;
     width: 100%;
-
     min-height: 100%;
-    background-color: #eaeef7;
+    background-color: #394267;
     overflow-x: hidden;
 }
 
@@ -53,9 +52,9 @@ h3{
 }
 
 .circles{
-    width: 5px;
-    height: 5px;
-    background-color: lightgrey;
+    width: 10px;
+    height: 10px;
+    background-color: #faf4d7;
     border-radius: 10px;
     display: inline-block;
     margin-left: 10pt;
