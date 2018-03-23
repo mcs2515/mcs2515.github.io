@@ -12,7 +12,11 @@ const init = () =>{
     
 	
 	
-		$("#card").flip();
+		$("#card").flip({
+			axis: 'x',
+			trigger: 'hover',
+			reverse:true,
+		});
 //        //fade top on scroll
 //    $(window).scroll(function(){
 //        
