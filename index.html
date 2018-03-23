@@ -18,30 +18,27 @@
 
 	
 	<script>
-	$(document.body).ready(function() {
-//	    $('a[href^="#"]').on('click', function(event) {
-//        var target = $(this.getAttribute('href'));
-//        if( target.length ) {
-//            event.preventDefault();
-//            $('html, body').stop().animate({
-//                scrollTop: target.offset().top-120
-//            }, 'slow');
-//					}
-//			});
-    
-		$("#card").flip({
-			axis: 'x',
-			trigger: 'hover',
-			reverse: true,
-		});
-	});
-	
+      $(document.body).ready(function() {
+  //	    $('a[href^="#"]').on('click', function(event) {
+  //        var target = $(this.getAttribute('href'));
+  //        if( target.length ) {
+  //            event.preventDefault();
+  //            $('html, body').stop().animate({
+  //                scrollTop: target.offset().top-120
+  //            }, 'slow');
+  //					}
+  //			});
+
+          $("#card").flip({
+              axis: 'x',
+              trigger: 'hover',
+              reverse: true,
+          });
+      });
 	</script>
 </head>
     
 <body>
-
-    
     <header>
         <div class="gradient"></div>
         <div id= "gloss"></div>
@@ -50,9 +47,9 @@
 
             <nav class="mainMenu">
                 <ul>
-                    <li><a id="resumeLink" href="resume.html">Resume </a></li>
-                    <li><a id="projectsLink" href="#projects"> Projects</a></li>
-                    <li><a id="contactLink" href="#contact"> Contact</a></li>
+                  <li><a id="resumeLink" href="resume.html">Resume </a></li>
+                  <li><a id="projectsLink" href="#projects"> Projects</a></li>
+                  <li><a id="contactLink" href="#contact"> Contact</a></li>
                 </ul>		
             </nav>
         </section>
@@ -67,69 +64,65 @@
             <a href="#"><img id= "email" src="media/logos/email.png" alt="linkedin" height="42" width="42"></a>
         </section>
 				
-			<section id= "title"><img id= "signature" src="media/name.png" alt="linkedin" height="211" width="999"></section>
+        <section id= "title"><img id= "signature" src="media/name.png" alt="linkedin" height="211" width="999"></section>
 			
         <section id="about">
-            
-            
-					<div class = "arrow" id= "arrowL"></div>
-						<div id="card"> 
-								<div class="front"> 
-									<h2>Who am I? </h2>
-								</div> 
-								<div class="back">
-									<h3>My major: New Media Interactive Development</h3>
-									<p class= "desc">I am a student who strengths lies in <strong>front-end development</strong>. I create projects that helps others to do their task more efficiently and be an enjoyable experience.</p>
-								</div> 
-						</div>
-					<div class = "arrow" id= "arrowR"></div>
-				</section>
+            <div class = "arrow" id= "arrowL"></div>
+            <div id="card"> 
+                <div class="front"><h2>Who am I? </h2></div> 
+                <div class="back">
+                    <h3>My major: New Media Interactive Development</h3>
+                    <p class= "desc">I am a student who strengths lies in <strong>front-end development</strong>. I create projects that helps others to do their task more efficiently and be an enjoyable experience.</p>
+                </div> 
+            </div>
+            <div class = "arrow" id= "arrowR"></div>
+        </section>
 
         <section class="break">
-            <p class= "circles"> </p>
-            <p class= "circles"> </p>
-            <p class= "circles"> </p>
-            <p class= "circles"> </p>
-            <p class= "circles"> </p>
+          <p class= "circles"> </p>
+          <p class= "circles"> </p>
+          <p class= "circles"> </p>
+          <p class= "circles"> </p>
+          <p class= "circles"> </p>
         </section>
 
         <section id="skills">
             <h2>What I Know</h2>
-                <h3>These are coding skills that I have aquired through exploration and with practice.</h3>
-                <section class="codingSkills">         
-                    <section class= "summary">
-                        <img id= "html" src="media/logos/html.png" alt="linkedin" height="42" width="42">
-                        <p class = "label">HTML5/CSS</p>
-                        <p class= "desc"> I can give structure and responsive design to a web page easily with HTML5/CSS. </p>
-                    </section>
-                    
-                    <section class= "summary">
-                        <img id= "javascript" src="media/logos/javascript.png" alt="linkedin" height="42" width="42">
-                        <p class = "label">JavaScript</p>
-                        <p class= "desc">There is a handful JavaScript libraries I have used to give interative design to a website.</p>
-                    </section>
-                    
-                    <section class= "summary">
-                        <img id= "jquery" src="media/logos/jquery.png" alt="linkedin" height="42" width="42">
-                        <p class = "label">JQuery</p>
-                        <p class= "desc">jQuery helps me simplfy task that would take multiple lines to do with JavaScript.</p>
-                    </section>
-									
-										<section class= "summary">
-                        <img id= "html" src="media/logos/csharp.png" alt="linkedin" height="42" width="42">
-                        <p class = "label">C++</p>
-                        <p class= "desc"> I can give structure and responsive design to a web page easily with HTML5/CSS. </p>
-                    </section>
+            <h3>These are coding skills that I have aquired through exploration and with practice.</h3>
+            <section class="codingSkills">         
+                <section class= "summary">
+                    <img id= "html" src="media/logos/html.png" alt="linkedin" height="42" width="42">
+                    <p class = "label">HTML5/CSS</p>
+                    <p class= "desc"> I can give structure and responsive design to a web page easily with HTML5/CSS. </p>
+                </section>
+
+                <section class= "summary">
+                    <img id= "javascript" src="media/logos/javascript.png" alt="linkedin" height="42" width="42">
+                    <p class = "label">JavaScript</p>
+                    <p class= "desc">There is a handful JavaScript libraries I have used to give interative design to a website.</p>
+                </section>
+
+                <section class= "summary">
+                    <img id= "jquery" src="media/logos/jquery.png" alt="linkedin" height="42" width="42">
+                    <p class = "label">JQuery</p>
+                    <p class= "desc">jQuery helps me simplfy task that would take multiple lines to do with JavaScript.</p>
+                </section>
+
+                                    <section class= "summary">
+                    <img id= "html" src="media/logos/csharp.png" alt="linkedin" height="42" width="42">
+                    <p class = "label">C++</p>
+                    <p class= "desc"> I can give structure and responsive design to a web page easily with HTML5/CSS. </p>
+                </section>
             </section>
         </section>
 
 
         <section class="break">
-            <p class= "circles"> </p>
-            <p class= "circles"> </p>
-            <p class= "circles"> </p>
-            <p class= "circles"> </p>
-            <p class= "circles"> </p>
+          <p class= "circles"> </p>
+          <p class= "circles"> </p>
+          <p class= "circles"> </p>
+          <p class= "circles"> </p>
+          <p class= "circles"> </p>
         </section>
 
         <section id = "projects">
@@ -232,12 +225,13 @@
     -->
 
         </section>
+      
         <section class="break">
-            <p class= "circles"> </p>
-            <p class= "circles"> </p>
-            <p class= "circles"> </p>
-            <p class= "circles"> </p>
-            <p class= "circles"> </p>
+          <p class= "circles"> </p>
+          <p class= "circles"> </p>
+          <p class= "circles"> </p>
+          <p class= "circles"> </p>
+          <p class= "circles"> </p>
         </section>
 
     </section>
