@@ -1,15 +1,5 @@
-#about{
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 5em;
-}
-
-#about p{
-    font-size: 12pt;
-    width: 30em;
-    position: relative;
-    margin: 0 auto;
+#title{
+	text-align: center;
 }
 
 #signature{
@@ -17,17 +7,33 @@
     height: auto;
 }
 
-#card{
-    width: 30em;
-		height: 15em;
+
+#about{
     position: relative;
     margin: 0 auto;
+    text-align: center;
+		margin-top: 2em;
+    margin-bottom: 5em;
+		display: flex;
+		justify-content: space-between;
+		max-width: 40em;
+}
+
+
+#card{
+	  margin: 0 auto;
+    position: relative;
+	  width: 30em;
+		height: 15em;
 }
 
 #card .desc{
+	font-size: 12pt;
+	position: relative;
+	margin: 0 auto;
 	text-align: left;
 	padding-top: 2em;
-	width: 90%; 
+	width: 85%; 
 }
 
 #card h2{
@@ -36,11 +42,12 @@
 }
 
 #card h3{
-	width: 90%;
+	width: 85%;
 	position: relative;
   margin: 0 auto;
 	text-align: left;
 	padding-top: 3em;
+	color: #4E8DFF;
 }
 
 #card:hover{
@@ -54,12 +61,56 @@
     border-radius: 5px;
 }
 
+.arrow{
+	width: 0; 
+  height: 0;
+	margin-top: 5em;
+
+}
+
+#arrowL {
+  animation: arrowL 1s ease-in-out infinite;
+	border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid #4b5788;
+}
+
+#arrowR {
+  animation: arrowR 1s ease-in-out infinite;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent; 
+  border-right: 30px solid #4b5788; 
+}
+
+@keyframes arrowL {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
+  }
+}
+
+@keyframes arrowR {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-10px, 0);
+  }
+}
+
+
 #skills{
     position: relative;
     margin: 0 auto;
     width: 100%;
     padding: 2em 0em;
-    background-color: aliceblue;
+    background-color: #808cb9;
 }
 
 .codingSkills{
