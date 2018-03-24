@@ -104,56 +104,67 @@
   }
 }
 
+#skillsSection{
+	background-color: #2b2b2b;
+	width: 100%;
+}
 
 #skills{
     position: relative;
     margin: 0 auto;
-    width: 100%;
-    padding: 2em 0em;
-    background-color: #2b2b2b;
+    width: 50%;
+		height: auto;
+    padding-top: 2em;
+    padding-bottom: 3em;
 }
 
-#skills p{
-	color:antiquewhite
+.skill:first-child{
+	margin-left: 5em;
+	margin-right: 15em;
 }
 
-.codingSkills{
-    text-align: center;
-    margin: 4em;
+#skillsSection h2{
+	text-align: left;
+	padding-left: 25%;
+	padding-top: 2em;
+	margin-bottom: 0;
 }
 
-.codingSkills .summary{
-    display:inline-block;
-    margin-left: 15%;
-    width: 15em;
+#skills .wrap{
+	display: flex;
 }
 
-.summary:first-child{
-    margin-left: 0;
+#skills ul{
+	color: antiquewhite;
+	text-align: left;
+	list-style: none;
+	padding-left: 0;
+}
+
+#skills ul li{
+	margin-bottom: 1em;
+}
+
+#skills h3{
+	text-align: left;
 }
 
 .summary img{
-    position: relative;
-    width: 5em;
-    height: auto;
+	position: relative;
+	width: 5em;
+	height: auto;
+	padding: 0;
 }
 
-.label{
-    font-size: 11pt;
-    font-weight: bold;
+#projects h2{
+	text-align: left;
+	padding-left: 25%;
 }
 
 @media screen and (max-width: 1180px) {
     #signature{
         width: 30em;
         height: auto;
-    }
-    
-    .codingSkills .summary:last-child{
-        display: block;
-        position: relative;
-        margin: 0 auto;
-     
     }
     
     .codingSkills{
@@ -163,7 +174,6 @@
     
     .summary img{
         width: 3em;
-        margin-top: 1em;
     }   
 }
 

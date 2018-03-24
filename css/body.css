@@ -14,7 +14,7 @@ body{
     width:100%;
 }
 
-p{
+p, ul, span{
     color: #545454; 
     text-align: center;
     letter-spacing: 1px;
@@ -59,10 +59,6 @@ h3{
     height: 10px;
     background-color: #faf4d7;
     border-radius: 10px;
-}
-
-.circles:first-child{
-    margin-left: 0;
 }
 
 .bold{
