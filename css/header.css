@@ -65,32 +65,17 @@ header{
 }
 
 .mainMenu{ 
-    margin-top: 30pt;
+    margin-top: 35pt;
     position: relative;
     float: right;
   	z-index:2;
-}
-
-.mainMenu li{
     list-style: none;
-    display: inline;
-    margin-right: 1em;
+    display: inline-flex;
     font-family: "Lato";
     text-transform:uppercase;
     font-weight: bold;
     font-size: 10pt;
-    padding-top: 10pt;
-    padding-bottom: 10pt;
-    padding-left: 12pt;
-    border-left: 1px solid white;
-}
-
-.mainMenu li:first-child{
-    border: none;
-}
-
-.mainMenu li:last-child{
-    margin-right: 20pt;
+    padding: 10pt 0pt;
 }
 
 .mainMenu a{
@@ -99,11 +84,14 @@ header{
     transition:all .5s ease;
 }
 
+ .link{
+	padding: 0pt 10pt;
+}
+
 .mainMenu a:hover{
     color: #A99AFF;
     cursor:pointer;
 }
-
 
 h1{
     text-align: center;
@@ -155,32 +143,11 @@ h1 img{
         margin: 0 auto;
         top:1em;
     }
-    
+	
     .mainMenu{
-        width: 100%;
-        position: absolute;
-				top: 6em;
-        margin: 0em;
-        background-color: rgba(255,255,255, .1);
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        height: 40pt;
-        transition:all .5s ease;
-    }
-    
-    .mainMenu ul{
-        padding-top: 2pt;
-        padding-bottom: 5pt;
+				display: none;
     }
 
-    .mainMenu ul li{
-        padding-left: 7pt;
-        margin-right: 7pt;
-    }
-    
-    .mainMenu ul li:last-child{
-        margin: 0em;
-    }
 }
 
 
