@@ -10,7 +10,6 @@
     opacity: .2;
 }
 
-
 #linkedin{
     margin-left: 0;
 
@@ -25,20 +24,25 @@
 }
 
 @media screen and (max-width: 960px) {
-    
-    .logos img{
-        margin-left: 0em;
-    }
+
+	.logos{
+		max-width: 13em;
+		margin: 0 auto;
+    padding: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+		text-align: center;
+		display: flex;
+		justify-content: space-between;
+		top: 34em;
+		
+	}
 }
 
 @media screen and (max-width: 700px) {
+}
 
-    .logos img{
-        margin-left: 2.5em;
-    }
-    
-    .logos #linkedin{
-        margin-left: 0;
-    }
+@media screen and (max-width: 430px) {
 }
 

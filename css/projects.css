@@ -1,6 +1,14 @@
-#projects{
-    text-align: center;
-    margin-bottom: -2em;
+#projectSection{
+	position: relative;
+  text-align: center;
+	background-color: #96A0D1;
+	z-index: 1;
+}
+
+#projects h2{
+	text-align: center;
+	padding-top: 2em;
+	margin-bottom: 0;
 }
 
 .masonry { /* Masonry container */
@@ -16,8 +24,8 @@
     border-radius: 5pt;
     display: inline-block;
     margin: 0 0 1em;
-    overflow: hidden;
     width: 95%;
+		height: auto;
 }
 
 .imgWrap img {
