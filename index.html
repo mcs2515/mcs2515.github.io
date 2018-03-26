@@ -5,16 +5,19 @@
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Main Page</title>
+
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/header.css">
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/index.css">
+	<link REL="StyleSheet" TYPE="text/css" HREF="css/skills.css">
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/logo.css">
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/body.css">  
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/projects.css">  
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/footer.css">
+	
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<!--	https://nnattawat.github.io/flip/-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 
 	
@@ -43,7 +46,6 @@
     <header>
 			
         <div class="gradient"></div>
-        <div id= "gloss"></div>
         <section class="navbar">
             <a id="contentLink" href="#content"><img class="logo" src="media/logo.png" alt="Logo"  width="1800" height="1692"/></a>
 
@@ -90,19 +92,46 @@
 				
 					<section id="skills">
 						<h2>My Skills</h2>
-						<div class = "wrap">
-							<span class = "skill" id = "coding">         
+							<span class = "wrap" id = "coding">         
 								<h3>Coding Languages:</h3>
-								<ul>
-									<li>C++</li>
-									<li>C#</li>
-									<li>HTML &amp; CSS</li>
-									<li>JavaScript</li>
-								</ul>
+								<div class = "skill">
+									<p>C++</p>
+									<div class="progressbar">
+										<div id= "cplusplus"></div>
+									</div>
+								</div>
+								<br>
+								
+								
+								<div class = "skill">
+									<p>C#</p>
+									<div class="progressbar">
+										<div id= "csharp"></div>
+									</div>
+								</div>
+								
+								<br>
+								
+								<div class = "skill">
+									<p>Html/CSS</p>
+									<div class="progressbar">
+										<div id= "html"></div>
+									</div>
+								</div>
+								
+								<br>
+								
+								<div class = "skill">
+									<p>JavaScript</p>
+									<div class="progressbar">
+										<div id= "js"></div>
+									</div>
+								</div>
+								
 							</span>
 
 
-							<span class = "skill" id = "softwares">
+							<span class = "wrap" id = "softwares">
 								<h3>Softwares:</h3>
 								<ul>
 									<li>Visual Studio</li>
@@ -113,20 +142,10 @@
 									<li>Xcode</li>
 								</ul>
 							</span>
-						</div>
 					</section>
 				</section>
 
-
-        <section class="break">
-          <p class= "circles"> </p>
-          <p class= "circles"> </p>
-          <p class= "circles"> </p>
-          <p class= "circles"> </p>
-          <p class= "circles"> </p>
-        </section>
-
-			<section id="projectSection">
+	<section id="projectSection">
         <section id = "projects">
             <h2>My Projects</h2>
 
@@ -216,19 +235,10 @@
                 <img class="imageThumb" data-toggle="modal" data-target="#aquariumModal" src="media/event_page_thumb.jpg" alt="Aquarium E-vite">
 
                 <img class="imageThumb" data-toggle="modal" data-target="#monstersModal" src="media/monsters_menu_thumb.jpg" alt="Monsters and Ladders">
-    -->
-
+    
+-->
         </section>
 			</section>
-      
-        <section class="break">
-          <p class= "circles"> </p>
-          <p class= "circles"> </p>
-          <p class= "circles"> </p>
-          <p class= "circles"> </p>
-          <p class= "circles"> </p>
-        </section>
-
     </section>
 
     <footer>     

@@ -6,7 +6,7 @@ footer{
     height: 15em;
     background-color: #e6efff;
     font-family: "Abhaya Libre";
-    margin-top: 3em;
+
 		background-color: white;
 }
 
@@ -48,7 +48,7 @@ footer .wrap{
 	font-size: 10pt;
 	font-weight: bold;
 	max-width: 80%;
-	color: #d6d5e2;
+	color: #cfd7e5;
 }
 
 @media screen and (max-width: 960px) {

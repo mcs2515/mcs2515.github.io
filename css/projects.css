@@ -1,8 +1,10 @@
 #projectSection{
 	position: relative;
   text-align: center;
-	background-color: #96A0D1;
+	height: 90em;
+	background-color: #242426;
 	z-index: 1;
+	margin-top: -2em;
 }
 
 #projects h2{

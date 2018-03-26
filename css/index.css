@@ -99,50 +99,6 @@
   }
 }
 
-#skillsSection{
-	position: relative;
-	background-color: #2b2b2b;
-	width: 100%;
-	height: 30em;
-	z-index: 1;
-}
-
-#skills{
-    position: relative;
-    margin: 0 auto;
-		height: auto;
-    padding-top: 5em;
-		width: 40em;
-}
-
-#skillsSection h2{
-	text-align: left;
-	padding-bottom: 1em;
-	margin-bottom: 0;
-}
-
-#skillsSection #coding{
-	float: left;
-}
-
-#skillsSection #softwares{
-	float: right;
-	margin-top: -4.5em;
-}
-
-#skills ul{
-	color: antiquewhite;
-	list-style: none;
-	padding-left: 0;
-}
-
-#skills ul li{
-	margin-bottom: 1em;
-}
-
-#skills h3{
-	text-align: left;
-}
 
 @media screen and (max-width: 960px) {
     #signature{
@@ -150,15 +106,6 @@
         max-width: 30em;
         height: auto;
     }
-	
-		#signature{
-			width: 30em;
-			height: auto;
-    }
-    
-    #skills{
-			width: 80%;
-		}
     
     .summary img{
         width: 3em;
@@ -181,16 +128,6 @@
 	#about p{
 			width: 90%; 
 			font-size: 12pt;
-	}
-	
-	#skillsSection{
-		height: 27em;
-	}
-	
-	#skills{
-		display: block;
-		width: 90%; 
-		padding-top: 3em;
 	}
 	
 	#card{
@@ -239,24 +176,6 @@
 		margin: 0 auto;
 		padding-top: 10%;
 		width: 85%; 
-	}
-	
-	#skillsSection{
-		height: 39em;
-	}
-	
-	#skills{
-		width: 70%;
-	}
-	
-	#skills h2{
-		text-align: center;
-	}
-	
-	#skillsSection #softwares{
-		margin: 0;
-		float: left;
-		margin-top: 1em;
 	}
 	
 	#arrowL , #arrowR {
