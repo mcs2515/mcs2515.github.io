@@ -9,11 +9,11 @@
 }
 
 #skills{
-    position: relative;
-    margin: 0 auto;
-    padding-top: 4em;
-		width: 57%;
-		padding-left: 5em;
+	position: relative;
+	margin: 0 auto;
+	padding-top: 4em;
+	width: 57%;
+	padding-left: 5em;
 }
 
 #skillsSection h2{
@@ -82,7 +82,7 @@
 
 #csharp{
 	background-color: #394267;
-	 width: 50%;
+	width: 50%;
 }
 
 #html{
@@ -96,15 +96,13 @@
 }
 
 @media screen and (max-width: 960px) {
-
-    #skills{
-			width: 80%;
-			padding-left: 0em;
-		}
+	#skills{
+		width: 80%;
+		padding-left: 0em;
+	}
 }
 
 @media screen and (max-width: 700px){
-	
 	#skills{
 		width: 90%; 
 		padding-top: 3em;
@@ -120,8 +118,8 @@
 	}
 	
 	#skillsSection #softwares{
-		width: 40%;
-		}
+	width: 40%;
+	}
 	
 	#softwares h3, #softwares ul{
 		padding-left: 2em;
@@ -129,14 +127,12 @@
 }
 
 @media screen and (max-width: 550px){
-	
 	#softwares h3, #softwares ul{
 		padding-left: 0em;
 	}
 }
 
 @media screen and (max-width: 430px){
-	
 	#skills{
 		width: 85%;
 	}

@@ -72,8 +72,8 @@ header{
     transition:all .5s ease;
 }
 
- .link{
-	padding: 0pt 10pt;
+.link{
+		padding: 0pt 10pt;
 }
 
 .mainMenu a:hover{
@@ -115,13 +115,12 @@ h1 img{
         margin-left: 1em;
     }
 	
-	.mainMenu li:last-child{
-			margin-right: 10pt;
-	}
+		.mainMenu li:last-child{
+				margin-right: 10pt;
+		}
 }
 
 @media screen and (max-width: 430px) {
-
 		.gradient, header{
 				border-radius: 0;
 			}
@@ -136,10 +135,10 @@ h1 img{
 				display: none;
     }
 	
-	#title{
-		margin-top: -3em;;
-		padding: 0;
-	}
+		#title{
+			margin-top: -3em;;
+			padding: 0;
+		}
 
 }
 

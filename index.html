@@ -23,16 +23,6 @@
 	
 	<script>
       $(document.body).ready(function() {
-  //	    $('a[href^="#"]').on('click', function(event) {
-  //        var target = $(this.getAttribute('href'));
-  //        if( target.length ) {
-  //            event.preventDefault();
-  //            $('html, body').stop().animate({
-  //                scrollTop: target.offset().top-120
-  //            }, 'slow');
-  //					}
-  //			});
-
           $("#card").flip({
 
               trigger: 'hover',
@@ -50,17 +40,16 @@
     
 <body>
     <header>
-			
-        <div class="gradient"></div>
-        <section class="navbar">
-            <a id="contentLink" href="#content"><img class="logo" src="media/logo.png" alt="Logo"  width="1800" height="1692"/></a>
+			<div class="gradient"></div>
+			<section class="navbar">
+					<a id="contentLink" href="#title"><img class="logo" src="media/logo.png" alt="Logo"  width="1800" height="1692"/></a>
 
-							<nav class="mainMenu">
-                <section class= "link"><a  href="resume.html">Resume </a></section>
-								<section class= "link"><a  href="#projects"> Projects</a></section>
-								<section class= "link"><a href="#contact"> Contact</a></section>
-            	</nav>
-        </section>
+						<nav class="mainMenu">
+							<section class= "link"><a  href="media/resume.pdf">Resume </a></section>
+							<section class= "link"><a  href="#projectSection"> Projects</a></section>
+							<section class= "link"><a href="#copyright"> Contact</a></section>
+						</nav>
+			</section>
     </header>
 
     <section id="content">
@@ -96,123 +85,123 @@
 
 			<section id="skillsSection">
 				
-					<section id="skills">
-						<h2>My Skills</h2>
-							<span class = "wrap" id = "coding">         
-								<h3>Coding Languages:</h3>
-								<div class = "skill">
-									<p>C++</p>
-									<div class="progressbar">
-										<div id= "cplusplus"></div>
-									</div>
+				<section id="skills">
+					<h2>My Skills</h2>
+						<span class = "wrap" id = "coding">         
+							<h3>Coding Languages:</h3>
+							<div class = "skill">
+								<p>C++</p>
+								<div class="progressbar">
+									<div id= "cplusplus"></div>
 								</div>
-								<br>
-								
-								
-								<div class = "skill">
-									<p>C#</p>
-									<div class="progressbar">
-										<div id= "csharp"></div>
-									</div>
-								</div>
-								
-								<br>
-								
-								<div class = "skill">
-									<p>Html/CSS</p>
-									<div class="progressbar">
-										<div id= "html"></div>
-									</div>
-								</div>
-								
-								<br>
-								
-								<div class = "skill">
-									<p>JavaScript</p>
-									<div class="progressbar">
-										<div id= "js"></div>
-									</div>
-								</div>
-								
-							</span>
+							</div>
+							<br>
 
 
-							<span id = "softwares">
-								<h3>Softwares:</h3>
-								<ul>
-									<li>Visual Studio</li>
-									<li>Qt</li>
-									<li>Unity</li>
-									<li>Adobe Photoshop</li>
-									<li>Adobe Illustrator</li>
-									<li>Xcode</li>
-								</ul>
-							</span>
-					</section>
+							<div class = "skill">
+								<p>C#</p>
+								<div class="progressbar">
+									<div id= "csharp"></div>
+								</div>
+							</div>
+
+							<br>
+
+							<div class = "skill">
+								<p>Html/CSS</p>
+								<div class="progressbar">
+									<div id= "html"></div>
+								</div>
+							</div>
+
+							<br>
+
+							<div class = "skill">
+								<p>JavaScript</p>
+								<div class="progressbar">
+									<div id= "js"></div>
+								</div>
+							</div>
+
+						</span>
+
+
+						<span id = "softwares">
+							<h3>Softwares:</h3>
+							<ul>
+								<li>Visual Studio</li>
+								<li>Qt</li>
+								<li>Unity</li>
+								<li>Adobe Photoshop</li>
+								<li>Adobe Illustrator</li>
+								<li>Xcode</li>
+							</ul>
+						</span>
 				</section>
+			</section>
 
-		<section id="projectSection">
-        <section id = "projects">
-            <h2>My Projects</h2>
-            <h3>Some projects focus on user experience and some projects are simple games. </h3>
+			<section id="projectSection">
+					<section id = "projects">
+						<h2>My Projects</h2>
+						<h3>Some projects focus on user experience and some projects are simple games. </h3>
 <!--
 
-                <div class="imgWrap" id= "evite">
-                    <img class="myImg" src="media/event_page.jpg" alt="e-vite">
-                    <div class= "projectDesc">
-                        <div class = "border">
-                            <p>Aquarium <strong>E-vite</strong></p>
-                            <p>The Aquarium E-vite is a web splash page event page made in Photoshop. This project focused on using several tools in Photoshop all while paying attention to composition, aesthetics,  and details.</p>
-                        </div>
-                    </div>
-                </div>
-                      
+								<div class="imgWrap" id= "evite">
+										<img class="myImg" src="media/event_page.jpg" alt="e-vite">
+										<div class= "projectDesc">
+												<div class = "border">
+														<p>Aquarium <strong>E-vite</strong></p>
+														<p>The Aquarium E-vite is a web splash page event page made in Photoshop. This project focused on using several tools in Photoshop all while paying attention to composition, aesthetics,  and details.</p>
+												</div>
+										</div>
+								</div>
+
 -->
 
 						<div class = "box">
 							<div class = "tile" >
-							<figure class="proj">
-								<img class="imageThumb" src="media/audio.png">
-								<figcaption>
-									<h3>Magic Visualizer</h3>
-									<p>Visuals are presented to the user based on the waveform and frequency of the music file. The user has several options in the controller to change how the music is represented on the canvas.</p>
-								</figcaption>
-								<a href= "https://people.rit.edu/mcs2515/330/projects/project1/audio-visualizer.html" target="_blank "></a>
-							</figure>
+								<figure class="proj">
+									<img class="imageThumb" src="media/audio.png">
+									<figcaption>
+										<h3>Magic Visualizer</h3>
+										<p>Visuals are presented to the user based on the waveform and frequency of the music file. The user has several options in the controller to change how the music is represented on the canvas.</p>
+									</figcaption>
+									<a href= "https://people.rit.edu/mcs2515/330/projects/project1/audio-visualizer.html" target="_blank "></a>
+								</figure>
 
-							<figure class="proj">
-								<img class="imageThumb" src="media/eat.png">
-								<figcaption>
-									<h3>I Like to Eat Too!!</h3>
-									<p>A side-scrolling digital game. The user is a caterpillar whose goal is to eat leaves all while trying not to get eaten by the birds. The project heavily focused on the mastery of JavaScript.</p>
-								</figcaption>
-								<a href= "https://people.rit.edu/mcs2515/330/projects/project2/" target="_blank "></a>
-							</figure>
+								<figure class="proj">
+									<img class="imageThumb" src="media/eat.png">
+									<figcaption>
+										<h3>I Like to Eat Too!!</h3>
+										<p>A side-scrolling digital game. The user is a caterpillar whose goal is to eat leaves all while trying not to get eaten by the birds. The project heavily focused on the mastery of JavaScript.</p>
+									</figcaption>
+									<a href= "https://people.rit.edu/mcs2515/330/projects/project2/" target="_blank "></a>
+								</figure>
 
-							<figure class="proj">
-								<img class="imageThumb" src="media/cook.png">
-								<figcaption>
-									<h3>To Cook or Not to Cook</h3>
-									<p>Allows for hungry and indecisive users to find a dish to make/cook for themselves or to find restaurants near them instead. The user has several options to choose from.</p>
-								</figcaption>
-								<a href= "https://people.rit.edu/mcs2515/330/projects/project3/" target="_blank "></a>
-							</figure>
+								<figure class="proj">
+									<img class="imageThumb" src="media/cook.png">
+									<figcaption>
+										<h3>To Cook or Not to Cook</h3>
+										<p>Allows for hungry and indecisive users to find a dish to make/cook for themselves or to find restaurants near them instead. The user has several options to choose from.</p>
+									</figcaption>
+									<a href= "https://people.rit.edu/mcs2515/330/projects/project3/" target="_blank "></a>
+								</figure>
 
-							<figure class="proj">
-								<img class="imageThumb" src="media/flux.png">
-								<figcaption>
-									<h3>Flux</h3>
-									<p>Working in progress project. Link is comming soon!</p>
-								</figcaption>
-								<a href= "#"></a>
-							</figure>
-								</div>
+								<figure class="proj">
+									<img class="imageThumb" src="media/flux.png">
+									<figcaption>
+										<h3>Flux</h3>
+										<p>Working in progress project. Link is comming soon!</p>
+									</figcaption>
+									<a href= "#"></a>
+								</figure>
+							</div>
 						</div>
-        </section>
+					</section>
 			</section>
-    </section>
+	</section>
 
-    <footer>     
+	<footer>     
         <section class= "wrap">
 					<div id = "crutch">
 						<p>Am I right for you? A front-end developer who is self-motivated and loves to eat and have small talks? If so, contact me!</p>

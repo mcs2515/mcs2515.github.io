@@ -165,7 +165,6 @@ figure{
 }
 
 @media screen and (max-width: 960px) {
-
 	#projects{
 		width: 80%;
 		padding-left: 0em;
@@ -183,7 +182,6 @@ figure{
 }
 
 @media screen and (max-width: 700px) {
-	
 	#projects{
 		display: block;
 		width: 90%; 
@@ -202,7 +200,6 @@ figure{
 }
 
 @media screen and (max-width: 430px) {
-	
 	#projects h2{
 		text-align: center;
 		width: 100%;
