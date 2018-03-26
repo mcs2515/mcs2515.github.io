@@ -22,7 +22,7 @@
 	text-align: left;
 	padding-bottom: 1em;
 	margin-bottom: 0;
-	width: 85%;
+	width: 88%;
 }
 
 .box{
@@ -90,6 +90,7 @@ figure{
 	color: white;
 }
 .proj h3 {
+	text-align: center;
   margin: 0 0 5px;
   font-weight: 700;
   text-transform: uppercase;
@@ -174,6 +175,10 @@ figure{
 		padding-top: 1em;
 		width: 100%;
 	}
+	
+	#projects h3{
+		text-align: left;
+	}
 
 }
 
@@ -187,6 +192,11 @@ figure{
 	
 	#projects h2{
 		padding-top: 1em;
+		width: 98%;
+	}
+	
+	#projects h3{
+		text-align: center;
 	}
 	
 }

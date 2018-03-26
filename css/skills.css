@@ -12,7 +12,7 @@
     position: relative;
     margin: 0 auto;
     padding-top: 4em;
-		width: 55%;
+		width: 57%;
 		padding-left: 5em;
 }
 
@@ -32,6 +32,7 @@
 	margin: 0;
 	width: 10em;
 	color: beige;
+	font-weight: bold;
 }
 
 #skillsSection #coding{
@@ -105,18 +106,33 @@
 @media screen and (max-width: 700px){
 	
 	#skills{
-		display: block;
 		width: 90%; 
 		padding-top: 3em;
+		padding-left: 1em;
 	}
 	
 	#skills ul, .skill{
 		padding-left: 0em;
 	}
 	
+	#skillsSection #coding{
+		padding-left: .5em;
+	}
+	
 	#skillsSection #softwares{
-			width: 40%;
+		width: 40%;
 		}
+	
+	#softwares h3, #softwares ul{
+		padding-left: 2em;
+	}
+}
+
+@media screen and (max-width: 550px){
+	
+	#softwares h3, #softwares ul{
+		padding-left: 0em;
+	}
 }
 
 @media screen and (max-width: 430px){
@@ -144,4 +160,6 @@
 	
 	#skillsSection #coding{
 		width: 100%;
+		padding: 0;
+		margin: -.5em;
 	}

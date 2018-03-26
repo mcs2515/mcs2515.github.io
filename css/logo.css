@@ -1,7 +1,8 @@
 .logos{
     position: fixed;
-    left: 11.8%;
+    left: 11.5%;
 		top: 12em;
+		z-index: 2;
 }
 
 .logos img{
@@ -36,7 +37,7 @@
 		display: flex;
 		justify-content: space-between;
 		top: 34em;
-		
+		z-index: 0;
 	}
 }
 

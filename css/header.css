@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
 
 .gradient{
     position: absolute;
@@ -23,8 +22,6 @@ header{
     height: 6em;
     z-index: 2;
     background-color: #96a1d1;
-	
-
 }
 
 .navbar{
@@ -138,6 +135,11 @@ h1 img{
     .mainMenu{
 				display: none;
     }
+	
+	#title{
+		margin-top: -3em;;
+		padding: 0;
+	}
 
 }
 

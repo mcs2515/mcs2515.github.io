@@ -16,7 +16,7 @@ body{
 p, ul, span{
     color: #545454; 
     letter-spacing: 1px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', Arial, sans-serif;
 }
 
 .desc{
