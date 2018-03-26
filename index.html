@@ -38,6 +38,12 @@
               trigger: 'hover',
               reverse: true,
           });
+				
+				  $(".hover").mouseleave(
+						function () {
+							$(this).removeClass("hover");
+						}
+				  );
       });
 	</script>
 </head>
@@ -131,7 +137,7 @@
 							</span>
 
 
-							<span class = "wrap" id = "softwares">
+							<span id = "softwares">
 								<h3>Softwares:</h3>
 								<ul>
 									<li>Visual Studio</li>
@@ -145,38 +151,12 @@
 					</section>
 				</section>
 
-	<section id="projectSection">
+		<section id="projectSection">
         <section id = "projects">
             <h2>My Projects</h2>
-
-
-						
-            <h3>Some projects focus on user experience and some projects are simple games made in Canvas. </h3>
+            <h3>Some projects focus on user experience and some projects are simple games. </h3>
 <!--
-            <section class= "masonry">
-                <div class="imgWrap" id= "cook">
-                    <img class="projImg" src="media/cook_page.jpg" alt="To Cook or Not to Cook">
-                    <div class= "projectDesc">
-                        <div class = "border">
-                            <p>To <strong>Cook</strong> or <strong>Not to Cook</strong></p>
-                            <p >To Cook or Not to Cook uses the Yummly API and Google Places API. This website allows for hungry and indecisive users to find a dish to make/cook for themselves or to find restaurants near them instead. The user has several options to play with in order to get several specific dishes to choose from.</p>
-                            <a class= "proj-link" href="https://people.rit.edu/mcs2515/330/projects/project3/" target="_blank"><button type="button" class="btn"> Link</button></a>
-                        </div>
-                    </div>
-                </div>
 
-                
-                <div class="imgWrap"  id= "caterpillar">
-                    <img class="projImg" src="media/canvas_game.jpg" alt="I Like to Eat Too!!">
-                    <div class= "projectDesc">
-                        <div class = "border">
-                            <p>I Like to <strong>Eat</strong> Too!!<p>
-                            <p>I Like to Eat Too is a side-scrolling digital game created with the Canvas API. The user is a caterpillar whose goal is to eat leaves all while trying not to get eaten by the birds. All art and animations were created from scratch. The project heavily focused on the mastery of JavaScript.  </p>
-                            <a class= "proj-link" href="https://people.rit.edu/mcs2515/330/projects/project2/" target="_blank"><button type="button" class="btn"> Link</button></a>
-                        </div>
-                    </div>
-                </div>
-                
                 <div class="imgWrap" id= "evite">
                     <img class="myImg" src="media/event_page.jpg" alt="e-vite">
                     <div class= "projectDesc">
@@ -186,57 +166,48 @@
                         </div>
                     </div>
                 </div>
-               
-                
-                <div class="imgWrap"  id= "typoPoster">
-                    <img class="projImg" src="media/typo_poster.png" alt="Typographic Poster">
-                    <div class= "projectDesc">
-                        <div class = "border">
-                            <p>Simply <strong>Pixelated</strong><p>
-                            <p>Simply Pixelates is a typographic poster made in AI. The user is a caterpillar whose goal is to eat leaves all while trying not to get eaten by the birds. All art and animations were created from scratch. The project heavily focused on the mastery of JavaScript.  </p>
-                            <a class= "proj-link" href="https://people.rit.edu/mcs2515/330/projects/project2/" target="_blank"><button type="button" class="btn"> Link</button></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="imgWrap"  id= "adPoster">
-                    <img class="projImg" src="media/ad_poster.png" alt="AD Poster">
-                    <div class= "projectDesc">
-                        <div class = "border">
-                            <p>Somthing <strong>I Suppose</strong><p>
-                            <p>Simply Pixelates is a typographic poster made in AI. The user is a caterpillar whose goal is to eat leaves all while trying not to get eaten by the birds. All art and animations were created from scratch. The project heavily focused on the mastery of JavaScript.  </p>
-                            <a class= "proj-link" href="https://people.rit.edu/mcs2515/330/projects/project2/" target="_blank"><button type="button" class="btn"> Link</button></a>
-                        </div>
-                    </div>
-                </div>
-                 <div class="imgWrap" id= "visualizer">
-                    <img class="myImg" src="media/audioV2.jpg" alt="Magical Visualizer">
-                    <div class= "projectDesc">
-                        <div class = "border">
-                            <p>Magical <strong>Visualizer</strong></p>
-                            <p>Magical Visualizer uses both the Canvas API and Web Audio API. Visuals are presented to the user based on the waveform and frequency of the music file. The user has several options in the controller to change how the music is represented on the canvas.</p>
-                            <a class= "proj-link" href="https://people.rit.edu/mcs2515/330/projects/project1/audio-visualizer.html" target="_blank"><button type="button" class="btn"> Link</button></a>
-                        </div>
-                    </div>
-                </div>
-            </section>        
+                      
 -->
 
+						<div class = "box">
+							<div class = "tile" >
+							<figure class="proj">
+								<img class="imageThumb" src="media/audio.png">
+								<figcaption>
+									<h3>Magic Visualizer</h3>
+									<p>Visuals are presented to the user based on the waveform and frequency of the music file. The user has several options in the controller to change how the music is represented on the canvas.</p>
+								</figcaption>
+								<a href= "https://people.rit.edu/mcs2515/330/projects/project1/audio-visualizer.html" target="_blank "></a>
+							</figure>
 
-            <!--
-                <img class="imageThumb" data-toggle="modal" data-target="#audioModal" src="media/audioV2_thumb.jpg" alt="Audio Visualizer">
+							<figure class="proj">
+								<img class="imageThumb" src="media/eat.png">
+								<figcaption>
+									<h3>I Like to Eat Too!!</h3>
+									<p>A side-scrolling digital game. The user is a caterpillar whose goal is to eat leaves all while trying not to get eaten by the birds. The project heavily focused on the mastery of JavaScript.</p>
+								</figcaption>
+								<a href= "https://people.rit.edu/mcs2515/330/projects/project2/" target="_blank "></a>
+							</figure>
 
-                <img class="imageThumb" data-toggle="modal" data-target="#eatModal" src="media/canvas_game_thumb.jpg" alt="I like to Eat Too!!">
+							<figure class="proj">
+								<img class="imageThumb" src="media/cook.png">
+								<figcaption>
+									<h3>To Cook or Not to Cook</h3>
+									<p>Allows for hungry and indecisive users to find a dish to make/cook for themselves or to find restaurants near them instead. The user has several options to choose from.</p>
+								</figcaption>
+								<a href= "https://people.rit.edu/mcs2515/330/projects/project3/" target="_blank "></a>
+							</figure>
 
-               <img class="imageThumb" data-toggle="modal" data-target="#toCookModal" src="media/cook_icon.png" alt="To Cook or Not to Cook">
-    -->
-
-            <!--
-                <img class="imageThumb" data-toggle="modal" data-target="#aquariumModal" src="media/event_page_thumb.jpg" alt="Aquarium E-vite">
-
-                <img class="imageThumb" data-toggle="modal" data-target="#monstersModal" src="media/monsters_menu_thumb.jpg" alt="Monsters and Ladders">
-    
--->
+							<figure class="proj">
+								<img class="imageThumb" src="media/flux.png">
+								<figcaption>
+									<h3>Flux</h3>
+									<p>Working in progress project. Link is comming soon!</p>
+								</figcaption>
+								<a href= "#"></a>
+							</figure>
+								</div>
+						</div>
         </section>
 			</section>
     </section>
