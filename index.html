@@ -24,7 +24,6 @@
 	<script>
       $(document.body).ready(function() {
           $("#card").flip({
-
               trigger: 'hover',
               reverse: true,
           });
@@ -34,6 +33,16 @@
 							$(this).removeClass("hover");
 						}
 				  );
+				
+				$("a[href='#top']").click(function() {
+					 $("html, body").animate({ scrollTop: 0 }, "slow");
+					 return false;
+				});
+				
+				$("a[href='#projectSection']").click(function() {
+					 $("html, body").animate({ scrollTop: 1100 }, "slow");
+					 return false;
+				});
       });
 	</script>
 </head>
@@ -42,11 +51,11 @@
     <header>
 			<div class="gradient"></div>
 			<section class="navbar">
-					<a id="contentLink" href="#title"><img class="logo" src="media/logo.png" alt="Logo"  width="1800" height="1692"/></a>
+					<a id="contentLink" href="#top"><img class="logo" src="media/logo.png" alt="Logo"  width="1800" height="1692"/></a>
 
 						<nav class="mainMenu">
-							<section class= "link"><a  href="media/resume.pdf">Resume </a></section>
-							<section class= "link"><a  href="#projectSection"> Projects</a></section>
+							<section class= "link"><a href="media/resume.pdf">Resume </a></section>
+							<section class= "link"><a href="#projectSection"> Projects</a></section>
 							<section class= "link"><a href="#copyright"> Contact</a></section>
 						</nav>
 			</section>
@@ -60,7 +69,7 @@
 
             <a href="#"><img id= "email" src="media/logos/email.png" height="42" width="42"></a>
 			</section>
-				
+			
 			<section id= "title"><img id= "signature" src="media/name.png" height="211" width="999"></section>
 			
 			<section id="about">
@@ -191,9 +200,8 @@
 									<img class="imageThumb" src="media/flux.png">
 									<figcaption>
 										<h3>Flux</h3>
-										<p>Working in progress project. Link is comming soon!</p>
+										<p>Working in progress project. Link is coming soon!</p>
 									</figcaption>
-									<a href= "#"></a>
 								</figure>
 							</div>
 						</div>
@@ -204,7 +212,7 @@
 	<footer>     
         <section class= "wrap">
 					<div id = "crutch">
-						<p>Am I right for you? A front-end developer who is self-motivated and loves to eat and have small talks? If so, contact me!</p>
+						<p>Am I right for you? A front-end developer who is self-motivated, loves to eat and make small talk? If so, contact me!</p>
 						<br>
 						
 					</div>
