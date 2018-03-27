@@ -68,7 +68,7 @@ header{
 }
 
 .mainMenu a{
-		color: #394267;
+		color: #4E8DFF;
     text-decoration: none;
     transition:all .5s ease;
 }
@@ -78,8 +78,8 @@ header{
 }
 
 .mainMenu a:hover{
-    color: #4E8DFF;
-    cursor:pointer;
+	color: #394267;
+	cursor:pointer;
 }
 
 h1{
