@@ -21,14 +21,26 @@ footer .wrap{
 }
 
 #crutch{
+    position: relative;
+    margin: 0 auto;
 	width: 30em;
-	margin: 0;
-	padding-right: 3em;
 }
 
 #info{
-	padding-top: .5em;
-	width: 20em;
+    position: relative;
+    margin: 0 auto;
+	width: 12.5em;
+}
+
+#info ul{
+	list-style: none;
+    padding-left: 0em;
+}
+
+#info ul li{
+	margin-bottom: 1em;
+    display: inline-flex;
+    align-items: center;
 }
 
 #info img{
@@ -37,39 +49,29 @@ footer .wrap{
 	margin-right: 1.5em;
 }
 
-#info div{
-	display: inline-flex;
-	align-items: center;
-}
-
 #copyright{
 	position: relative;
 	margin: 0 auto;
 	font-family: 'Lato', sans-serif;
 	font-size: 10pt;
 	font-weight: bold;
-	max-width: 80%;
+	max-width: 60%;
 	color: #cfd7e5;
 }
 
 @media screen and (max-width: 960px) {
 	footer .wrap{
-		width: 90%;
-		padding: 0;
-		padding-top: 2em;
+      width: 90%;
+      padding: 0;
+      padding-top: 2em;
 	}
 	
 	#crutch{
-		width: 25em;
-	}
-	
-	#info div{
-		width: 16em;
-		padding-left: 5em;
+      width: 25em;
 	}
 	
 	#copyright{
-		max-width: 90%;
+      max-width: 90%;
 	}
 }
 
@@ -80,6 +82,7 @@ footer .wrap{
 	}
 	
 	#crutch{
+        width: 15em;
 		padding: 0;
 	}
 	
@@ -88,8 +91,8 @@ footer .wrap{
 		padding-left: .5em;
 	}
 
-	#info div{
-		padding: 0;
+	#info {
+		width: 13em;
 	}
 }
 
@@ -111,8 +114,7 @@ footer .wrap{
 	#info {
 		position: relative;
 		margin: 0 auto;
-		padding-left: ;
-		width: 18em;
+		width: 14em;
 		font-size: 11pt;
 	}
 
