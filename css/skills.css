@@ -22,10 +22,21 @@
 	margin-bottom: 0;
 }
 
+#skillsSection h3{
+	text-align: left;
+}
+
+#skills .wrap{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 auto;
+  max-width: 50em;
+}
+
 .skill {
 	display:flex;
 	margin-bottom: 1em;
-	padding-left: 2em;
 }
 
 .skill p{
@@ -36,34 +47,37 @@
 }
 
 #skillsSection #coding{
-	float: left;
 	width: 45%;
 }
 
 #skillsSection #softwares{
-	float: right;
-	width: 35%;
+	width: 30%;
 }
 
 #skills ul{
 	color: #4E8DFF;
 	list-style: none;
 	font-weight: bold;
+    padding-left: 0em;
 }
 
 #skills ul li{
 	margin-bottom: .8em;
 }
 
-#skills h3{
-	text-align: left;
+#skills #software_header{
+	font-family: 'Lato', sans-serif;
+    color: #545454;
+    font-size: 12pt;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .progressbar {
 	display: flex;
-  background-color: #595959;
-  border-radius: 15px;
-  padding: 3px;
+    background-color: #595959;
+    border-radius: 15px;
+    padding: 3px;
 	width: 100%;
 	height: 10px;
 }
@@ -87,7 +101,7 @@
 
 #html{
 	background-color: #b9d3ef;
-  width: 80%;
+    width: 80%;
 }
 
 #js{
@@ -97,39 +111,42 @@
 
 @media screen and (max-width: 960px) {
 	#skills{
-		width: 80%;
+		width: 90%;
 		padding-left: 0em;
 	}
+  
+    #skillsSection #softwares{
+        width: 10em;
+	}
+  
+    #skills .wrap{
+      max-width: 35em;
+    }
 }
 
 @media screen and (max-width: 700px){
 	#skills{
 		width: 90%; 
 		padding-top: 3em;
-		padding-left: 1em;
 	}
-	
-	#skills ul, .skill{
-		padding-left: 0em;
-	}
+  
+    #skills .wrap{
+      max-width: 30em;
+    }
 	
 	#skillsSection #coding{
-		padding-left: .5em;
+        width: 55%;
+	}
+  
+  	#skillsSection #softwares{
+        width: 8em;
 	}
 	
-	#skillsSection #softwares{
-	width: 40%;
-	}
-	
-	#softwares h3, #softwares ul{
-		padding-left: 2em;
-	}
-}
-
-@media screen and (max-width: 550px){
-	#softwares h3, #softwares ul{
-		padding-left: 0em;
-	}
+    #skillsSection p, ul li{
+        font-size: 10pt;
+    }
+  
+  
 }
 
 @media screen and (max-width: 430px){
@@ -145,17 +162,18 @@
 		text-align: center;
 		margin-top: 0;
 	}
+  
+    #skillsSection p, ul li{
+        font-size: 12pt;
+    }
 	
 	#skillsSection #softwares{
 		display: none;
 	}
 	
-	.skill{
-		padding-left: 0em;	
-	}
+
 	
 	#skillsSection #coding{
 		width: 100%;
 		padding: 0;
-		margin: -.5em;
 	}

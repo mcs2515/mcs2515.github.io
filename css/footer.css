@@ -1,14 +1,14 @@
 footer{
     position: relative;
-		margin: 0 auto;
+	margin: 0 auto;
     bottom: 0;
     width: 100%;
     display:block;
-		overflow:auto;
+	overflow:auto;
     background-color: #e6efff;
     font-family: "Abhaya Libre";
-		background-color: white;
-		padding-bottom: 1em;
+    background-color: white;
+    padding-bottom: 1em;
 }
 
 footer .wrap{
