@@ -52,6 +52,24 @@ header{
     transform: scale(1.1);
 }
 
+#logos{
+    margin-left: 4em;
+    position: fixed;
+    top: 12em;
+    z-index: 2;
+}
+
+#logos img{
+    display: block;
+    margin-bottom: 1em;
+    opacity: .2;
+}
+
+#logos img:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
 .mainMenu{ 
     margin-top: 35pt;
     position: relative;
@@ -108,6 +126,10 @@ h1 img{
     .mainMenu ul{
         padding-left: 0pt;
     }   
+	
+	#logos{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 700px) {

@@ -11,7 +11,7 @@
     position: relative;
     margin: 0 auto;
 		margin-top: 2em;
-    margin-bottom: 5em;
+    margin-bottom: 8em;
 		display: flex;
 		justify-content: space-between;
 		max-width: 40em;
@@ -156,6 +156,9 @@
 }
 
 @media screen and (max-width: 430px){
+	#about{
+		margin-bottom: 6em;
+	}
 	
 	#card{
 		position: relative;

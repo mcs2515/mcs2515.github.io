@@ -1,27 +1,15 @@
 .logos{
-    position: fixed;
-    left: 11.5%;
-    top: 12em;
-    z-index: 2;
+	display: none;
+	position: fixed;
 }
 
 .logos img{
-    display: block;
-    margin-bottom: 1em;
     opacity: .2;
 }
 
-#linkedin{
-    margin-left: 0;
-
-}
 .logos img:hover {
     cursor: pointer;
     opacity: .5;
-}
-
-.codingSkills img:first-child{
-    margin-left: 0em;
 }
 
 @media screen and (max-width: 960px) {
@@ -34,7 +22,7 @@
       text-align: center;
       display: flex;
       justify-content: space-between;
-      top: 34em;
+      top: 50%;
       z-index: 0;
 	}
 }
