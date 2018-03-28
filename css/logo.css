@@ -1,13 +1,13 @@
 .logos{
     position: fixed;
     left: 11.5%;
-		top: 12em;
-		z-index: 2;
+    top: 12em;
+    z-index: 2;
 }
 
 .logos img{
     display: block;
-		margin-bottom: 1em;
+    margin-bottom: 1em;
     opacity: .2;
 }
 
@@ -17,7 +17,7 @@
 }
 .logos img:hover {
     cursor: pointer;
-    opacity: .3;
+    opacity: .5;
 }
 
 .codingSkills img:first-child{
@@ -26,17 +26,16 @@
 
 @media screen and (max-width: 960px) {
 	.logos{
-		max-width: 13em;
-		margin: 0 auto;
-    padding: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-		text-align: center;
-		display: flex;
-		justify-content: space-between;
-		top: 34em;
-		z-index: 0;
+      max-width: 13em;
+      margin: 0 auto;
+      padding: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      top: 34em;
+      z-index: 0;
 	}
 }
 
