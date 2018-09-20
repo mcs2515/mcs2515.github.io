@@ -15,61 +15,15 @@
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/body.css">  
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/projects.css">  
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/footer.css">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<!--Jquery-->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+	<!--Slick-->
 	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
-	<script>
-      $(document.body).ready(function() {
-        $("#card").flip({
-          trigger: 'hover',
-          reverse: true,
-        });
-
-        $("a[href='#top']").click(function() {
-          $("html, body").animate({ scrollTop: 0 }, "slow");
-          return false;
-        });
-
-        $("a[href='#projectSection']").click(function() {
-          $("html, body").animate({ scrollTop: 1050 }, "slow");
-          return false;
-        });
-
-        $("a[href='#copyright']").click(function() {
-          $("html, body").animate({ scrollTop: $(document).height()}, "slow");
-          return false;
-        });
-		  
-	  $('.carousel').slick({
-		  centerMode: true,
-		  centerPadding: '60px',
-		  slidesToShow: 3,
-		  responsive: [
-			{
-			  breakpoint: 768,
-			  settings: {
-				arrows: false,
-				centerMode: true,
-				centerPadding: '40px',
-				slidesToShow: 3
-			  }
-			},
-			{
-			  breakpoint: 480,
-			  settings: {
-				arrows: false,
-				centerMode: true,
-				centerPadding: '40px',
-				slidesToShow: 1
-			  }
-			}
-		  ]
-		});
-      });
-	</script>
 </head>
     
 <body>
@@ -147,50 +101,50 @@
 				<h2>My Projects</h2>
 				<h3>Some projects focus on user experience and some projects are simple games. </h3>
 				<div class = "carousel" >
-					<figure class="proj">
+					<div class="proj">
 						<img class="imageThumb" src="media/audio.png">
-						<figcaption>
+						<div>
 							<h3>Magic Visualizer</h3>
 							<p>Visuals are presented to the user based on the frequency of the music file. The user has several options in order to change different features of the visualizer.</p> <br> <p>Canvas API</p>
-						</figcaption>
+						</div>
 						<a href= "https://people.rit.edu/mcs2515/330/projects/project1/audio-visualizer.html" target="_blank "></a>
-					</figure>
+					</div>
 
-					<figure class="proj">
+					<div class="proj">
 						<img class="imageThumb" src="media/eat.png">
-						<figcaption>
+						<div>
 							<h3>I Like to Eat Too!!</h3>
 							<p>A side-scrolling game where player plays as a caterpillar whose goal is to eat leaves. Enemy birds will try to eat the player as the game progresses.</p> <br> <p>Canvas API</p>
-						</figcaption>
+						</div>
 						<a href= "https://people.rit.edu/mcs2515/330/projects/project2/" target="_blank "></a>
-					</figure>
+					</div>
 
-					<figure class="proj">
+					<div class="proj">
 						<img class="imageThumb" src="media/cook.png">
-						<figcaption>
+						<div>
 							<h3>Recipe Map</h3>
 								<p>Allows users to find a dish to cook for themselves or to find restaurants near them instead. The user has several options to choose from.</p> <br> <p>Yummly API, Google Maps API</p>
-						</figcaption>
+						</div>
 						<a href= "https://people.rit.edu/mcs2515/portfolio/projects/recipe-map/" target="_blank "></a>
-					</figure>
+					</div>
 
-					<figure class="proj">
+					<div class="proj">
 						<img class="imageThumb" src="media/flux.png">
-						<figcaption>
+						<div>
 							<h3>Flux</h3>
 							<p>Endless runner game for users to get on their phones and up on their feet to play. User has to jump and run in place to play on phone. Made in Unity.</p>
-						</figcaption>
+						</div>
 						<a href= "https://teamflux.github.io/" target="_blank "></a>
-					</figure>
+					</div>
 
-					<figure class="proj">
+					<div class="proj">
 						<img class="imageThumb" src="media/peacock.png">
-						<figcaption>
+						<div>
 							<h3>Peacock</h3>
 							<p>Peacock was specifically made for those who are inspired by the colors of an image and would like to save the images to a library. Users can upload and share their images.</p> <br> <p>Node.js, MongoDB, React</p>
-						</figcaption>
+						</div>
 						<a href= "https://peacock-app.herokuapp.com/" target="_blank "></a>
-					</figure>
+					</div>
 				</div>
 			</section>
 		</section>
@@ -205,9 +159,9 @@
 			
 			<div id = "info">
 				<ul>
-					<li><img id= "email" src="media/logos/marker.png" height="42" width="42">Rochester, NY, US</li>
-					<li><img id= "location" src="media/logos/email2.png" height="42" width="42">mcs2515@rit.edu</li>
-					<li><img id= "phone" src="media/logos/phone.png" height="42" width="42">(585) 905 - 4078</li>
+					<li><i class="fas fa-map-marker-alt"></i>Rochester, NY, US</li>
+					<li><i class="far fa-envelope"></i>mcs2515@rit.edu</li>
+					<li><i class="fas fa-phone"></i>585.905.4078</li>
 				</ul>
 			</div>
 		</section>

@@ -16,7 +16,7 @@
 .proj {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
-/*  float: left;*/
+  float: left;
   display: inline-grid;
   margin: 10px 1%;
   min-width: 310px -60px;
@@ -40,7 +40,7 @@
   vertical-align: top;
 	border-radius: 3px;
 }
-.proj figcaption {
+.proj div {
   position: absolute;
   top: 0;
   right: 0;
@@ -50,16 +50,16 @@
   opacity: 0;
   padding: 20px 30px;
 }
-.proj figcaption:before,
-.proj figcaption:after {
+.proj div:before,
+.proj div:after {
   width: 1px;
   height: 0;
 }
-.proj figcaption:before {
+.proj div:before {
   right: 0;
   top: 0;
 }
-.proj figcaption:after {
+.proj div:after {
   left: 0;
   bottom: 0;
 }
@@ -89,8 +89,8 @@
 }
 .proj:before,
 .proj:after,
-.proj figcaption:before,
-.proj figcaption:after {
+.proj div:before,
+.proj div:after {
   position: absolute;
   content: '';
   background-color: #ffffff;
@@ -116,14 +116,14 @@
 .proj.hover img {
   opacity: 0.2;
 }
-.proj:hover figcaption,
-.proj.hover figcaption {
+.proj:hover div,
+.proj.hover div {
   opacity: 1;
 }
-.proj:hover figcaption:before,
-.proj.hover figcaption:before,
-.proj:hover figcaption:after,
-.proj.hover figcaption:after {
+.proj:hover div:before,
+.proj.hover div:before,
+.proj:hover div:after,
+.proj.hover div:after {
   height: 100%;
 }
 .proj:hover:before,
@@ -136,10 +136,10 @@
 .proj.hover:before,
 .proj:hover:after,
 .proj.hover:after,
-.proj:hover figcaption:before,
-.proj.hover figcaption:before,
-.proj:hover figcaption:after,
-.proj.hover figcaption:after {
+.proj:hover div:before,
+.proj.hover div:before,
+.proj:hover div:after,
+.proj.hover div:after {
   opacity: 0.1;
 }
 
