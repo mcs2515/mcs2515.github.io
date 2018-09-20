@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
 
 .gradient{
     position: absolute;
@@ -82,17 +82,17 @@ header{
     font-weight: bold;
     font-size: 10pt;
     padding: 10pt 0pt;
-		font-size: 12pt;
+	font-size: 12pt;
 }
 
 .mainMenu a{
-		color: #4E8DFF;
+	color: #4E8DFF;
     text-decoration: none;
     transition:all .5s ease;
 }
 
 .link{
-		padding: 0pt 10pt;
+	padding: 0pt 10pt;
 }
 
 .mainMenu a:hover{
@@ -108,13 +108,6 @@ h1{
 h1 img{
     max-width: 420px;
     height: auto;
-}
-
-.memo{
-    text-align: center;
-    font-family: "Lato";
-    font-size: 15pt;
-    font-weight: bold;
 }
 
 @media screen and (max-width: 960px) {

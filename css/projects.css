@@ -2,18 +2,6 @@
 	position: relative;
 	background-color: #242426;
 	width: 100%;
-	display:block;
-	overflow:auto;
-	z-index: 1;
-	padding-bottom: 5em;
-}
-
-#projects{
-	position: relative;
-	margin: 0 auto;
-	padding-top: 4em;
-	width: 65%;
-	padding-left: 5em;
 }
 
 #projects h2{
@@ -25,20 +13,11 @@
 	width: 88%;
 }
 
-.box{
-	text-align: center;
-}
-
-figure{
-	display: inline-block;
-	margin: 0 auto;
-}
-
 .proj {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
 /*  float: left;*/
-	display: inline-grid;
+  display: inline-grid;
   margin: 10px 1%;
   min-width: 310px -60px;
   max-width: 310px;

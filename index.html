@@ -3,8 +3,10 @@
 <head>
 	
 	<meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/header.css">
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/index.css">
@@ -13,25 +15,18 @@
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/body.css">  
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/projects.css">  
 	<link REL="StyleSheet" TYPE="text/css" HREF="css/footer.css">
-	
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<!--	https://nnattawat.github.io/flip/-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 
-	
 	<script>
       $(document.body).ready(function() {
         $("#card").flip({
           trigger: 'hover',
           reverse: true,
         });
-
-        $(".hover").mouseleave(
-          function () {
-            $(this).removeClass("hover");
-          }
-        );
 
         $("a[href='#top']").click(function() {
           $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -47,6 +42,32 @@
           $("html, body").animate({ scrollTop: $(document).height()}, "slow");
           return false;
         });
+		  
+	  $('.carousel').slick({
+		  centerMode: true,
+		  centerPadding: '60px',
+		  slidesToShow: 3,
+		  responsive: [
+			{
+			  breakpoint: 768,
+			  settings: {
+				arrows: false,
+				centerMode: true,
+				centerPadding: '40px',
+				slidesToShow: 3
+			  }
+			},
+			{
+			  breakpoint: 480,
+			  settings: {
+				arrows: false,
+				centerMode: true,
+				centerPadding: '40px',
+				slidesToShow: 1
+			  }
+			}
+		  ]
+		});
       });
 	</script>
 </head>
@@ -66,188 +87,131 @@
 				</section>
 				
 				<nav class="mainMenu">
-						<section class= "link"><a href="media/resume.pdf" target="_blank ">Resume </a></section>
-						<section class= "link"><a href="#projectSection"> Projects</a></section>
-						<section class= "link"><a href="#copyright"> Contact</a></section>
+					<section class= "link"><a href="media/resume.pdf" target="_blank ">Resume </a></section>
+					<section class= "link"><a href="#projectSection"> Projects</a></section>
+					<section class= "link"><a href="#copyright"> Contact</a></section>
 				</nav>
       </section>
     </header>
 
-    <section id="content">
-			<section class= "logos">
-        <a href="https://www.linkedin.com/in/meganchunyusmith/" target = "_blank"><img id= "linkedin" src="media/logos/linkedin.png" height="42" width="42"></a>
+    <section class="content">
+		<section class= "logos">
+		<a href="https://www.linkedin.com/in/meganchunyusmith/" target = "_blank"><img id= "linkedin" src="media/logos/linkedin.png" height="42" width="42"></a>
 
-        <a href="https://github.com/mcs2515" target = "_blank"><img id= "github" src="media/logos/github.png" height="42" width="42"></a>
+		<a href="https://github.com/mcs2515" target = "_blank"><img id= "github" src="media/logos/github.png" height="42" width="42"></a>
 
-        <a href="https://www.behance.net/megancsmith" target = "_blank"><img id= "behanced" src="media/logos/behanced.png" height="42" width="42"></a>
+		<a href="https://www.behance.net/megancsmith" target = "_blank"><img id= "behanced" src="media/logos/behanced.png" height="42" width="42"></a>
 			</section>
 
 			<section id= "title"><img id= "signature" src="media/name.png" height="211" width="999"></section>
 
 			<section id="about">
-				<div class = "arrow" id= "arrowL"></div>
-				<div id="card"> 
-					<div class="front"><h2>Who am I? </h2></div> 
-					<div class="back">
-						<h3>My major: New Media Interactive Development</h3>
+				<div class="card"> 
+
+					<div class="desc">
+						<i class="fas fa-laptop-code fa-3x"></i>
+						<h3>Front-End Web Developer</h3>
 						<p class= "desc">I am a student whos strengths lie in <strong>front-end development</strong>. Even though I am a developer, I strive for good design and to create something that is easy and enjoyable for the user.</p>
 					</div> 
 				</div>
-				<div class = "arrow" id= "arrowR"></div>
+				<div class="card">
+					<div class="desc">
+						<h3>Coding Languages</h3>
+						<ul>
+							<li>HTML & CSS</li>
+							<li>Javascript</li>
+							<li>jQuery</li>
+							<li>C++</li>
+							<li>C#</li>
+						</ul>
+						<h3>Dev Tools</h3>
+						<ul>
+							<li>Visual Studios</li>
+							<li>Qt</li>
+							<li>Git</li>
+							<li>Adobe Photoshop</li>
+							<li>Adobe Illustrator</li>
+							<li>xCode</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="card">
+					<i class="fas fa-heart fa-3x"></i>
+					<h3>About Me</h3>
+				</div>
 			</section>
+		
+		<section id="projectSection">
+			<section id = "projects">
+				<h2>My Projects</h2>
+				<h3>Some projects focus on user experience and some projects are simple games. </h3>
+				<div class = "carousel" >
+					<figure class="proj">
+						<img class="imageThumb" src="media/audio.png">
+						<figcaption>
+							<h3>Magic Visualizer</h3>
+							<p>Visuals are presented to the user based on the frequency of the music file. The user has several options in order to change different features of the visualizer.</p> <br> <p>Canvas API</p>
+						</figcaption>
+						<a href= "https://people.rit.edu/mcs2515/330/projects/project1/audio-visualizer.html" target="_blank "></a>
+					</figure>
 
-<!--
-  <section class="break">
-      <p class= "circles"> </p>
-      <p class= "circles"> </p>
-      <p class= "circles"> </p>
-      <p class= "circles"> </p>
-      <p class= "circles"> </p>
-    </section>
--->
-      <section id="skillsSection">
-        <section id="skills">
-          <h2>My Skills</h2>
-          <div class = "wrap">
-            <span id = "coding">         
-              <h3>Coding Languages:</h3>
-              <div class = "skill">
-                <p>C++</p>
-                <div class="progressbar">
-                    <div id= "cplusplus"></div>
-                </div>
-              </div>
-              
-              <br>
+					<figure class="proj">
+						<img class="imageThumb" src="media/eat.png">
+						<figcaption>
+							<h3>I Like to Eat Too!!</h3>
+							<p>A side-scrolling game where player plays as a caterpillar whose goal is to eat leaves. Enemy birds will try to eat the player as the game progresses.</p> <br> <p>Canvas API</p>
+						</figcaption>
+						<a href= "https://people.rit.edu/mcs2515/330/projects/project2/" target="_blank "></a>
+					</figure>
 
-              <div class = "skill">
-                <p>C#</p>
-                <div class="progressbar">
-                  <div id= "csharp"></div>
-                </div>
-              </div>
+					<figure class="proj">
+						<img class="imageThumb" src="media/cook.png">
+						<figcaption>
+							<h3>Recipe Map</h3>
+								<p>Allows users to find a dish to cook for themselves or to find restaurants near them instead. The user has several options to choose from.</p> <br> <p>Yummly API, Google Maps API</p>
+						</figcaption>
+						<a href= "https://people.rit.edu/mcs2515/portfolio/projects/recipe-map/" target="_blank "></a>
+					</figure>
 
-              <br>
+					<figure class="proj">
+						<img class="imageThumb" src="media/flux.png">
+						<figcaption>
+							<h3>Flux</h3>
+							<p>Endless runner game for users to get on their phones and up on their feet to play. User has to jump and run in place to play on phone. Made in Unity.</p>
+						</figcaption>
+						<a href= "https://teamflux.github.io/" target="_blank "></a>
+					</figure>
 
-              <div class = "skill">
-                <p>Html/CSS</p>
-                <div class="progressbar">
-                  <div id= "html"></div>
-                </div>
-              </div>
-
-              <br>
-
-              <div class = "skill">
-                <p>JavaScript</p>
-                <div class="progressbar">
-                  <div id= "js"></div>
-                </div>
-              </div>
-
-              </span>
-
-              <span id = "softwares">
-                <ul>
-                  <li id="software_header">Softwares:</li>
-                  <li>Visual Studio</li>
-                  <li>Qt</li>
-                  <li>Unity</li>
-                  <li>Adobe Photoshop</li>
-                  <li>Adobe Illustrator</li>
-                  <li>Xcode</li>
-                </ul>
-              </span>
-          </div>
-        </section>
-      </section>
-
-      <section id="projectSection">
-        <section id = "projects">
-          <h2>My Projects</h2>
-          <h3>Some projects focus on user experience and some projects are simple games. </h3>
-<!--
-
-          <div class="imgWrap" id= "evite">
-            <img class="myImg" src="media/event_page.jpg" alt="e-vite">
-            <div class= "projectDesc">
-              <div class = "border">
-                <p>Aquarium <strong>E-vite</strong></p>
-                <p>The Aquarium E-vite is a web splash page event page made in Photoshop. This project focused on using several tools in Photoshop all while paying attention to composition, aesthetics,  and details.</p>
-              </div>
-            </div>
-          </div>
-
--->
-          <div class = "box">
-            <div class = "tile" >
-              <figure class="proj">
-                <img class="imageThumb" src="media/audio.png">
-                <figcaption>
-                  <h3>Magic Visualizer</h3>
-                  <p>Visuals are presented to the user based on the frequency of the music file. The user has several options in order to change different features of the visualizer.</p> <br> <p>Canvas API</p>
-                </figcaption>
-                <a href= "https://people.rit.edu/mcs2515/330/projects/project1/audio-visualizer.html" target="_blank "></a>
-              </figure>
-
-              <figure class="proj">
-                <img class="imageThumb" src="media/eat.png">
-                <figcaption>
-                  <h3>I Like to Eat Too!!</h3>
-                  <p>A side-scrolling game where player plays as a caterpillar whose goal is to eat leaves. Enemy birds will try to eat the player as the game progresses.</p> <br> <p>Canvas API</p>
-                </figcaption>
-                <a href= "https://people.rit.edu/mcs2515/330/projects/project2/" target="_blank "></a>
-              </figure>
-
-              <figure class="proj">
-                <img class="imageThumb" src="media/cook.png">
-                <figcaption>
-                  <h3>Recipe Map</h3>
-									<p>Allows users to find a dish to cook for themselves or to find restaurants near them instead. The user has several options to choose from.</p> <br> <p>Yummly API, Google Maps API</p>
-                </figcaption>
-                <a href= "https://people.rit.edu/mcs2515/portfolio/projects/recipe-map/" target="_blank "></a>
-              </figure>
-
-              <figure class="proj">
-                <img class="imageThumb" src="media/flux.png">
-                <figcaption>
-                  <h3>Flux</h3>
-                  <p>Endless runner game for users to get on their phones and up on their feet to play. User has to jump and run in place to play on phone. Made in Unity.</p>
-                </figcaption>
-								<a href= "https://teamflux.github.io/" target="_blank "></a>
-              </figure>
-							
-							<figure class="proj">
-                <img class="imageThumb" src="media/peacock.png">
-                <figcaption>
-                  <h3>Peacock</h3>
-                  <p>Peacock was specifically made for those who are inspired by the colors of an image and would like to save the images to a library. Users can upload and share their images.</p> <br> <p>Node.js, MongoDB, React</p>
-                </figcaption>
-								<a href= "https://peacock-app.herokuapp.com/" target="_blank "></a>
-              </figure>
-            </div>
-          </div>
-        </section>
-      </section>
+					<figure class="proj">
+						<img class="imageThumb" src="media/peacock.png">
+						<figcaption>
+							<h3>Peacock</h3>
+							<p>Peacock was specifically made for those who are inspired by the colors of an image and would like to save the images to a library. Users can upload and share their images.</p> <br> <p>Node.js, MongoDB, React</p>
+						</figcaption>
+						<a href= "https://peacock-app.herokuapp.com/" target="_blank "></a>
+					</figure>
+				</div>
+			</section>
+		</section>
 	</section>
 
-	<footer>     
-      <section class= "wrap">
-        <div id = "crutch">
-          <p>Am I right for you? A front-end developer who is self-motivated, loves to eat and make small talk? If so, contact me!</p>
-          <br>
-        </div>
-
-        <div id = "info">
-          <ul>
-            <li><img id= "email" src="media/logos/marker.png" height="42" width="42">Rochester, NY, US</li>
-            <li><img id= "location" src="media/logos/email2.png" height="42" width="42">mcs2515@rit.edu</li>
-            <li><img id= "phone" src="media/logos/phone.png" height="42" width="42">(585) 905 - 4078</li>
-          </ul>
-        </div>
-      </section>
-      <p id= "copyright">&copy; Megan C. Smith 2018</p>
-    </footer>
-
-</body>
+	<footer>
+		<section class= "wrap">
+			<div id = "crutch">
+				<p>Am I right for you? A front-end developer who is self-motivated, loves to eat and make small talk? If so, contact me!</p>
+				<br>
+			</div>
+			
+			<div id = "info">
+				<ul>
+					<li><img id= "email" src="media/logos/marker.png" height="42" width="42">Rochester, NY, US</li>
+					<li><img id= "location" src="media/logos/email2.png" height="42" width="42">mcs2515@rit.edu</li>
+					<li><img id= "phone" src="media/logos/phone.png" height="42" width="42">(585) 905 - 4078</li>
+				</ul>
+			</div>
+		</section>
+		<p id= "copyright">&copy; Megan C. Smith 2018</p>
+	</footer>
+	</body>
 </html>

@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+
+html{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.content{
+	display: relative;
+	margin: 0 auto;
+	padding-top: 15em;
+	max-width: 1200px;
+}
+
 #title{
 	text-align: center;
 }
@@ -8,95 +23,61 @@
 }
 
 #about{
-    position: relative;
-    margin: 0 auto;
-		margin-top: 2em;
-    margin-bottom: 8em;
-		display: flex;
-		justify-content: space-between;
-		max-width: 40em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-#card{
-	  margin: 0 auto;
-    position: relative;
-	  width: 30em;
-		height: 15em;
+.card{
+	margin: 0 auto;
+	position: relative;
+    background-color: aliceblue;
+    border-radius: 5px;
+	width: 20em;
+	height: 30em;
 }
 
-#card .desc{
+.card .desc{
+	font-family: 'Roboto', sans-serif;
 	font-size: 12pt;
+	line-height: 18pt;
 	position: relative;
 	margin: 0 auto;
-	padding-top: 2em;
-	width: 85%; 
+	text-align: center;
+	padding: 0 8pt 0 8pt;
 }
 
-#card h2{
+.card h2{
 	margin: 0;
 	padding-top: 2.5em;
 }
 
-#card h3{
-	width: 85%;
+.card h3{
+	font-size: 14pt;
 	position: relative;
-  margin: 0 auto;
-	text-align: left;
-	padding-top: 3em;
+	margin: 0 auto;
+	text-align: center;
+
+	margin-bottom: 2em;
 	color: #4E8DFF;
 }
 
-#card:hover{
-    cursor: pointer;
+.card .fas{
+	color: #4E8DFF;
+	width: 100%;
+	text-align: center;
+	padding-top: 2em;
+	margin-bottom: 1em;
 }
-
-.front, .back{
-    width: 100%;
-    height: 100%;
-    background-color: aliceblue;
-    border-radius: 5px;
+.card ul{
+	list-style: none;
+	text-align: left;
 }
 
 .arrow{
 	width: 0; 
   height: 0;
 	margin-top: 5em;
-}
-
-#arrowL {
-  animation: arrowL 1s ease-in-out infinite;
-	border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
-  border-left: 30px solid #4b5788;
-}
-
-#arrowR {
-  animation: arrowR 1s ease-in-out infinite;
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent; 
-  border-right: 30px solid #4b5788; 
-}
-
-@keyframes arrowL {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-
-  50% {
-    transform: translate(10px, 0);
-  }
-}
-
-@keyframes arrowR {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-
-  50% {
-    transform: translate(-10px, 0);
-  }
 }
 
 
