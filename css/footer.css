@@ -1,10 +1,10 @@
 footer{
     position: relative;
-	margin: 0 auto;
+    margin: 0 auto;
     bottom: 0;
     width: 100%;
     display:block;
-	overflow:auto;
+    overflow:auto;
     background-color: #e6efff;
     font-family: "Abhaya Libre";
     background-color: white;
@@ -12,41 +12,36 @@ footer{
 }
 
 footer .wrap{
-	position: relative;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	width: 80%;
-	padding: 2em 2em 0em 2em;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    padding: 2em 0em;
 }
 
 #crutch{
-    position: relative;
-    margin: 0 auto;
-	width: 30em;
+    width: 30em;
 }
 
-#info{
-    position: relative;
-    margin: 0 auto;
-	width: 12.5em;
-}
-
-#info ul{
-	list-style: none;
+.info ul{
+    list-style: none;
     padding-left: 0em;
+    display: flex;
+    flex-direction: column;
 }
 
-#info ul li{
-	margin-bottom: 1em;
+.info ul li{
+    margin-bottom: 1em;
     display: inline-flex;
-    align-items: center;
+    align-items: center;  
 }
 
-#info img{
-	width: 1.5em;
-	height: auto;
-	margin-right: 1.5em;
+.info .fas{
+    width: 1em;
+    padding-right: 1em;
+    color: #96a1d1;
 }
 
 #copyright{
@@ -57,6 +52,22 @@ footer .wrap{
 	font-weight: bold;
 	max-width: 60%;
 	color: #cfd7e5;
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    justify-content: space-between;
+}
+
+.logos .fab{
+    color: #96a1d1;
+}
+
+.logos .fab:hover {
+    cursor: pointer;
+    color: #394267;
 }
 
 @media screen and (max-width: 960px) {
@@ -98,8 +109,9 @@ footer .wrap{
 
 @media screen and (max-width: 430px) {
 	footer .wrap{
-		padding-bottom: 1em;
-		padding-top: 1em;
+      padding-bottom: 1em;
+      padding-top: 1em;
+      min-width: 360px;
 	}
 	
 	#copyright{

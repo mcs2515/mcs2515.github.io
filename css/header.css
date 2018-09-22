@@ -27,7 +27,7 @@ header{
 .navbar{
     position: relative;
     margin: 0 auto;
-    width: 85%;
+    max-width: 1200px;
     height: 6em;   
 }
 
@@ -50,24 +50,6 @@ header{
     cursor: pointer;
     transition:all .5s ease;
     transform: scale(1.1);
-}
-
-#logos{
-    margin-left: 4em;
-    position: fixed;
-    top: 12em;
-    z-index: 2;
-}
-
-#logos img{
-    display: block;
-    margin-bottom: 1em;
-    opacity: .2;
-}
-
-#logos img:hover {
-    cursor: pointer;
-    opacity: .5;
 }
 
 .mainMenu{ 
