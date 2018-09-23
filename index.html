@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    
-    <link REL="StyleSheet" TYPE="text/css" HREF="css/header.css">
-    <link REL="StyleSheet" TYPE="text/css" HREF="css/index.css">
-    <link REL="StyleSheet" TYPE="text/css" HREF="css/body.css">
-    <link REL="StyleSheet" TYPE="text/css" HREF="css/projects.css">
-    <link REL="StyleSheet" TYPE="text/css" HREF="css/footer.css">
-    <script type="text/javascript" src="js/index.js"></script>
-    <!--Jquery-->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    
-    <!--Slick-->
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
 
-</head>
-    
-<body>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+        <link REL="StyleSheet" TYPE="text/css" HREF="css/header.css">
+        <link REL="StyleSheet" TYPE="text/css" HREF="css/index.css">
+        <link REL="StyleSheet" TYPE="text/css" HREF="css/body.css">
+        <link REL="StyleSheet" TYPE="text/css" HREF="css/projects.css">
+        <link REL="StyleSheet" TYPE="text/css" HREF="css/footer.css">
+        <script type="text/javascript" src="js/index.js"></script>
+        <!--Jquery-->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <!--Flip-->
+        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
+    </head>
+
+    <body>
     <header>
       <div class="gradient"></div>
       <section class="navbar">
@@ -43,7 +41,6 @@
             <p>A place to show off my skills. I'm continuously revising my projects and improving them.</p> 
             <p>Please look foward to more updates here - there's always more to add!</p>
         </section>
-        <section class="background"></section>
         <section class="about">
             <div  class="card"> 
                 <div class="desc">
@@ -65,9 +62,21 @@
                 </div>
             </div>
             
-            <div class="card">
-                <i class="fas fa-heart fa-3x"></i>
-                <h3>About Me</h3>
+            <div class="card aboutme">
+                <div class="front">
+                    <i class="fas fa-heart fa-3x"></i>
+                    <h3>About Megan</h3>
+                    <h2>(Hover me!)</h2>
+                </div>
+                <div class="back">
+                    <i class="fas fa-heart fa-3x"></i>
+                    <ol>
+                        <li> Adopted from Hefei, China</li>
+                        <li> Loves animals, especially cats!</li>
+                        <li> Enjoys playing strategy games</li>
+                        <li> A perfectionist</li>
+                    </ol>
+                </div>
             </div>
         </section>
         
@@ -75,56 +84,69 @@
             <section class= 'projects'>
                 <h2>My Projects</h2>
                 <h3>Some projects focus on user experience and some projects are simple games. </h3>
-                <div class = "carousel" >
-                    <div class="proj">
-                        <img class="imageThumb" src="media/audio_viz.jpg">
-                        <div>
-                            <h3>Magic Visualizer</h3>
-                            <p>Visuals are presented to the user based on the frequency of the music file. The user has several options in order to change different features of the visualizer.</p> <br> <p>Canvas API</p>
+                <div class="proj">
+                    <img class="imageThumb js-tilt" data-tilt src="media/audio_viz.jpg">
+                    <div class= 'desc'> 
+                        <h3>Magic Visualizer</h3>
+                        <p class='details'>Visuals are presented to the user based on the frequency of the music file. The user has several options in order to change different features of the visualizer.</p>
+                        <div class="tags">
+                            <p class='tag'>Web Canvas API</p>
                         </div>
-                        <a href= "https://people.rit.edu/mcs2515/330/projects/project1/audio-visualizer.html" target="_blank "></a>
                     </div>
+                    <a href= "https://people.rit.edu/mcs2515/330/projects/project1/audio-visualizer.html" target="_blank "></a>
+                </div>
                     
-                    <div class="proj">
-                        <img class="imageThumb" src="media/eat_game.jpg">
-                        <div>
-                            <h3>I Like to Eat Too!!</h3>
-                            <p>A side-scrolling game where player plays as a caterpillar whose goal is to eat leaves. Enemy birds will try to eat the player as the game progresses.</p> <br> <p>Canvas API</p>
+
+                <div class="proj">
+                    <div class= 'desc'>
+                        <h3>I Like to Eat Too!!</h3>
+                        <p class='details'>A side-scrolling game where player plays as a caterpillar whose goal is to eat leaves. Enemy birds will try to eat the player as the game progresses.</p>
+                        <div class="tags">
+                            <p class='tag'>Web Canvas API</p>
                         </div>
-                        <a href= "https://people.rit.edu/mcs2515/330/projects/project2/" target="_blank "></a>
                     </div>
-                    
-                    <div class="proj">
-                        <img class="imageThumb" src="media/cook_page.jpg">
-                        <div>
-                            <h3>Recipe Map</h3>
-                            <p>Allows users to find a dish to cook for themselves or to find restaurants near them instead. The user has several options to choose from.</p> <br> <p>Yummly API, Google Maps API</p>
+                    <a href= "https://people.rit.edu/mcs2515/330/projects/project2/" target="_blank "></a>
+                    <img class="imageThumb js-tilt" src="media/eat_game.jpg">   
+                </div>
+
+                <div class="proj">
+                    <img class="imageThumb js-tilt" src="media/cook_page.jpg">
+                    <div class='desc'>
+                        <h3>Recipe Map</h3>
+                        <p class='details'>Allows users to find a dish to cook for themselves or to find restaurants near them instead. The user has several options to choose from.</p>
+                        <div class="tags">
+                            <p class='tag'>Yummly API</p> <p class='tag'>Google Maps API</p>
                         </div>
-                        <a href= "https://people.rit.edu/mcs2515/portfolio/projects/recipe-map/" target="_blank "></a>
                     </div>
-                    
-                    <div class="proj">
-                        <img class="imageThumb" src="media/flux_game.jpg">
-                        <div>
-                            <h3>Flux</h3>
-                            <p>Endless runner game for users to get on their phones and up on their feet to play. User has to jump and run in place to play on phone. Made in Unity.</p>
+                    <a href= "https://people.rit.edu/mcs2515/portfolio/projects/recipe-map/" target="_blank "></a>
+                </div>
+
+                <div class="proj">
+                    <div class='desc'>
+                        <h3>Flux</h3>
+                        <p class='details'>With a team of seven members, I developed an endless runner game for users to get on their phones and up on their feet to play. Th user has to jump and run in place to play on phone.</p>
+                        <div class="tags">
+                            <p class='tag'>Unity</p> <p class='tag'>C#</p>
                         </div>
                         <a href= "https://teamflux.github.io/" target="_blank "></a>
                     </div>
-                    
-                    <div class="proj">
-                        <img class="imageThumb" src="media/peacock.jpg">
-                        <div>
-                            <h3>Peacock</h3>
-                            <p>Peacock was specifically made for those who are inspired by the colors of an image and would like to save the images to a library. Users can upload and share their images.</p> <br> <p>Node.js, MongoDB, React</p>
+                    <img class="imageThumb js-tilt" src="media/flux_game.jpg"> 
+                </div>
+
+                <div class="proj">
+                    <img class="imageThumb js-tilt" src="media/peacock.jpg">
+                    <div class="desc">
+                        <h3>Peacock</h3>
+                        <p class='details'>Peacock was specifically made for those who are inspired by the colors of an image and would like to save the images to a library. Users can upload and share their images.</p>
+                        <div class="tags">
+                            <p class='tag'>Node.js</p> <p class='tag'>MongoDB</p> <p class='tag'>React.js</p>
                         </div>
-                        <a href= "https://peacock-app.herokuapp.com/" target="_blank "></a>
                     </div>
+                    <a href= "https://peacock-app.herokuapp.com/" target="_blank "></a>
                 </div>
             </section>
         </section>
     </section>
-
     <footer>
         <section class= "wrap">
             <div id = "crutch">

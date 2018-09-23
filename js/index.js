@@ -3,35 +3,44 @@
     "use strict";
     
     function init(){
+        $(".aboutme").flip({
+          trigger: 'hover',
+          reverse: true,
+        });
+        
         $("a[href='#top']").click(function() {
-            $("html, body").animate({ scrollTop: 0 }, "slow");
+            $("html, body").animate({ scrollTop: 0 }, 1000);
             return false;
         });
         
         $("a[href='#projectSection']").click(function() {
-            $("html, body").animate({ scrollTop: 1050 }, "slow");
+            $("html, body").animate({ scrollTop: 950 }, 1000);
           return false;
         });
         
         $("a[href='#copyright']").click(function() {
-            $("html, body").animate({ scrollTop: $(document).height()}, "slow");
+            $("html, body").animate({ scrollTop: $(document).height()}, 2000);
             return false;
         });
         
         $(".about, [data-paroller-factor]").paroller({
-            factor: .5,
+            factor: .2,
             type: 'foreground',
         });
         
-        
-        $('.carousel').slick({
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            dots: true,
-            centerMode: true,
+        $(".imageThumb, [data-paroller-factor]").paroller({
+            factor: .1,
+            type: 'foreground',
         });
+        
+        $(".tags, [data-paroller-factor]").paroller({
+            factor: .2,
+            type: 'foreground',
+        });
+        
+        $('.js-tilt').tilt({
+            perspective: 1500,
+        })
     }
     
     window.onload = init;
