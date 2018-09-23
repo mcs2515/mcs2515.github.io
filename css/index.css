@@ -22,6 +22,14 @@ html{
     height: auto;
 }
 
+.title p{
+    position: relative;
+    margin: 0 auto;
+    color: #FFF2D2;
+    font-size: 10pt;
+    width: 800pt;
+}
+
 .background{
     position: absolute;
     background-color: #242426;

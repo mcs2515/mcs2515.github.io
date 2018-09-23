@@ -8,7 +8,7 @@
 
 .projects_wrap{
     width: 100%;
-    padding-top: 35em;
+    padding-top: 30em;
     padding-bottom: 15em;
     background-color: #242426;
 }
@@ -16,6 +16,7 @@
 .projects{
     position: relative;
     margin: 0 auto;
+    margin-top: -3em;
     width: 1200px;
 }
 
@@ -51,7 +52,7 @@
 }
 .proj img {
     position: relative;
-    max-width: 100%;
+    width: 100%;
     vertical-align: top;
     border-radius: 8px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6) 
