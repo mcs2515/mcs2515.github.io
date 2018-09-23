@@ -6,8 +6,7 @@
     width: 100%;
     height: 3.5em;
     top:2.4em;
-    background: linear-gradient(90deg, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, .7) 100%);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6)/*, inset 0 0 1px rgba(255, 255, 255, 0.6)*/;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, 0.3) 15%, rgba(255, 255, 255, 0.3) 85%, rgba(255, 255, 255, .7) 100%);
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     z-index: 2;
@@ -21,7 +20,7 @@ header{
     width: 100%;
     height: 6em;
     z-index: 2;
-    background-color: #96a1d1;
+    background-color: #878fc1;
 }
 
 .navbar{
@@ -64,13 +63,14 @@ header{
     font-weight: bold;
     font-size: 10pt;
     padding: 10pt 0pt;
-	font-size: 12pt;
+    font-size: 12pt;
 }
 
 .mainMenu a{
-	color: #4E8DFF;
+    color: #4C51AB;
+    font-weight: bold;
     text-decoration: none;
-    transition:all .5s ease;
+    transition: all .5s ease;
 }
 
 .link{
@@ -78,8 +78,8 @@ header{
 }
 
 .mainMenu a:hover{
-	color: #394267;
-	cursor:pointer;
+    color: white;
+    cursor:pointer;
 }
 
 h1{

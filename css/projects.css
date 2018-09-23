@@ -1,33 +1,48 @@
-#projectSection{
-	position: relative;
-	background-color: #242426;
-	width: 100%;
+.slick-track{
+    padding: 20px 0 40px 0;
 }
 
-#projects h2{
-	position: relative;
-	margin: 0 auto;
-	text-align: left;
-	padding-bottom: 1em;
-	margin-bottom: 0;
-	width: 88%;
+.slick-dots{
+    transform: scale(1.5);
+}
+
+.projects_wrap{
+    width: 100%;
+    padding-top: 35em;
+    padding-bottom: 15em;
+    background-color: #242426;
+}
+
+.projects{
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.projects h2{
+    color: #FFF2D2;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.projects h3{
+    margin-top: 2em;
+    margin-bottom: 5em;
+    font-weight: 100;
 }
 
 .proj {
-  font-family: 'Raleway', Arial, sans-serif;
-  position: relative;
-  float: left;
-  display: inline-grid;
-  margin: 10px 1%;
-  min-width: 310px -60px;
-  max-width: 310px;
-  width: 100%;
-  color: #ffffff;
-  text-align: left;
-  background-color: #000000;
-  font-size: 16px;
-	border-radius: 3px;
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    display: inline-grid;
+    margin: 0 10px;
+    color: #ffffff;
+    text-align: left;
+    background-color: #000000;
+    font-size: 16px;
 }
+
 .proj * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -35,11 +50,13 @@
   transition: all 0.4s ease-in;
 }
 .proj img {
-  position: relative;
-  max-width: 100%;
-  vertical-align: top;
-	border-radius: 3px;
+    position: relative;
+    max-width: 100%;
+    vertical-align: top;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6) 
 }
+
 .proj div {
   position: absolute;
   top: 0;
