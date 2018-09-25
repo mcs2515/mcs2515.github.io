@@ -18,6 +18,12 @@
 
         <!--Flip-->
         <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+		
+		<!--Slick-->
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+				
 
     </head>
 
@@ -25,18 +31,18 @@
     <header>
       <div class="gradient"></div>
       <section class="navbar">
-				<a id="contentLink" href="#top"><img class="logo" src="media/fish_icon.png" alt="Logo"  width="1800" height="1692"/></a>
-				
-				<nav class="mainMenu">
-					<section class= "link"><a href="media/resume.pdf" target="_blank ">Resume </a></section>
-					<section class= "link"><a href="#projectSection"> Projects</a></section>
-					<section class= "link"><a href="#copyright"> Contact</a></section>
-				</nav>
+			<a id="contentLink" href="#top"><img class="logo" src="media/fish_icon.png" alt="Logo"  width="1800" height="1692"/></a>
+
+			<nav class="mainMenu">
+				<section class= "link"><a href="media/resume.pdf" target="_blank ">Resume </a></section>
+				<section class= "link"><a href="#projectSection"> Projects</a></section>
+				<section class= "link"><a href="#copyright"> Contact</a></section>
+			</nav>
       </section>
     </header>
 
     <section class="content">
-        <section data-tilt class= "title">
+        <section data-tilt class= "portfolio">
             <img class= "signature" src="media/name.png" height="211" width="999">
             <p>A place to show off my skills. I'm continuously revising my projects and improving them.</p> 
             <p>Please look foward to more updates here - there's always more to add!</p>
@@ -87,8 +93,10 @@
                 <div class="proj">
                     <a href= "https://mcs2515.github.io/Magical_Visualizer/" target="_blank"><img class="imageThumb js-tilt" data-tilt src="media/audio_viz.jpg"></a>
                     <div class= 'desc'> 
-                        <h3>Magic Visualizer</h3>
-                        <a href= "https://people.rit.edu/mcs2515/330/projects/project1/audio-visualizer.html" target="_blank ">View Project &#8594;</a>
+                        <section class='title'>
+							<h3>Magic Visualizer</h3>
+                        	<a href= "https://people.rit.edu/mcs2515/330/projects/project1/audio-visualizer.html" target="_blank ">View Project &#8594;</a>
+						</section>
                         <p class='details'>Visuals are presented to the user based on the frequency of the music file. The user has several options in order to change different features of the visualizer.</p>
                         <div class="tags">
                             <p class='tag'>Web Canvas API</p>
@@ -98,8 +106,10 @@
                     
                 <div class="proj">
                     <div class= 'desc'>
-                        <h3>I Like to Eat Too!!</h3>
-                        <a href= "https://mcs2515.github.io/I_Like_to_Eat_Too/" target="_blank ">View Project &#8594;</a>
+                        <section class='title'>
+							<h3>I Like to Eat Too!!</h3>
+                        	<a href= "https://mcs2515.github.io/I_Like_to_Eat_Too/" target="_blank ">View Project &#8594;</a>
+						</section>
                         <p class='details'>A side-scrolling game where player plays as a caterpillar whose goal is to eat leaves. Enemy birds will try to eat the player as the game progresses.</p>
                         <div class="tags">
                             <p class='tag'>Web Canvas API</p>
@@ -111,8 +121,10 @@
                 <div class="proj">
                     <a href= "https://mcs2515.github.io/Recipe_Map/" target="_blank "><img class="imageThumb js-tilt" src="media/cook_page.jpg"></a>
                     <div class='desc'>
-                        <h3>Recipe Map</h3>
-                        <a href= "https://mcs2515.github.io/Recipe_Map/" target="_blank ">View Project &#8594;</a>
+                        <section class='title'>
+							<h3>Recipe Map</h3>
+                        	<a href= "https://mcs2515.github.io/Recipe_Map/" target="_blank ">View Project &#8594;</a>
+						</section>
                         <p class='details'>Allows users to find a dish to cook for themselves or to find restaurants near them instead. The user has several options to choose from, or they can choose to be lazy and find a narby resturant.</p>
                         <div class="tags">
                             <p class='tag'>Yummly API</p> <p class='tag'>Google Maps API</p>
@@ -122,8 +134,10 @@
 
                 <div class="proj">
                     <div class='desc'>
-                        <h3>Flux</h3>
-                        <a href= "https://teamflux.github.io/" target="_blank ">View Project &#8594;</a>
+                        <section class='title'>
+							<h3>Flux</h3>
+                        	<a href= "https://teamflux.github.io/" target="_blank ">View Project &#8594;</a>
+						</section>
                         <p class='details'>With a team of seven members, I developed an endless runner game for users to get on their phones and up on their feet to play. Th user has to jump and run in place to play on phone.</p>
                         <div class="tags">
                             <p class='tag'>Unity</p> <p class='tag'>C#</p>
@@ -151,7 +165,8 @@
                 <div class="proj">
                     <div class="desc">
                         <h3>My Portfolio</h3>
-                        <p class='details'>This portfolio was created from scratch and has gone under multiple reconstructions for improvement. Subtle interations you find come from multiple Javascript libraries. I am hoping, that you are impressed, enjoyed the experiene, and learned something about me from veiwing my portfolio!</p>
+                        <p class='details'>This portfolio was created from scratch and has gone under multiple reconstructions for improvement. Subtle interations you find come from multiple Javascript libraries. I hope I left a good impression on you and I hope you enjoyed the experiene of my portfolio.</p>
+						<p class='details'>Thanks for visiting!</p>
                     </div>
                 </div>
             </section>

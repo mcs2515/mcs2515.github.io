@@ -61,6 +61,7 @@
     margin: 0;
     padding-top: 65px;
     text-decoration: none;
+	color: #FFF2D2;
 }
 
 .proj .desc{
@@ -91,6 +92,12 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6)
 }
 
+@media screen and (max-width: 1200px) {
+	.projects{
+		width: 90%;
+	}
+}
+
 @media screen and (max-width: 700px) {
 	#projects{
 		display: block;
@@ -110,17 +117,8 @@
 }
 
 @media screen and (max-width: 430px) {
-	#projects h2{
-		text-align: center;
-		width: 100%;
-	}
-
-	.proj p{
-		display: none;
-	}
-	
-	.proj h3{
-		padding-top: 3.5em;
+	.projects{
+		min-width: 360px;
 	}
 }
 
