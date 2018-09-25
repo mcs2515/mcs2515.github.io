@@ -1,7 +1,7 @@
 .projects_wrap{
     width: 100%;
-    padding-top: 30em;
-    padding-bottom: 15em;
+    padding-top: 35em;
+    padding-bottom: 1em;
     background-color: #242426;
 }
 
@@ -51,9 +51,20 @@
     cursor: pointer;
 }
 
+.proj .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.proj .title a{
+    margin: 0;
+    padding-top: 65px;
+    text-decoration: none;
+}
+
 .proj .desc{
-    padding: 0 5em;
-    
+    padding: 0 5em;   
 }
 
 .proj .desc .details{
