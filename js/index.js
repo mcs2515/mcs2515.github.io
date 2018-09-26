@@ -41,7 +41,17 @@
         $('.js-tilt').tilt({
             perspective: 1500,
         })
+        
+        $('.slick').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+					infinite:true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+					arrows: false,
+					dots: true,
+        });
     }
-    
+
     window.onload = init;
 })();

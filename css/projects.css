@@ -61,7 +61,7 @@
     margin: 0;
     padding-top: 65px;
     text-decoration: none;
-	color: #FFF2D2;
+    color: #FFF2D2;
 }
 
 .proj .desc{
@@ -69,7 +69,6 @@
 }
 
 .proj .desc .details{
-
     margin-bottom: 3em;
     font-size: 12pt;
 }
@@ -92,33 +91,73 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6)
 }
 
-@media screen and (max-width: 1200px) {
-	.projects{
-		width: 90%;
+.responsive{
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+    
+    .projects{
+        width: 100%;
+    }
+
+    .proj{
+        position:relative;
+        margin: 0 auto;
+        margin-bottom: 5em;
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .proj a{
+        position: relative;
+        margin: 0 auto;
+    }
+    
+    .proj .desc{
+        padding: 0; 
+    }
+    
+    .responsive{
+        display: block;
+    }
+    
+    .largeScreen{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+	.projects_wrap{
+		padding-top: 35em;
+	}
+	.proj .desc{
+			width: 100%; 
 	}
 }
 
-@media screen and (max-width: 700px) {
-	#projects{
-		display: block;
-		width: 90%; 
-		padding-top: 3em;
-	}
-	
-	#projects h2{
-		padding-top: 1em;
-		width: 98%;
-	}
-	
-	#projects h3{
-		text-align: center;
-	}
-	
+@media screen and (max-width: 700px) {  
+    .proj img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 430px) {
-	.projects{
-		min-width: 360px;
-	}
+    .projects{
+        min-width: 360px;
+    }
+    
+    .proj h3{
+        font-size: 14pt;
+    }
+    
+    .proj .desc .details{
+        font-size: 10pt;
+    }
+    
+    .proj .title a{
+        padding-top: 40px;
+    }
 }
-

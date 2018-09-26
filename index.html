@@ -7,6 +7,8 @@
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+				<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
         <link REL="StyleSheet" TYPE="text/css" HREF="css/header.css">
         <link REL="StyleSheet" TYPE="text/css" HREF="css/index.css">
         <link REL="StyleSheet" TYPE="text/css" HREF="css/body.css">
@@ -19,12 +21,10 @@
         <!--Flip-->
         <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 		
-		<!--Slick-->
-		<script type="text/javascript" src="slick/slick.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+				<!--Slick-->
+				<script type="text/javascript" src="slick/slick.min.js"></script>
+			
 				
-
     </head>
 
     <body>
@@ -47,11 +47,11 @@
             <p>A place to show off my skills. I'm continuously revising my projects and improving them.</p> 
             <p>Please look foward to more updates here - there's always more to add!</p>
         </section>
-        <section class="about">
+        <section class="about unslick">
             <div  class="card"> 
                 <div class="desc">
                     <i class="fas fa-laptop-code fa-3x"></i>
-                    <h3>Front-End Web Developer</h3>
+                    <h3>Front-End Developer</h3>
                     <p class= "desc">I am a student whos strengths lie in <strong>front-end development</strong>. Even though I am a developer, I strive for good design and to create something that is easy and enjoyable for the user.</p>
                 </div>
             </div>
@@ -86,6 +86,39 @@
             </div>
         </section>
         
+        <section class="about slick">
+            <div  class="card"> 
+                <div class="desc">
+                    <i class="fas fa-laptop-code fa-3x"></i>
+                    <h3>Front-End Developer</h3>
+                    <p class= "desc">I am a student whos strengths lie in <strong>front-end development</strong>. Even though I am a developer, I strive for good design and to create something that is easy and enjoyable for the user.</p>
+                </div>
+            </div>
+            
+            <div class="card skills">
+                <i class="fas fa-edit fa-3x"></i>
+                <div class="desc">
+                    <h3 class='lang'>Coding Languages</h3>
+                    <p>HTML, CSS, Javascript </p> <p> C++, C#, Swift</p>
+
+                    <h3 class='tools'>Dev Tools</h3>
+                    <p>Visual Studios, Git, Qt, xCode</p>
+                    <p>Photoshop, Illustrator</p>
+                </div>
+            </div>
+            
+            <div class="card">
+								<i class="fas fa-heart fa-3x"></i>
+								<h3>About Megan</h3>
+								<ol>
+										<li> Adopted from Hefei, China</li>
+										<li> Loves animals, especially cats!</li>
+										<li> Enjoys playing strategy games</li>
+										<li> A perfectionist</li>
+								</ol>
+            </div>
+        </section>
+        
         <section class = "projects_wrap">
             <section class= 'projects'>
                 <h2>My Projects</h2>
@@ -94,9 +127,9 @@
                     <a href= "https://mcs2515.github.io/Magical_Visualizer/" target="_blank"><img class="imageThumb js-tilt" data-tilt src="media/audio_viz.jpg"></a>
                     <div class= 'desc'> 
                         <section class='title'>
-							<h3>Magic Visualizer</h3>
-                        	<a href= "https://people.rit.edu/mcs2515/330/projects/project1/audio-visualizer.html" target="_blank ">View Project &#8594;</a>
-						</section>
+                            <h3>Magic Visualizer</h3>
+                            <a href= "https://people.rit.edu/mcs2515/330/projects/project1/audio-visualizer.html" target="_blank ">View Project &#8594;</a>
+                        </section>
                         <p class='details'>Visuals are presented to the user based on the frequency of the music file. The user has several options in order to change different features of the visualizer.</p>
                         <div class="tags">
                             <p class='tag'>Web Canvas API</p>
@@ -105,26 +138,36 @@
                 </div>
                     
                 <div class="proj">
-                    <div class= 'desc'>
+                    <div class= 'desc largeScreen'>
                         <section class='title'>
-							<h3>I Like to Eat Too!!</h3>
-                        	<a href= "https://mcs2515.github.io/I_Like_to_Eat_Too/" target="_blank ">View Project &#8594;</a>
-						</section>
+                            <h3>I Like to Eat Too!!</h3>
+                            <a href= "https://mcs2515.github.io/I_Like_to_Eat_Too/" target="_blank ">View Project &#8594;</a>
+                        </section>
                         <p class='details'>A side-scrolling game where player plays as a caterpillar whose goal is to eat leaves. Enemy birds will try to eat the player as the game progresses.</p>
                         <div class="tags">
                             <p class='tag'>Web Canvas API</p>
                         </div>
                     </div>
                     <a href= "https://mcs2515.github.io/I_Like_to_Eat_Too/" target="_blank "><img class="imageThumb js-tilt" src="media/eat_game.jpg"></a>
+                    <div class='desc responsive'>
+                        <section class='title'>
+                            <h3>I Like to Eat Too!!</h3>
+                            <a href= "https://mcs2515.github.io/I_Like_to_Eat_Too/" target="_blank ">View Project &#8594;</a>
+                        </section>
+                        <p class='details'>A side-scrolling game where player plays as a caterpillar whose goal is to eat leaves. Enemy birds will try to eat the player as the game progresses.</p>
+                        <div class="tags">
+                            <p class='tag'>Web Canvas API</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="proj">
                     <a href= "https://mcs2515.github.io/Recipe_Map/" target="_blank "><img class="imageThumb js-tilt" src="media/cook_page.jpg"></a>
                     <div class='desc'>
                         <section class='title'>
-							<h3>Recipe Map</h3>
-                        	<a href= "https://mcs2515.github.io/Recipe_Map/" target="_blank ">View Project &#8594;</a>
-						</section>
+                            <h3>Recipe Map</h3>
+                            <a href= "https://mcs2515.github.io/Recipe_Map/" target="_blank ">View Project &#8594;</a>
+                        </section>
                         <p class='details'>Allows users to find a dish to cook for themselves or to find restaurants near them instead. The user has several options to choose from, or they can choose to be lazy and find a narby resturant.</p>
                         <div class="tags">
                             <p class='tag'>Yummly API</p> <p class='tag'>Google Maps API</p>
@@ -133,18 +176,27 @@
                 </div>
 
                 <div class="proj">
-                    <div class='desc'>
+                    <div class='desc largeScreen'>
                         <section class='title'>
-							<h3>Flux</h3>
-                        	<a href= "https://teamflux.github.io/" target="_blank ">View Project &#8594;</a>
-						</section>
+                            <h3>Flux</h3>
+                            <a href= "https://teamflux.github.io/" target="_blank ">View Project &#8594;</a>
+                        </section>
+                        <p class='details'>With a team of seven members, I developed an endless runner game for users to get on their phones and up on their feet to play. Th user has to jump and run in place to play on phone.</p>
+                        <div class="tags">
+                            <p class='tag'>Unity</p> <p class='tag'>C#</p>
+                        </div>   
+                    </div>
+                    <a href= "https://teamflux.github.io/" target="_blank "><img class="imageThumb js-tilt" src="media/flux_game.jpg"></a>
+                    <div class='desc responsive'>
+                        <section class='title'>
+                            <h3>Flux</h3>
+                            <a href= "https://teamflux.github.io/" target="_blank ">View Project &#8594;</a>
+                        </section>
                         <p class='details'>With a team of seven members, I developed an endless runner game for users to get on their phones and up on their feet to play. Th user has to jump and run in place to play on phone.</p>
                         <div class="tags">
                             <p class='tag'>Unity</p> <p class='tag'>C#</p>
                         </div>
-                        
                     </div>
-                    <a href= "https://teamflux.github.io/" target="_blank "><img class="imageThumb js-tilt" src="media/flux_game.jpg"></a>
                 </div>
 
                 <div class="proj">
@@ -166,7 +218,7 @@
                     <div class="desc">
                         <h3>My Portfolio</h3>
                         <p class='details'>This portfolio was created from scratch and has gone under multiple reconstructions for improvement. Subtle interations you find come from multiple Javascript libraries. I hope I left a good impression on you and I hope you enjoyed the experiene of my portfolio.</p>
-						<p class='details'>Thanks for visiting!</p>
+                        <p class='details'>Thanks for visiting!</p>
                     </div>
                 </div>
             </section>

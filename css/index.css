@@ -66,7 +66,7 @@ html{
     width: 20em;
     height: 30em;
     margin-bottom: -20em;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6)
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
 }
 
 .card .desc{
@@ -149,43 +149,34 @@ html{
     margin-top: 2.5em;
 }
 
+.slick{
+    z-index: 1;
+    display: none;
+}
+
 @media screen and (max-width: 1200px) {
 	.portfolio{
-		width: 80%;
+		width: 90%;
 	}
+	
 	.signature{
-		width: 80%;
+		width: 70%;
 		height: auto;
 	}
 	
-/*
 	.about{
-		position: relative;
-		margin: 0 auto;
 		padding-top: 10em;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		width: 1100px;
-		z-index: 1;
+		width: 95%;
 	}
-
-	.front, .back{
-		width: 20em;
-		height: 30em;
-		background-color: #f2f2f2;
-		border-radius: 5px;
-		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6)
-	}
-*/
 
 	.card{
 		border-radius: 5px;
-		width: 18em;
+		width: 31%;
+		max-width: 18em;
 		height: 25em;
-		margin-bottom: -20em;
+		margin-bottom: -15em;
 	}
-
+    
 	.card .desc{
 		font-size: 10pt;
 	}
@@ -201,7 +192,7 @@ html{
 
 	.card .fas{
 		font-size: 22pt;
-		padding-top: 3em;
+		padding-top: 35%;
 	}
 	
 	.skills .tools{
@@ -211,33 +202,93 @@ html{
 	.card ol{
 		font-size: 10pt;
 		line-height: 30pt;
+		padding-left: 13%;
+		 
 	}
 
+	.card ol li{
+		position: relative;
+		margin: 0 auto;
+	}
+	
 	.card ol li:before {
 		font-size: 12pt;
 	}
-
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 960px){
+	
+	.portfolio p{
+		width:70%;
+	}
+	
+	.card{
+		min-width: 300px;
+		max-width: 90%;
+		margin: 0 1em;
+	}
+	
+	.card ol{
+		padding-left: 11%;
+	}
+	
+	.slick{
+    display: block;
+		cursor: pointer;
+	}
+	
+	.slick-list{
+		padding-bottom: 30px;
+		margin-bottom: -10em;
+	}
+	
+	.slick-dots li{
+		transform: scale(2);
+	}
+	
+	.about{
+		padding-top: 3em;
+		max-width: 350px;
+	}
+	
+	.unslick{
+		display: none;
+	}
+	
+	.aboutme{
+		pointer-events: none;
+	}
+	
+	.card .fas{
+		padding-top: 25%;
+	}
+	
+	.card ol{
+		padding-left: 50px;
 
+	}
 }
 
 @media screen and (max-width: 700px){
+	
+	.portfolio p{
+		width: 90%;
+	}
+	
 	.signature{
-		width: 100%;
+		width: 90%;
 		height: auto;
 	}
-
+    
+	.portfolio p:last-child{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 430px){
 	.portfolio{
 		min-width: 360px;
 	}
-	
-	
-	
 }
 
 
