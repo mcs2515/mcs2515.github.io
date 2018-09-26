@@ -1,10 +1,10 @@
 footer{
     position: relative;
-	margin: 0 auto;
+    margin: 0 auto;
     bottom: 0;
     width: 100%;
     display:block;
-	overflow:auto;
+    overflow:auto;
     background-color: #e6efff;
     font-family: "Abhaya Libre";
     background-color: white;
@@ -12,41 +12,36 @@ footer{
 }
 
 footer .wrap{
-	position: relative;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	width: 80%;
-	padding: 2em 2em 0em 2em;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    padding-top: 2em;
 }
 
 #crutch{
-    position: relative;
-    margin: 0 auto;
-	width: 30em;
+    width: 30em;
 }
 
-#info{
-    position: relative;
-    margin: 0 auto;
-	width: 12.5em;
-}
-
-#info ul{
-	list-style: none;
+.info ul{
+    list-style: none;
     padding-left: 0em;
+    display: flex;
+    flex-direction: column;
 }
 
-#info ul li{
-	margin-bottom: 1em;
+.info ul li{
+    margin-bottom: 10px;
     display: inline-flex;
-    align-items: center;
+    align-items: center;  
 }
 
-#info img{
-	width: 1.5em;
-	height: auto;
-	margin-right: 1.5em;
+.info .fas{
+    width: 1em;
+    padding-right: 1em;
+    color: #96a1d1;
 }
 
 #copyright{
@@ -55,19 +50,36 @@ footer .wrap{
 	font-family: 'Lato', sans-serif;
 	font-size: 10pt;
 	font-weight: bold;
-	max-width: 60%;
-	color: #cfd7e5;
+	width: 1200px;
+	color: #96a1d1;
 }
 
-@media screen and (max-width: 960px) {
+.logos{
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    justify-content: space-between;
+    width: 26em;
+}
+
+.logos .fab{
+    color: #96a1d1;
+}
+
+.logos .fab:hover {
+    cursor: pointer;
+    color: #394267;
+}
+
+@media screen and (max-width: 1250px) {
 	footer .wrap{
-      width: 90%;
-      padding: 0;
-      padding-top: 2em;
+		width: 90%;
+		padding: 0;
+		padding-top: 2em;
 	}
 	
-	#crutch{
-      width: 25em;
+	#crutch, .logos{
+		width: 25em;
 	}
 	
 	#copyright{
@@ -75,49 +87,61 @@ footer .wrap{
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
 
-	#crutch, #info{
+	#crutch{
+		display: none;
+	}
+	
+	.info{
+		width: 100%;
+		margin-bottom: 1em;
 		font-size: 10pt;
 	}
 	
-	#crutch{
-        width: 15em;
-		padding: 0;
+	.info ul{
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 	
-	#info img{
-		margin-right: 1em;
-		padding-left: .5em;
+	.info ul li{
+		margin: 0;
 	}
-
-	#info {
-		width: 13em;
-	}
-}
-
-@media screen and (max-width: 430px) {
-	footer .wrap{
-		padding-bottom: 1em;
-		padding-top: 1em;
+	
+	.info .fas{
+		font-size: 14pt;
 	}
 	
 	#copyright{
 		text-align: center;
 		width: 100%;
+		font-size: 8pt;
+	}	
+}
+
+@media screen and (max-width: 600px) {
+	footer .wrap{
+		min-width: 360px;
+		padding-bottom: 1em;
+		padding-top: 1em;
 	}
 	
-	#crutch{
-		display: none;
-	}
-
-	#info {
+	.info ul{
+		flex-direction: column;
 		position: relative;
 		margin: 0 auto;
-		width: 14em;
-		font-size: 11pt;
+		width: 250px;
+		font-size: 12pt;
 	}
-
+	
+	#copyright{
+		display: none;
+	}
+	
 }
 
 

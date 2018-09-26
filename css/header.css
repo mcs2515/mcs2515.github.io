@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
 
 .gradient{
     position: absolute;
@@ -6,28 +6,27 @@
     width: 100%;
     height: 3.5em;
     top:2.4em;
-    background: linear-gradient(90deg, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, .7) 100%);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6)/*, inset 0 0 1px rgba(255, 255, 255, 0.6)*/;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, 0.3) 15%, rgba(255, 255, 255, 0.3) 85%, rgba(255, 255, 255, .7) 100%);
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     z-index: 2;
 }
 
 header{
-    position: fixed;
-    top:0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 6em;
-    z-index: 2;
-    background-color: #96a1d1;
+	position: fixed;
+	top:0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 6em;
+	z-index: 2;
+	background-color: #878fc1;
 }
 
 .navbar{
     position: relative;
     margin: 0 auto;
-    width: 85%;
+    max-width: 1200px;
     height: 6em;   
 }
 
@@ -40,34 +39,15 @@ header{
     background-color: rgba(255,255,255, .5);
     margin: 0;
     margin-top: 1em;
-    margin-left: 2em;
     border: 1px solid white;
-    transition:all .5s ease;
+    transition:all 2.5s ease;
   	z-index: 2;
 }
 
 .logo:hover{
     cursor: pointer;
-    transition:all .5s ease;
-    transform: scale(1.1);
-}
-
-#logos{
-    margin-left: 4em;
-    position: fixed;
-    top: 12em;
-    z-index: 2;
-}
-
-#logos img{
-    display: block;
-    margin-bottom: 1em;
-    opacity: .2;
-}
-
-#logos img:hover {
-    cursor: pointer;
-    opacity: .5;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 .mainMenu{ 
@@ -82,89 +62,48 @@ header{
     font-weight: bold;
     font-size: 10pt;
     padding: 10pt 0pt;
-		font-size: 12pt;
+    font-size: 12pt;
 }
 
 .mainMenu a{
-		color: #4E8DFF;
+    color: #4C51AB;
+    font-weight: bold;
     text-decoration: none;
-    transition:all .5s ease;
+    transition: all .5s ease;
 }
 
 .link{
-		padding: 0pt 10pt;
+	padding: 0pt 10pt;
+}
+
+.link:last-child{
+	padding: 0;
 }
 
 .mainMenu a:hover{
-	color: #394267;
+	color: white;
 	cursor:pointer;
 }
 
-h1{
-    text-align: center;
-    margin-top: 40pt;
-}
-
-h1 img{
-    max-width: 420px;
-    height: auto;
-}
-
-.memo{
-    text-align: center;
-    font-family: "Lato";
-    font-size: 15pt;
-    font-weight: bold;
-}
-
-@media screen and (max-width: 960px) {
-    .navbar{
-        width: 100%;
-        transition:all .5s ease;
-    }
-    
-    .mainMenu ul{
-        padding-left: 0pt;
-    }   
-	
-	#logos{
-		display: none;
+@media screen and (max-width: 1250px) {
+	.navbar{
+		width: 95%;
 	}
 }
 
 @media screen and (max-width: 700px) {
-    .logo{
-        width: 5em;
-        margin-left: 1em;
-    }
+	.logo{
+		width: 4.5em;
+		margin-top: 1em;
+	}
 	
-		.mainMenu li:last-child{
-				margin-right: 10pt;
-		}
+	.mainMenu{
+		font-size: 10pt;
+	}
 }
 
 @media screen and (max-width: 430px) {
-		.gradient, header{
-				border-radius: 0;
-			}
-    
-    .logo{
-        display: block;
-        margin: 0 auto;
-        top:1em;
-    }
-	
-    .mainMenu{
-				display: none;
-    }
-	
-		#title{
-			margin-top: -3em;;
-			padding: 0;
-		}
-
+	.gradient, header{
+		min-width: 360px;	
+	}
 }
-
-
-
-
