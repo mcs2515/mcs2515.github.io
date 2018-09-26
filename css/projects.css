@@ -91,31 +91,77 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6)
 }
 
+.proj .desc:nth-child(odd){
+    padding-left: 0;
+}
+
+.proj .desc:nth-child(even){
+    padding-right: 0;
+}
+
+.proj:last-child .desc{
+    padding: 0;
+    width: 100%;
+}
+
 .responsive{
     display: none;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1250px){
     
     .projects{
-        width: 100%;
-    }
-
-    .proj{
-        position:relative;
-        margin: 0 auto;
-        margin-bottom: 5em;
         width: 90%;
-        flex-direction: column;
-    }
-    
-    .proj a{
-        position: relative;
-        margin: 0 auto;
     }
     
     .proj .desc{
+        width: 50%;
+        padding: 0 2%;
+    }
+
+    .proj img{
+        width: auto;
+        height: 300px;
+    }
+    
+    .last .desc{
+        padding: 0;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    
+    .projects_wrap{
+        padding-top: 35em;
+    }
+
+    .proj{
+        margin-bottom: 10em;
+    }
+    
+    .proj{
+        position:relative;
+        margin: 0 auto;
+        margin-bottom: 10em;
+        flex-direction: column;
+    }
+    
+    .proj .desc{
+        width: 100%;
         padding: 0; 
+    }
+    
+    .proj img{
+        width: auto;
+        height: 350px;
+        margin-bottom: 3em;
+    }
+ 
+    .proj a{
+        position: relative;
+        margin: 0 auto;
     }
     
     .responsive{
@@ -125,28 +171,31 @@
     .largeScreen{
         display: none;
     }
+    
+    .proj .desc .details{
+        margin-bottom: 1em;
+    }
+    
+    .proj:last-child .desc{
+        width: 100%;
+    }
 }
 
-
-@media screen and (max-width: 960px) {
-	.projects_wrap{
-		padding-top: 35em;
-	}
-	.proj .desc{
-			width: 100%; 
-	}
-}
-
-@media screen and (max-width: 700px) {  
+@media screen and (max-width: 700px) {
     .proj img {
         width: 100%;
         height: auto;
+        margin-bottom: 1em;
     }
 }
 
 @media screen and (max-width: 430px) {
     .projects{
+        width: 90%;
         min-width: 360px;
+    }
+    .proj{
+        width: 95%;
     }
     
     .proj h3{

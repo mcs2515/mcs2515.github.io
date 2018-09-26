@@ -28,16 +28,6 @@
             type: 'foreground',
         });
         
-        $(".imageThumb, [data-paroller-factor]").paroller({
-            factor: .1,
-            type: 'foreground',
-        });
-        
-        $(".tags, [data-paroller-factor]").paroller({
-            factor: .2,
-            type: 'foreground',
-        });
-        
         $('.js-tilt').tilt({
             perspective: 1500,
         })
@@ -52,6 +42,35 @@
 					dots: true,
         });
     }
+    
+    function checkWidth(){
+        let w = window.innerWidth;
+        $(window).resize(function(){location.reload();});
+        
+        if(w< 960){
+            $(".imageThumb, [data-paroller-factor]").paroller({
+                factor: .05,
+                type: 'foreground',
+            });
+
+            $(".tags, [data-paroller-factor]").paroller({
+                factor: .05,
+                type: 'foreground',
+            });
+        }
+        else{
+            $(".imageThumb, [data-paroller-factor]").paroller({
+                factor: .1,
+                type: 'foreground',
+            });
+
+            $(".tags, [data-paroller-factor]").paroller({
+                factor: .2,
+                type: 'foreground',
+            });
+        }   
+    }
 
     window.onload = init;
+    checkWidth();
 })();

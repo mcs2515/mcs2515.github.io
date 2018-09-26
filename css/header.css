@@ -85,7 +85,7 @@ header{
 	cursor:pointer;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
 	.navbar{
 		width: 95%;
 	}

@@ -231,6 +231,24 @@ html{
 	.card ol{
 		padding-left: 11%;
 	}
+
+	.about{
+		padding-top: 3em;
+		max-width: 350px;
+	}
+	
+	.aboutme{
+		pointer-events: none;
+	}
+	
+	.card .fas{
+		padding-top: 25%;
+	}
+	
+	.card ol{
+		padding-left: 50px;
+
+	}
 	
 	.slick{
     display: block;
@@ -246,26 +264,8 @@ html{
 		transform: scale(2);
 	}
 	
-	.about{
-		padding-top: 3em;
-		max-width: 350px;
-	}
-	
 	.unslick{
 		display: none;
-	}
-	
-	.aboutme{
-		pointer-events: none;
-	}
-	
-	.card .fas{
-		padding-top: 25%;
-	}
-	
-	.card ol{
-		padding-left: 50px;
-
 	}
 }
 
@@ -288,6 +288,15 @@ html{
 @media screen and (max-width: 430px){
 	.portfolio{
 		min-width: 360px;
+	}
+	
+	.about{
+		min-width: 250px;
+	}
+	
+	.card{
+		min-width: 250px;
+		margin: 0 2em;
 	}
 }
 

@@ -71,7 +71,7 @@ footer .wrap{
     color: #394267;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
 	footer .wrap{
 		width: 90%;
 		padding: 0;
@@ -89,39 +89,14 @@ footer .wrap{
 
 @media screen and (max-width: 900px) {
 
-	#crutch, .logos{
-		font-size: 10pt;
-		padding: 0;
-		width: 15em;
-	}
-	
-	.info{
-		font-size: 10pt;
-	}
-	
-	.info ul li{
-		margin: 0;
-	}
-	
-	.info .fas{
-		font-size: 14pt;
-	}
-}
-
-@media screen and (max-width: 900px) {
 	#crutch{
 		display: none;
 	}
 	
-	#copyright{
-		text-align: center;
-		width: 100%;
-		font-size: 8pt;
-	}
-	
-	.info {
+	.info{
 		width: 100%;
 		margin-bottom: 1em;
+		font-size: 10pt;
 	}
 	
 	.info ul{
@@ -132,6 +107,20 @@ footer .wrap{
 		flex-direction: row;
 		justify-content: space-between;
 	}
+	
+	.info ul li{
+		margin: 0;
+	}
+	
+	.info .fas{
+		font-size: 14pt;
+	}
+	
+	#copyright{
+		text-align: center;
+		width: 100%;
+		font-size: 8pt;
+	}	
 }
 
 @media screen and (max-width: 600px) {
