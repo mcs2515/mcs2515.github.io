@@ -33,27 +33,19 @@
         })
         
         $('.slick').slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-					infinite:true,
-          autoplay: true,
-          autoplaySpeed: 2000,
-					arrows: false,
-					dots: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			infinite:true,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			arrows: false,
+			dots: true,
         });
     }
-    
-	let currentWidth = 0;
-	let w = $( window ).innerWidth();
 	
-    function checkWidth(){
-        
-		
-		if(currentWidth - w > 100){
-        	$(window).resize(function(){location.reload();});
-			currentWidth = w;
-		}
-        
+	function checkWidth(){
+		let w = $( window ).innerWidth();
+
         if(currentWidth< 960){
             $(".imageThumb, [data-paroller-factor]").paroller({
                 factor: .05,
