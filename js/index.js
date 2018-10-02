@@ -46,7 +46,7 @@
 	function checkWidth(){
 		let w = $( window ).innerWidth();
 
-        if(currentWidth< 960){
+        if(w< 960){
             $(".imageThumb, [data-paroller-factor]").paroller({
                 factor: .05,
                 type: 'foreground',
