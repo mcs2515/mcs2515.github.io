@@ -43,11 +43,18 @@
         });
     }
     
+	let currentWidth = 0;
+	let w = $( window ).innerWidth();
+	
     function checkWidth(){
-        let w = window.innerWidth;
-        $(window).resize(function(){location.reload();});
         
-        if(w< 960){
+		
+		if(currentWidth - w > 100){
+        	$(window).resize(function(){location.reload();});
+			currentWidth = w;
+		}
+        
+        if(currentWidth< 960){
             $(".imageThumb, [data-paroller-factor]").paroller({
                 factor: .05,
                 type: 'foreground',
