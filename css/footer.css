@@ -5,10 +5,10 @@ footer{
     width: 100%;
     display:block;
     overflow:auto;
-    background-color: #e6efff;
     font-family: "Abhaya Libre";
-    background-color: white;
+	background-color: #363A77;
     padding-bottom: 1em;
+	color: #FFF2D2;
 }
 
 footer .wrap{
@@ -21,91 +21,80 @@ footer .wrap{
     padding-top: 2em;
 }
 
-#crutch{
-    width: 30em;
+.info{
+	margin-top: -10px;
 }
 
 .info ul{
     list-style: none;
-    padding-left: 0em;
-    display: flex;
-    flex-direction: column;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .info ul li{
-    margin-bottom: 10px;
     display: inline-flex;
-    align-items: center;  
+    align-items: center;
+	margin-right: 2em;
+}
+
+.info ul li:last-child{
+	margin-right: 0em;
+}
+
+.info ul li p{
+    margin-left: 10px; 
 }
 
 .info .fas{
-    width: 1em;
-    padding-right: 1em;
     color: #96a1d1;
-}
-
-#copyright{
-	position: relative;
-	margin: 0 auto;
-	font-family: 'Lato', sans-serif;
-	font-size: 10pt;
-	font-weight: bold;
-	width: 1200px;
-	color: #96a1d1;
 }
 
 .logos{
     display: flex;
     flex-direction: row;
-    z-index: 2;
     justify-content: space-between;
-    width: 26em;
+    width: 15em;
 }
 
 .logos .fab{
     color: #96a1d1;
+	
 }
 
 .logos .fab:hover {
     cursor: pointer;
-    color: #394267;
+    color: #FFF2D2;
+	text-shadow: 0 0px 5px #FFF2D2;
 }
 
 @media screen and (max-width: 1250px) {
 	footer .wrap{
-		width: 90%;
+		width: 95%;
 		padding: 0;
 		padding-top: 2em;
 	}
 	
-	#crutch, .logos{
-		width: 25em;
-	}
-	
-	#copyright{
-		max-width: 90%;
-	}
-}
-
-@media screen and (max-width: 900px) {
-
-	#crutch{
+	.logos{
 		display: none;
 	}
 	
 	.info{
-		width: 100%;
-		margin-bottom: 1em;
-		font-size: 10pt;
-	}
-	
-	.info ul{
-		width: 100%;
 		position: relative;
 		margin: 0 auto;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		width: 50em;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	
+	.info{
+		margin-bottom: 1em;
+		font-size: 10pt;
 	}
 	
 	.info ul li{
@@ -115,12 +104,6 @@ footer .wrap{
 	.info .fas{
 		font-size: 14pt;
 	}
-	
-	#copyright{
-		text-align: center;
-		width: 100%;
-		font-size: 8pt;
-	}	
 }
 
 @media screen and (max-width: 600px) {
@@ -137,11 +120,6 @@ footer .wrap{
 		width: 250px;
 		font-size: 12pt;
 	}
-	
-	#copyright{
-		display: none;
-	}
-	
 }
 
 

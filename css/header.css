@@ -1,58 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
 
-.gradient{
-    position: absolute;
-    margin: 0 auto;
-    width: 100%;
-    height: 3.5em;
-    top:2.4em;
-    background: linear-gradient(90deg, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, 0.3) 15%, rgba(255, 255, 255, 0.3) 85%, rgba(255, 255, 255, .7) 100%);
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    z-index: 2;
-}
+@import url('https://fonts.googleapis.com/css?family=Sacramento|Kalam|La+Belle+Aurore');
+
 
 header{
 	position: fixed;
-	top:0;
+	background-image: url("../media/seigaiha.png");
+    background-repeat: repeat;
 	margin: 0;
-	padding: 0;
 	width: 100%;
 	height: 6em;
-	z-index: 2;
-	background-color: #878fc1;
+	z-index: 10;
+	background-color: #43467f;
 }
 
 .navbar{
     position: relative;
     margin: 0 auto;
-    max-width: 1200px;
-    height: 6em;   
+    max-width: 1200px;  
+	display: flex;
+	flex-direction: row;
 }
 
-.logo{
-    position: relative;
-    width: 6em;
-    padding: .5em;
-    height: auto;
-    border-radius: 6em;
-    background-color: rgba(255,255,255, .5);
-    margin: 0;
-    margin-top: 1em;
-    border: 1px solid white;
-    transition:all 2.5s ease;
-  	z-index: 2;
-}
-
-.logo:hover{
-    cursor: pointer;
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+.navbar p{
+	width: 100%;
+	color: #FFF2D2;
+	margin: 0;
+	margin-top: 20pt;
+	font-size: 30pt;
+	font-family: 'Sacramento', cursive;
+	text-shadow: 0 0px 10px #FFF2D2;
 }
 
 .mainMenu{
-    width: 300px;
-    margin-top: 35pt;
+    width: 380px;
     position: relative;
     float: right;
   	z-index:2;
@@ -63,11 +44,12 @@ header{
     font-weight: bold;
     padding: 10pt 0pt;
     font-size: 12pt;
+	margin-top: 25pt;
 }
 
 .mainMenu a{
-    color: #4C51AB;
-    font-weight: bold;
+    color: #FFF2D2;
+    font-weight: lighter;
     text-decoration: none;
     transition: all .5s ease;
 }
@@ -75,6 +57,7 @@ header{
 .mainMenu a:hover{
 	color: white;
 	cursor:pointer;
+	text-shadow: 0 0px 10px #FFF2D2;
 }
 
 @media screen and (max-width: 1250px) {

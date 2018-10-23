@@ -9,7 +9,7 @@ html{
 .content{
 	display: relative;
 	margin: 0 auto;
-	padding-top: 15em;
+	padding-top: 12em;
 	width: 100%px;
 }
 
@@ -21,16 +21,21 @@ html{
 	cursor: pointer;
 }
 
-.signature{
-    width: 35em;
+.logo{
+    position: relative;
+    width: 10em;
     height: auto;
+    margin: 0;
+    margin-bottom: 1em;
+    transition:all 2.5s ease;
+  	z-index: 2;
 }
 
 .portfolio p{
     position: relative;
     margin: 0 auto;
     color: #FFF2D2;
-    font-size: 10pt;
+    font-size: 12pt;
 }
 
 .background{
@@ -48,25 +53,26 @@ html{
     justify-content: space-between;
     width: 1100px;
     z-index: 1;
+	color: #545454;
 }
 
 .front, .back{
     width: 20em;
     height: 30em;
-    background-color: #f2f2f2;
+    background-color: #fcfcfc;
     border-radius: 5px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6)
+    box-shadow: 0 10px 25px rgba(76, 81, 151, 0.4);
 }
 
 .card{
     margin: 0 auto;
     position: relative;
-    background-color: #f2f2f2;
+    background-color: #fcfcfc;
     border-radius: 5px;
     width: 20em;
     height: 30em;
     margin-bottom: -20em;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 10px 25px rgba(76, 81, 151, 0.4);
 }
 
 .card .desc{

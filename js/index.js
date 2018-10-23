@@ -3,14 +3,11 @@
     "use strict";
     
     function init(){
+		checkWidth();
+		
         $(".aboutme").flip({
           trigger: 'hover',
           reverse: true,
-        });
-        
-        $("a[href='#top']").click(function() {
-            $("html, body").animate({ scrollTop: 0 }, 1000);
-            return false;
         });
         
         $("a[href='#projectSection']").click(function() {
@@ -51,25 +48,14 @@
                 factor: .05,
                 type: 'foreground',
             });
-
-            $(".tags, [data-paroller-factor]").paroller({
-                factor: .05,
-                type: 'foreground',
-            });
         }
         else{
             $(".imageThumb, [data-paroller-factor]").paroller({
                 factor: .1,
                 type: 'foreground',
             });
-
-            $(".tags, [data-paroller-factor]").paroller({
-                factor: .2,
-                type: 'foreground',
-            });
         }   
     }
 
     window.onload = init;
-    checkWidth();
 })();

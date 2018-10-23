@@ -2,7 +2,7 @@
     width: 100%;
     padding-top: 35em;
     padding-bottom: 1em;
-    background-color: #242426;
+    background-color: #fcfcfc;
 }
 
 .projects{
@@ -19,36 +19,63 @@
     margin: 0 auto;
     text-align: center;
     font-weight: 100;
+	color: #4C51AB;
 }
 
 .projects h3{
     margin-top: 2em;
     margin-bottom: 5em;
     font-weight: 100;
-    color: gray;
+    color: #4C51AB;
+	font-size: 18pt;
 }
 
+.proj-back{
+	background: #242426;
+	border-radius: 10px;
+    margin-bottom: 10em;
+}
 .proj {
     font-family: 'Raleway', sans-serif;
-    position: relative;
+    position:static;
+	margin: 0 auto;
     display: flex;
     flex-direction: row;
     font-size: 16px;
-    margin-bottom: 10em;
+	color: #545454;
+	width: 500px;
+}
+.proj:nth-child(odd){
+	margin-left: 0;
+}
+
+.proj:nth-child(even){
+	margin-right: 0;
+}
+
+.proj:last-child{
+	background: none;
 }
 
 .proj h3{
     text-align: left;
-    font-size: 20pt;
+    font-size: 22pt;
     margin-bottom: 0;
+	font-weight: 400;
 }
 
-.proj img {
+.proj-back img {
+	position: absolute;
     width: auto;
     height: 350px;
     border-radius: 8px;
-    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+	margin-top: 3em;
+}
+
+.proj-back img:nth-child(odd){
+	margin-left: 30px;
 }
 
 .proj .title{
@@ -59,18 +86,14 @@
 
 .proj .title a{
     margin: 0;
-    padding-top: 65px;
+    margin-top: 65px;
     text-decoration: none;
     color: #FFF2D2;
 }
 
-.proj .desc{
-    padding: 0 5em;   
-}
-
 .proj .desc .details{
     margin-bottom: 3em;
-    font-size: 12pt;
+    font-size: 14pt;
 }
 
 .proj .tags{
@@ -81,22 +104,21 @@
 .proj .tag{
     margin-right: 15px;
     font-family: 'Lato', sans-serif;
-    font-weight: bold; 
     padding: 0 10px;
     height: 35px;
     line-height: 35px;
     text-align: center;
     border-radius: 2px;
-    background: #151516;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6)
+	background: #151516;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 .proj .desc:nth-child(odd){
-    padding-left: 0;
+    margin-left: -1.5em;
 }
 
-.proj .desc:nth-child(even){
-    padding-right: 0;
+.proj:last-child{
+	margin-bottom: 2em;
 }
 
 .proj:last-child .desc{
