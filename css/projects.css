@@ -31,9 +31,8 @@
 }
 
 .proj-back{
-	background: #242426;
-	border-radius: 10px;
-    margin-bottom: 10em;
+	background: #e8e8e8;
+    margin-bottom: 15em;
 }
 .proj {
     font-family: 'Raleway', sans-serif;
@@ -74,8 +73,20 @@
 	margin-top: 3em;
 }
 
-.proj-back img:nth-child(odd){
+.proj-back:nth-child(odd) img{
 	margin-left: 30px;
+}
+
+.proj-back:nth-child(even) img{
+	margin-left: 40px;
+}
+
+.proj:nth-child(odd) .desc{
+	margin-left: 2em;
+}
+
+.proj:nth-child(even) .desc{
+	margin-left: -1.5em;
 }
 
 .proj .title{
@@ -111,10 +122,6 @@
     border-radius: 2px;
 	background: #151516;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-}
-
-.proj .desc:nth-child(odd){
-    margin-left: -1.5em;
 }
 
 .proj:last-child{
