@@ -1,241 +1,234 @@
-.projects_wrap{
-    width: 100%;
-    padding-top: 35em;
-    padding-bottom: 1em;
-    background-color: #fcfcfc;
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+.projects_wrap {
+	width: 100%;
+	padding-top: 35em;
+	padding-bottom: 1em;
+	background-color: #fcfcfc;
 }
 
-.projects{
-    position: relative;
-    margin: 0 auto;
-    margin-top: -3em;
-    width: 1200px;
+.projects {
+	position: relative;
+	margin: 0 auto;
+	margin-top: -3em;
+	width: 1200px;
 }
 
-.projects h2{
-    font-family: 'Raleway', sans-serif;
-    color: #FFF2D2;
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-    font-weight: 100;
+.projects h2 {
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+	margin-top: 0;
+	text-align: center;
+	font-weight: 400;
+	font-size: 50pt;
 	color: #4C51AB;
+	font-family: 'Sacramento', cursive;
 }
 
-.projects h3{
-    margin-top: 2em;
-    margin-bottom: 5em;
-    font-weight: 100;
-    color: #4C51AB;
+.projects h3 {
+	margin-top: 2em;
+	margin-bottom: 5em;
+	font-weight: 100;
 	font-size: 18pt;
 }
 
-.proj-back{
-	background: #e8e8e8;
-    margin-bottom: 15em;
+.proj-back {
+	background: #efefef;
+	margin-bottom: 15em;
+	background-image: url("../media/seigaiha_white.png");
+	background-repeat: repeat;
 }
+
 .proj {
-    font-family: 'Raleway', sans-serif;
-    position:static;
+	font-family: 'Raleway', sans-serif;
+	position: static;
 	margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    font-size: 16px;
+	display: flex;
+	flex-direction: row;
+	font-size: 16px;
 	color: #545454;
 	width: 500px;
 }
-.proj:nth-child(odd){
+
+.proj:nth-child(odd) {
 	margin-left: 0;
 }
 
-.proj:nth-child(even){
+.proj:nth-child(even) {
 	margin-right: 0;
 }
 
-.proj:last-child{
+.last {
 	background: none;
+	margin: 0 auto;
+	width: 100%;
+	margin-bottom: 5em;
 }
 
-.proj h3{
-    text-align: left;
-    font-size: 22pt;
-    margin-bottom: 0;
+.proj h3 {
+	text-align: left;
+	font-size: 22pt;
+	margin-bottom: 0;
 	font-weight: 400;
 }
 
 .proj-back img {
 	position: absolute;
-    width: auto;
-    height: 350px;
-    border-radius: 8px;
-    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
+	width: auto;
+	height: 350px;
+	border-radius: 8px;
+	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
+	cursor: pointer;
 	margin-top: 3em;
 }
 
-.proj-back:nth-child(odd) img{
+.proj-back:nth-child(odd) img {
 	margin-left: 30px;
 }
 
-.proj-back:nth-child(even) img{
+.proj-back:nth-child(even) img {
 	margin-left: 40px;
 }
 
-.proj:nth-child(odd) .desc{
+.proj:nth-child(odd) .desc {
 	margin-left: 2em;
 }
 
-.proj:nth-child(even) .desc{
-	margin-left: -1.5em;
+.proj:nth-child(even) .desc {
+	margin-left: -.5em;
 }
 
-.proj .title{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.proj a {
+	text-decoration: none;
 }
 
-.proj .title a{
-    margin: 0;
-    margin-top: 65px;
-    text-decoration: none;
-    color: #FFF2D2;
-}
-
-.proj .desc .details{
-    margin-bottom: 3em;
-    font-size: 14pt;
-}
-
-.proj .tags{
-    display: flex;
-    flex-direction: row;
-}
-
-.proj .tag{
-    margin-right: 15px;
-    font-family: 'Lato', sans-serif;
-    padding: 0 10px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    border-radius: 2px;
-	background: #151516;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-}
-
-.proj:last-child{
+.proj .desc .details {
 	margin-bottom: 2em;
+	font-size: 14pt;
 }
 
-.proj:last-child .desc{
-    padding: 0;
-    width: 100%;
+.proj .tags {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1em;
 }
 
-.responsive{
-    display: none;
+.proj .tag {
+	margin-right: 15px;
+	font-family: 'Lato', sans-serif;
+	padding: 0 10px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 2px;
+	background: #ffff;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-@media screen and (max-width: 1250px){
-    
-    .projects{
-        width: 90%;
-    }
-    
-    .proj .desc{
-        width: 50%;
-        padding: 0 2%;
-    }
+.responsive {
+	display: none;
+}
 
-    .proj img{
-        width: auto;
-        height: 300px;
-    }
-    
-    .last .desc{
-        padding: 0;
-        width: 100%;
-    }
+@media screen and (max-width: 1250px) {
+
+	.projects {
+		width: 90%;
+	}
+
+	.proj .desc {
+		width: 50%;
+		padding: 0 2%;
+	}
+
+	.proj img {
+		width: auto;
+		height: 300px;
+	}
+
+	.last .desc {
+		padding: 0;
+		width: 100%;
+	}
 }
 
 
 @media screen and (max-width: 960px) {
-    
-    .projects_wrap{
-        padding-top: 35em;
-    }
 
-    .proj{
-        margin-bottom: 10em;
-    }
-    
-    .proj{
-        position:relative;
-        margin: 0 auto;
-        margin-bottom: 10em;
-        flex-direction: column;
-    }
-    
-    .proj .desc{
-        width: 100%;
-        padding: 0; 
-    }
-    
-    .proj img{
-        width: auto;
-        height: 350px;
-        margin-bottom: 3em;
-    }
- 
-    .proj a{
-        position: relative;
-        margin: 0 auto;
-    }
-    
-    .responsive{
-        display: block;
-    }
-    
-    .largeScreen{
-        display: none;
-    }
-    
-    .proj .desc .details{
-        margin-bottom: 1em;
-    }
-    
-    .proj:last-child .desc{
-        width: 100%;
-    }
+	.projects_wrap {
+		padding-top: 35em;
+	}
+
+	.proj {
+		margin-bottom: 10em;
+	}
+
+	.proj {
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: 10em;
+		flex-direction: column;
+	}
+
+	.proj .desc {
+		width: 100%;
+		padding: 0;
+	}
+
+	.proj img {
+		width: auto;
+		height: 350px;
+		margin-bottom: 3em;
+	}
+
+	.proj a {
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.responsive {
+		display: block;
+	}
+
+	.largeScreen {
+		display: none;
+	}
+
+	.proj .desc .details {
+		margin-bottom: 1em;
+	}
+
+	.last{
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 700px) {
-    .proj img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 1em;
-    }
+	.proj img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 1em;
+	}
 }
 
 @media screen and (max-width: 430px) {
-    .projects{
-        width: 90%;
-        min-width: 360px;
-    }
-    .proj{
-        width: 95%;
-    }
-    
-    .proj h3{
-        font-size: 14pt;
-    }
-    
-    .proj .desc .details{
-        font-size: 10pt;
-    }
-    
-    .proj .title a{
-        padding-top: 40px;
-    }
+	.projects {
+		width: 90%;
+		min-width: 360px;
+	}
+
+	.proj {
+		width: 95%;
+	}
+
+	.projects h2 {
+		font-size: 35pt;
+	}
+
+	.proj .desc .details {
+		font-size: 10pt;
+	}
+
+	.proj .title a {
+		padding-top: 40px;
+	}
 }

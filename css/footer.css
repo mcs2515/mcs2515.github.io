@@ -1,32 +1,32 @@
-footer{
-    position: relative;
-    margin: 0 auto;
-    bottom: 0;
-    width: 100%;
-    display:block;
-    overflow:auto;
-    font-family: "Abhaya Libre";
+footer {
+	position: relative;
+	margin: 0 auto;
+	bottom: 0;
+	width: 100%;
+	display: block;
+	overflow: auto;
+	font-family: "Abhaya Libre";
 	background-color: #363A77;
-    padding-bottom: 1em;
+	padding-bottom: 1em;
 	color: #FFF2D2;
 }
 
-footer .wrap{
-    position: relative;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 1200px;
-    padding-top: 2em;
+footer .wrap {
+	position: relative;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 1200px;
+	padding-top: 2em;
 }
 
-.info{
+.info {
 	margin-top: -10px;
 }
 
-.info ul{
-    list-style: none;
+.info ul {
+	list-style: none;
 	width: 100%;
 	position: relative;
 	margin: 0 auto;
@@ -36,54 +36,54 @@ footer .wrap{
 	justify-content: space-between;
 }
 
-.info ul li{
-    display: inline-flex;
-    align-items: center;
+.info ul li {
+	display: inline-flex;
+	align-items: center;
 	margin-right: 2em;
 }
 
-.info ul li:last-child{
+.info ul li:last-child {
 	margin-right: 0em;
 }
 
-.info ul li p{
-    margin-left: 10px; 
+.info ul li p {
+	margin-left: 10px;
 }
 
-.info .fas{
-    color: #96a1d1;
+.info .fas {
+	color: #96a1d1;
 }
 
-.logos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 15em;
+.logos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 15em;
 }
 
-.logos .fab{
-    color: #96a1d1;
-	
+.logos .fab {
+	color: #96a1d1;
+
 }
 
 .logos .fab:hover {
-    cursor: pointer;
-    color: #FFF2D2;
+	cursor: pointer;
+	color: #FFF2D2;
 	text-shadow: 0 0px 5px #FFF2D2;
 }
 
 @media screen and (max-width: 1250px) {
-	footer .wrap{
+	footer .wrap {
 		width: 95%;
 		padding: 0;
 		padding-top: 2em;
 	}
-	
-	.logos{
+
+	.logos {
 		display: none;
 	}
-	
-	.info{
+
+	.info {
 		position: relative;
 		margin: 0 auto;
 		width: 50em;
@@ -91,29 +91,29 @@ footer .wrap{
 }
 
 @media screen and (max-width: 900px) {
-	
-	.info{
+
+	.info {
 		margin-bottom: 1em;
 		font-size: 10pt;
 	}
-	
-	.info ul li{
+
+	.info ul li {
 		margin: 0;
 	}
-	
-	.info .fas{
+
+	.info .fas {
 		font-size: 14pt;
 	}
 }
 
 @media screen and (max-width: 600px) {
-	footer .wrap{
+	footer .wrap {
 		min-width: 360px;
 		padding-bottom: 1em;
 		padding-top: 1em;
 	}
-	
-	.info ul{
+
+	.info ul {
 		flex-direction: column;
 		position: relative;
 		margin: 0 auto;
@@ -121,5 +121,3 @@ footer .wrap{
 		font-size: 12pt;
 	}
 }
-
-

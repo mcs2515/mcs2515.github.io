@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
 
-html{
+html {
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
 }
 
-.content{
+.content {
 	display: relative;
 	margin: 0 auto;
 	padding-top: 12em;
 	width: 100%px;
 }
 
-.portfolio{
+.portfolio {
 	position: relative;
 	margin: 0 auto;
 	width: 800px;
@@ -21,77 +21,78 @@ html{
 	cursor: pointer;
 }
 
-.logo{
-    position: relative;
-    width: 10em;
-    height: auto;
-    margin: 0;
-    margin-bottom: 1em;
-    transition:all 2.5s ease;
-  	z-index: 2;
+.logo {
+	position: relative;
+	width: 10em;
+	height: auto;
+	margin: 0;
+	margin-bottom: 1em;
+	transition: all 2.5s ease;
+	z-index: 2;
 }
 
-.portfolio p{
-    position: relative;
-    margin: 0 auto;
-    color: #FFF2D2;
-    font-size: 12pt;
+.portfolio p {
+	position: relative;
+	margin: 0 auto;
+	color: white;
+	font-size: 12pt;
 }
 
-.background{
-    position: absolute;
-    background-color: #242426;
-    height: 500px;
+.background {
+	position: absolute;
+	background-color: #242426;
+	height: 500px;
 }
 
-.about{
-    position: relative;
-    margin: 0 auto;
-    padding-top: 10em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 1100px;
-    z-index: 1;
+.about {
+	position: relative;
+	margin: 0 auto;
+	padding-top: 10em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 1100px;
+	z-index: 1;
 	color: #545454;
 }
 
-.front, .back{
-    width: 20em;
-    height: 30em;
-    background-color: #fcfcfc;
-    border-radius: 5px;
-    box-shadow: 0 10px 25px rgba(76, 81, 151, 0.4);
+.front,
+.back {
+	width: 20em;
+	height: 30em;
+	background-color: #fcfcfc;
+	border-radius: 5px;
+	box-shadow: 0 10px 25px rgba(76, 81, 151, 0.4);
 }
 
-.card{
-    margin: 0 auto;
-    position: relative;
-    background-color: #fcfcfc;
-    border-radius: 5px;
-    width: 20em;
-    height: 30em;
-    margin-bottom: -20em;
-    box-shadow: 0 10px 25px rgba(76, 81, 151, 0.4);
+.card {
+	margin: 0 auto;
+	position: relative;
+	background-color: #fcfcfc;
+	border-radius: 5px;
+	width: 20em;
+	height: 30em;
+	margin-bottom: -20em;
+	box-shadow: 0 10px 25px rgba(76, 81, 151, 0.4);
 }
 
-.card .desc{
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 12pt;
-    line-height: 18pt;
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-    padding: 0 8pt 0 8pt;
+.card .desc {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 12pt;
+	line-height: 18pt;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 8pt 0 8pt;
 }
 
-.card h2{
+.card h2 {
 	margin: 0;
 	padding-top: 2.5em;
 }
 
-.card h3{
+.card h3 {
 	font-size: 14pt;
 	position: relative;
 	margin: 0 auto;
@@ -100,7 +101,7 @@ html{
 	color: #4C51AB;
 }
 
-.card .fas{
+.card .fas {
 	color: #4C51AB;
 	width: 100%;
 	text-align: center;
@@ -108,207 +109,203 @@ html{
 	margin-bottom: 1em;
 }
 
-.aboutme{
-    background: transparent;
-    cursor: pointer;
-    box-shadow: none;
+.aboutme {
+	background: transparent;
+	cursor: pointer;
+	box-shadow: none;
 }
 
-.aboutme h3{
-    margin-bottom: 5px;
+.aboutme h3 {
+	margin-bottom: 5px;
 }
 
-.aboutme h2{
-    margin: 0;
-    padding: 0;
-    font-size: 10pt;
-    color: #878fc1;
-    font-weight: 100;
+.aboutme h2 {
+	margin-top: 1em;
+	padding: 0;
+	font-size: 10pt;
+	font-weight: 100;
 }
 
-.card ol{
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 12pt;
-    line-height: 35pt;
-    counter-reset: item;
-    list-style-type: none;
-    color: #545454;
+.card ol {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 12pt;
+	line-height: 35pt;
+	counter-reset: item;
+	list-style-type: none;
+	color: #545454;
 }
 
 .card ol li:before {
-    content: counter(item) ". ";
-    counter-increment: item;
-    color: #4C51AB;
-    font-size: 16pt;
+	content: counter(item) ". ";
+	counter-increment: item;
+	color: #4C51AB;
+	font-size: 16pt;
 }
 
-.skills p{
-    margin: 0px;
+.skills p {
+	margin: 0px;
 }
 
-.skills h3{
-    margin: 0em 0 .5em 0;
+.skills h3 {
+	margin: 0em 0 .5em 0;
 }
 
-.skills .tools{
-    margin-top: 2.5em;
+.skills .tools {
+	margin-top: 2.5em;
 }
 
-.slick{
-    z-index: 1;
-    display: none;
+.slick {
+	z-index: 1;
+	display: none;
 }
 
 @media screen and (max-width: 1200px) {
-	.portfolio{
+	.portfolio {
 		width: 90%;
 	}
-	
-	.signature{
+
+	.signature {
 		width: 70%;
 		height: auto;
 	}
-	
-	.about{
+
+	.about {
 		padding-top: 10em;
 		width: 95%;
 	}
 
-	.card{
+	.card {
 		border-radius: 5px;
 		width: 31%;
 		max-width: 18em;
 		height: 25em;
 		margin-bottom: -15em;
 	}
-    
-	.card .desc{
+
+	.card .desc {
 		font-size: 10pt;
 	}
 
-	.card h2{
+	.card h2 {
 		padding-top: 0em;
 	}
 
-	.card h3{
+	.card h3 {
 		font-size: 12pt;
 		margin-bottom: .5em;
 	}
 
-	.card .fas{
+	.card .fas {
 		font-size: 22pt;
 		padding-top: 35%;
 	}
-	
-	.skills .tools{
+
+	.skills .tools {
 		margin-top: 1.5em;
 	}
-	
-	.card ol{
+
+	.card ol {
 		font-size: 10pt;
 		line-height: 30pt;
 		padding-left: 13%;
-		 
+
 	}
 
-	.card ol li{
+	.card ol li {
 		position: relative;
 		margin: 0 auto;
 	}
-	
+
 	.card ol li:before {
 		font-size: 12pt;
 	}
 }
 
-@media screen and (max-width: 960px){
-	
-	.portfolio p{
-		width:70%;
+@media screen and (max-width: 960px) {
+
+	.portfolio p {
+		width: 70%;
 	}
-	
-	.card{
+
+	.card {
 		min-width: 300px;
 		max-width: 90%;
 		margin: 0 1em;
 	}
-	
-	.card ol{
+
+	.card ol {
 		padding-left: 11%;
 	}
 
-	.about{
+	.about {
 		padding-top: 3em;
 		max-width: 350px;
 	}
-	
-	.aboutme{
+
+	.aboutme {
 		pointer-events: none;
 	}
-	
-	.card .fas{
+
+	.card .fas {
 		padding-top: 25%;
 	}
-	
-	.card ol{
+
+	.card ol {
 		padding-left: 50px;
 
 	}
-	
-	.slick{
-    display: block;
+
+	.slick {
+		display: block;
 		cursor: pointer;
 	}
-	
-	.slick-list{
+
+	.slick-list {
 		padding-bottom: 30px;
 		margin-bottom: -10em;
 	}
-	
-	.slick-dots li{
+
+	.slick-dots li {
 		transform: scale(2);
 	}
-	
-	.unslick{
+
+	.unslick {
 		display: none;
 	}
 }
 
-@media screen and (max-width: 700px){
-	
-	.portfolio p{
-		width: 90%;
+@media screen and (max-width: 700px) {
+
+	.portfolio p {
+		width: 95%;
 	}
-	
-	.signature{
+
+	.signature {
 		width: 90%;
 		height: auto;
 	}
-    
-	.portfolio p:last-child{
+
+	.portfolio p:last-child {
 		display: none;
 	}
 }
 
-@media screen and (max-width: 430px){
-	.portfolio{
+@media screen and (max-width: 430px) {
+	.portfolio {
 		min-width: 360px;
 	}
 	
-	.about{
+	.logo{
+		width: 7em;
+	}
+
+	.about {
 		min-width: 250px;
 	}
-	
-	.card{
+
+	.card {
 		min-width: 250px;
 		margin: 0 2em;
 	}
 }
-
-
-
-
-
-
-
