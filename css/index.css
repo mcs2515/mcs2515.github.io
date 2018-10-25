@@ -38,12 +38,6 @@ html {
 	font-size: 12pt;
 }
 
-.background {
-	position: absolute;
-	background-color: #242426;
-	height: 500px;
-}
-
 .about {
 	position: relative;
 	margin: 0 auto;
