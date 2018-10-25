@@ -61,7 +61,7 @@ header {
 
 @media screen and (max-width: 1250px) {
 	.navbar {
-		width: 95%;
+		width: 90%;
 	}
 }
 
@@ -82,8 +82,8 @@ header {
 		min-width: 360px;
 		height: 5em;
 	}
-	
-	.navbar p{
+
+	.navbar p {
 		margin-top: 30px;
 		font-size: 20pt;
 	}
