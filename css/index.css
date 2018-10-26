@@ -286,12 +286,8 @@ html {
 }
 
 @media screen and (max-width: 430px) {
-	.portfolio {
-		min-width: 360px;
-	}
-
 	.logo {
-		width: 7em;
+		width: 6em;
 	}
 
 	.about {
