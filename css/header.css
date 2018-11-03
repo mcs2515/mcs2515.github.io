@@ -38,7 +38,7 @@ header {
 	z-index: 2;
 	display: inline-flex;
 	justify-content: space-between;
-	font-family: "Lato";
+	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
 	padding: 10pt 0pt;

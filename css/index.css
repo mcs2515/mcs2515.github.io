@@ -28,7 +28,6 @@ html {
 	margin: 0;
 	margin-bottom: 1em;
 	transition: all 2.5s ease;
-	z-index: 2;
 }
 
 .portfolio p {
@@ -257,7 +256,7 @@ html {
 
 	.slick-list {
 		padding-bottom: 30px;
-		margin-bottom: -10em;
+		margin-bottom: -5em;
 	}
 
 	.slick-dots li {
@@ -287,7 +286,7 @@ html {
 
 @media screen and (max-width: 430px) {
 	.logo {
-		width: 6em;
+		width: 8em;
 	}
 
 	.about {
