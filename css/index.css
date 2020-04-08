@@ -1,300 +1,296 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto");
 
 html {
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .content {
-	display: relative;
-	margin: 0 auto;
-	padding-top: 12em;
-	width: 100%px;
+  display: relative;
+  margin: 0 auto;
+  padding-top: 12em;
+  width: 100%px;
 }
 
 .portfolio {
-	position: relative;
-	margin: 0 auto;
-	width: 800px;
-	text-align: center;
-	cursor: pointer;
+  position: relative;
+  margin: 0 auto;
+  width: 800px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .logo {
-	position: relative;
-	width: 10em;
-	height: auto;
-	margin: 0;
-	margin-bottom: 1em;
-	transition: all 2.5s ease;
+  position: relative;
+  width: 10em;
+  height: auto;
+  margin: 0;
+  margin-bottom: 1em;
+  /* transition: all 2.5s ease; */
 }
 
 .portfolio p {
-	position: relative;
-	margin: 0 auto;
-	color: white;
-	font-size: 12pt;
+  position: relative;
+  margin: 0 auto;
+  color: white;
+  font-size: 12pt;
 }
 
 .about {
-	position: relative;
-	margin: 0 auto;
-	padding-top: 10em;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 1100px;
-	z-index: 1;
-	color: #545454;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 10em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1100px;
+  z-index: 1;
+  color: #545454;
 }
 
 .front,
 .back {
-	width: 20em;
-	height: 30em;
-	background-color: #fcfcfc;
-	border-radius: 5px;
-	box-shadow: 0 10px 25px rgba(76, 81, 151, 0.4);
+  width: 20em;
+  height: 30em;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  box-shadow: 0 10px 25px rgba(76, 81, 151, 0.4);
 }
 
 .card {
-	margin: 0 auto;
-	position: relative;
-	background-color: #fcfcfc;
-	border-radius: 5px;
-	width: 20em;
-	height: 30em;
-	margin-bottom: -20em;
-	box-shadow: 0 10px 25px rgba(76, 81, 151, 0.4);
+  margin: 0 auto;
+  position: relative;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  width: 20em;
+  height: 30em;
+  margin-bottom: -20em;
+  box-shadow: 0 10px 25px rgba(76, 81, 151, 0.4);
 }
 
 .card .desc {
-	font-family: 'Raleway', sans-serif;
-	font-weight: bold;
-	font-size: 12pt;
-	line-height: 18pt;
-	position: relative;
-	margin: 0 auto;
-	text-align: center;
-	padding: 0 8pt 0 8pt;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 12pt;
+  line-height: 18pt;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 8pt 0 8pt;
 }
 
 .card h2 {
-	margin: 0;
-	padding-top: 2.5em;
+  margin: 0;
+  padding-top: 2.5em;
 }
 
 .card h3 {
-	font-size: 14pt;
-	position: relative;
-	margin: 0 auto;
-	text-align: center;
-	margin-bottom: 2em;
-	color: #4C51AB;
+  font-size: 14pt;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2em;
+  color: #4c51ab;
 }
 
 .card .fas {
-	color: #4C51AB;
-	width: 100%;
-	text-align: center;
-	padding-top: 2em;
-	margin-bottom: 1em;
+  color: #4c51ab;
+  width: 100%;
+  text-align: center;
+  padding-top: 2em;
+  margin-bottom: 1em;
 }
 
 .aboutme {
-	background: transparent;
-	cursor: pointer;
-	box-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: none;
 }
 
 .aboutme h3 {
-	margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .aboutme h2 {
-	margin-top: 1em;
-	padding: 0;
-	font-size: 10pt;
-	font-weight: 100;
+  margin-top: 1em;
+  padding: 0;
+  font-size: 10pt;
+  font-weight: 100;
 }
 
 .card ol {
-	font-family: 'Raleway', sans-serif;
-	font-weight: bold;
-	font-size: 12pt;
-	line-height: 35pt;
-	counter-reset: item;
-	list-style-type: none;
-	color: #545454;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 12pt;
+  line-height: 35pt;
+  counter-reset: item;
+  list-style-type: none;
+  color: #545454;
 }
 
 .card ol li:before {
-	content: counter(item) ". ";
-	counter-increment: item;
-	color: #4C51AB;
-	font-size: 16pt;
+  content: counter(item) ". ";
+  counter-increment: item;
+  color: #4c51ab;
+  font-size: 16pt;
 }
 
 .skills p {
-	margin: 0px;
+  margin: 0px;
 }
 
 .skills h3 {
-	margin: 0em 0 .5em 0;
+  margin: 0em 0 0.5em 0;
 }
 
 .skills .tools {
-	margin-top: 2.5em;
+  margin-top: 2.5em;
 }
 
 .slick {
-	z-index: 1;
-	display: none;
+  z-index: 1;
+  display: none;
 }
 
 @media screen and (max-width: 1200px) {
-	.portfolio {
-		width: 90%;
-	}
+  .portfolio {
+    width: 90%;
+  }
 
-	.signature {
-		width: 70%;
-		height: auto;
-	}
+  .signature {
+    width: 70%;
+    height: auto;
+  }
 
-	.about {
-		padding-top: 10em;
-		width: 95%;
-	}
+  .about {
+    padding-top: 10em;
+    width: 95%;
+  }
 
-	.card {
-		border-radius: 5px;
-		width: 31%;
-		max-width: 18em;
-		height: 25em;
-		margin-bottom: -15em;
-	}
+  .card {
+    border-radius: 5px;
+    width: 31%;
+    max-width: 18em;
+    height: 25em;
+    margin-bottom: -15em;
+  }
 
-	.card .desc {
-		font-size: 10pt;
-	}
+  .card .desc {
+    font-size: 10pt;
+  }
 
-	.card h2 {
-		padding-top: 0em;
-	}
+  .card h2 {
+    padding-top: 0em;
+  }
 
-	.card h3 {
-		font-size: 12pt;
-		margin-bottom: .5em;
-	}
+  .card h3 {
+    font-size: 12pt;
+    margin-bottom: 0.5em;
+  }
 
-	.card .fas {
-		font-size: 22pt;
-		padding-top: 35%;
-	}
+  .card .fas {
+    font-size: 22pt;
+    padding-top: 35%;
+  }
 
-	.skills .tools {
-		margin-top: 1.5em;
-	}
+  .skills .tools {
+    margin-top: 1.5em;
+  }
 
-	.card ol {
-		font-size: 10pt;
-		line-height: 30pt;
-		padding-left: 13%;
+  .card ol {
+    font-size: 10pt;
+    line-height: 30pt;
+    padding-left: 13%;
+  }
 
-	}
+  .card ol li {
+    position: relative;
+    margin: 0 auto;
+  }
 
-	.card ol li {
-		position: relative;
-		margin: 0 auto;
-	}
-
-	.card ol li:before {
-		font-size: 12pt;
-	}
+  .card ol li:before {
+    font-size: 12pt;
+  }
 }
 
 @media screen and (max-width: 960px) {
+  .portfolio p {
+    width: 70%;
+  }
 
-	.portfolio p {
-		width: 70%;
-	}
+  .card {
+    min-width: 300px;
+    max-width: 90%;
+    margin: 0 1em;
+  }
 
-	.card {
-		min-width: 300px;
-		max-width: 90%;
-		margin: 0 1em;
-	}
+  .card ol {
+    padding-left: 11%;
+  }
 
-	.card ol {
-		padding-left: 11%;
-	}
+  .about {
+    padding-top: 3em;
+    max-width: 350px;
+  }
 
-	.about {
-		padding-top: 3em;
-		max-width: 350px;
-	}
+  .aboutme {
+    pointer-events: none;
+  }
 
-	.aboutme {
-		pointer-events: none;
-	}
+  .card .fas {
+    padding-top: 25%;
+  }
 
-	.card .fas {
-		padding-top: 25%;
-	}
+  .card ol {
+    padding-left: 50px;
+  }
 
-	.card ol {
-		padding-left: 50px;
+  .slick {
+    display: block;
+    cursor: pointer;
+  }
 
-	}
+  .slick-list {
+    padding-bottom: 30px;
+    margin-bottom: -5em;
+  }
 
-	.slick {
-		display: block;
-		cursor: pointer;
-	}
+  .slick-dots li {
+    transform: scale(2);
+  }
 
-	.slick-list {
-		padding-bottom: 30px;
-		margin-bottom: -5em;
-	}
-
-	.slick-dots li {
-		transform: scale(2);
-	}
-
-	.unslick {
-		display: none;
-	}
+  .unslick {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 700px) {
+  .portfolio p {
+    width: 95%;
+  }
 
-	.portfolio p {
-		width: 95%;
-	}
+  .signature {
+    width: 90%;
+    height: auto;
+  }
 
-	.signature {
-		width: 90%;
-		height: auto;
-	}
-
-	.portfolio p:last-child {
-		display: none;
-	}
+  .portfolio p:last-child {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 430px) {
-	.logo {
-		width: 8em;
-	}
+  .logo {
+    width: 8em;
+  }
 
-	.about {
-		min-width: 250px;
-	}
+  .about {
+    min-width: 250px;
+  }
 
-	.card {
-		min-width: 250px;
-		margin: 0 2em;
-	}
+  .card {
+    min-width: 250px;
+    margin: 0 2em;
+  }
 }
