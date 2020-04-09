@@ -7,27 +7,16 @@ header {
   background-repeat: repeat;
   margin: 0;
   width: 100%;
-  height: 5em;
+  height: 4em;
   z-index: 10;
   background-color: #43467f;
+  z-index: 500;
 }
 
 .navbar {
   position: relative;
   margin: 0 auto;
-  max-width: 1200px;
-  display: flex;
-  flex-direction: row;
-}
-
-.navbar p {
-  width: 100%;
-  color: #fff2d2;
-  margin: 0;
-  margin-top: 12pt;
-  font-size: 25pt;
-  font-family: "Sacramento", cursive;
-  text-shadow: 0 0px 10px #fff2d2;
+  width: 90%;
 }
 
 .mainMenu {
@@ -39,10 +28,8 @@ header {
   justify-content: space-between;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  font-weight: bold;
-  padding: 10pt 0pt;
   font-size: 12pt;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .mainMenu a {
@@ -58,35 +45,11 @@ header {
   text-shadow: 0 0px 10px #fff2d2;
 }
 
-@media screen and (max-width: 1250px) {
+@media only screen and (max-width: 600px) {
   .navbar {
-    width: 90%;
+    min-width: 600px;
   }
-}
-
-@media screen and (max-width: 700px) {
-  .logo {
-    width: 4.5em;
-    margin-top: 1em;
-  }
-
   .mainMenu {
-    font-size: 10pt;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  header {
-    height: 5em;
-  }
-
-  .navbar p {
-    margin-top: 30px;
-    font-size: 20pt;
-  }
-
-  .mainMenu {
-    width: 480px;
-    margin-top: 30px;
+    width: 300px;
   }
 }

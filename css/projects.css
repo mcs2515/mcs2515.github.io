@@ -2,21 +2,26 @@
   text-transform: capitalize;
 }
 
-.projects-wrap h2 {
-  position: relative;
-  margin-top: 0;
-  margin-bottom: 2em;
-  font-family: "Lato", sans-serif;
-  text-align: center;
-  font-size: 30pt;
-  color: #4c51ab;
-}
-
 .projects-wrap {
   width: 100%;
-  padding-top: 30em;
-  padding-bottom: 1em;
+  margin-top: 5em;
+  padding-bottom: 5em;
   background-color: #fcfcfc;
+}
+
+.project-title {
+  text-align: center;
+}
+
+.project-title h3 {
+  position: relative;
+  margin: 5em auto;
+  display: inline-flex;
+}
+
+.project-title .fas {
+  color: #545454;
+  stroke: #efefef;
 }
 
 .projects-container {
@@ -28,6 +33,7 @@
   align-items: start;
   column-gap: 40px;
   row-gap: 55px;
+  z-index: 100;
 }
 
 .proj-box {
@@ -94,6 +100,7 @@
   display: flex;
   padding: 10px 20px;
   justify-content: space-between;
+  font-family: "Lato", sans-serif;
 }
 
 .proj-git-div .fab {
@@ -113,17 +120,4 @@
 .proj-tag {
   font-size: 12px;
   margin-left: 8px;
-}
-
-.projects-wrap h3 {
-  margin-top: 5em;
-  margin-bottom: 5em;
-  font-weight: 100;
-  font-size: 18pt;
-}
-
-@media screen and (max-width: 1345px) {
-  .projects-container {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  }
 }
