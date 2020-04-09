@@ -22,11 +22,6 @@
     checkWidth();
     populateProjDiv();
 
-    $(".aboutme").flip({
-      trigger: "hover",
-      reverse: true,
-    });
-
     $("a[href='#projectSection']").click(function () {
       $("html, body").animate({ scrollTop: 950 }, 1000);
       return false;
@@ -37,23 +32,8 @@
       return false;
     });
 
-    $(".about, [data-paroller-factor]").paroller({
-      factor: 0.2,
-      type: "foreground",
-    });
-
     $(".js-tilt").tilt({
       perspective: 1500,
-    });
-
-    $(".slick").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      arrows: false,
-      dots: true,
     });
   }
 
