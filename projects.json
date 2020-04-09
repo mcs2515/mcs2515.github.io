@@ -1,0 +1,47 @@
+[
+  {
+    "name": "talking selfies",
+    "img": "media/talking_selfie.jpg",
+    "link": "#",
+    "location": "American Greetings",
+    "date": "April 2020",
+    "tags": "PixiJS",
+    "gitLink": "#"
+  },
+  {
+    "name": "magical journey",
+    "img": "media/magical_journey.jpg",
+    "link": "https://www.bluemountain.com/ecards/mothers-day/magical-mothers-day-journey-interactive/card-3491451",
+    "location": "American Greetings",
+    "date": "April 2019",
+    "tags": "PixiJS",
+    "gitLink": "#"
+  },
+  {
+    "name": "blooming birthday game",
+    "img": "media/spot_the_diff.jpg",
+    "link": "https://www.bluemountain.com/ecards/birthday/blooming-birthday-spot-the-differences-game/card-3478566",
+    "location": "American Greetings",
+    "date": "Dec 2019",
+    "tags": "PixiJS",
+    "gitLink": "#"
+  },
+  {
+    "name": "flux",
+    "img": "media/flux_game.jpg",
+    "link": "https://teamflux.github.io/",
+    "location": "RIT",
+    "date": "May 2018",
+    "tags": "Unity C#",
+    "gitLink": "https://github.com/mcs2515/Flux"
+  },
+  {
+    "name": "peacock",
+    "img": "media/peacock.jpg",
+    "link": "https://peacock-app.herokuapp.com/",
+    "location": "RIT",
+    "date": "Nov 2018",
+    "tags": "Node.js MongoDB React",
+    "gitLink": "https://github.com/mcs2515/peacock"
+  }
+]

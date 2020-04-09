@@ -1,63 +1,49 @@
-(function() {
+(function () {
   "use strict";
 
-  let projects = [
-    {
-      name: "talking selfies",
-      img: "media/peacock.jpg",
-      link: "#",
-      location: "American Greetings",
-      date: "Apr 2020",
-      tags: "PixiJS",
-      gitLink: "#"
-    },
-    {
-      name: "flux",
-      img: "media/flux_game.jpg",
-      link: "https://teamflux.github.io/",
-      location: "RIT",
-      date: "May 2018",
-      tags: "Unity C#",
-      gitLink: "https://github.com/mcs2515/Flux"
-    },
-    {
-      name: "peacock",
-      img: "media/peacock.jpg",
-      link: "https://peacock-app.herokuapp.com/",
-      location: "RIT",
-      date: "Nov 2018",
-      tags: "Node.js MongoDB React",
-      gitLink: "https://github.com/mcs2515/peacock"
-    }
-  ];
+  var projects;
+
+  //reads in the project json
+  function readProjectJSON() {
+    let requestURL = "projects.json";
+
+    let request = new XMLHttpRequest();
+    request.open("GET", requestURL);
+    request.responseType = "json";
+    request.send();
+
+    request.onload = function () {
+      projects = request.response;
+      init();
+    };
+  }
 
   function init() {
     checkWidth();
-
     populateProjDiv();
 
     $(".aboutme").flip({
       trigger: "hover",
-      reverse: true
+      reverse: true,
     });
 
-    $("a[href='#projectSection']").click(function() {
+    $("a[href='#projectSection']").click(function () {
       $("html, body").animate({ scrollTop: 950 }, 1000);
       return false;
     });
 
-    $("a[href='#copyright']").click(function() {
+    $("a[href='#copyright']").click(function () {
       $("html, body").animate({ scrollTop: $(document).height() }, 2000);
       return false;
     });
 
     $(".about, [data-paroller-factor]").paroller({
       factor: 0.2,
-      type: "foreground"
+      type: "foreground",
     });
 
     $(".js-tilt").tilt({
-      perspective: 1500
+      perspective: 1500,
     });
 
     $(".slick").slick({
@@ -67,7 +53,7 @@
       autoplay: true,
       autoplaySpeed: 2000,
       arrows: false,
-      dots: true
+      dots: true,
     });
   }
 
@@ -77,19 +63,19 @@
     if (w < 960) {
       $(".imageThumb, [data-paroller-factor]").paroller({
         factor: 0.05,
-        type: "foreground"
+        type: "foreground",
       });
     } else {
       $(".imageThumb, [data-paroller-factor]").paroller({
         factor: 0.1,
-        type: "foreground"
+        type: "foreground",
       });
     }
   }
 
   function populateProjDiv() {
     for (var i = 0; i < projects.length; i++) {
-      let idName = projects[i].name.replace(" ", "-");
+      let idName = projects[i].name.replace(/ /g, "-");
       let projectDiv = document.querySelector("#" + idName);
 
       if (projectDiv != null) {
@@ -116,6 +102,9 @@
 
   //Create image link to project
   function createProjImg(project) {
+    let imgDiv = document.createElement("div");
+    imgDiv.className = "image-link-div";
+
     let linkTag = document.createElement("a");
     linkTag.href = project.link;
     linkTag.target = "_blank";
@@ -124,8 +113,9 @@
     imgTag.src = project.img;
 
     linkTag.appendChild(imgTag);
+    imgDiv.appendChild(linkTag);
 
-    return linkTag;
+    return imgDiv;
   }
 
   //create text link to project
@@ -196,7 +186,7 @@
     let tagDiv = document.createElement("div");
     tagDiv.className = "proj-tags";
 
-    tags.forEach(item => {
+    tags.forEach((item) => {
       let span = document.createElement("span");
       span.className = "proj-tag";
       span.innerHTML = item;
@@ -209,5 +199,5 @@
     return footerDiv;
   }
 
-  window.onload = init;
+  window.onload = readProjectJSON;
 })();

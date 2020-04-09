@@ -1,94 +1,92 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
-@import url('https://fonts.googleapis.com/css?family=Sacramento');
-
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
 
 header {
-	position: fixed;
-	background-image: url("../media/seigaiha.png");
-	background-repeat: repeat;
-	margin: 0;
-	width: 100%;
-	height: 6em;
-	z-index: 10;
-	background-color: #43467f;
+  position: fixed;
+  background-image: url("../media/seigaiha.png");
+  background-repeat: repeat;
+  margin: 0;
+  width: 100%;
+  height: 5em;
+  z-index: 10;
+  background-color: #43467f;
 }
 
 .navbar {
-	position: relative;
-	margin: 0 auto;
-	max-width: 1200px;
-	display: flex;
-	flex-direction: row;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
 }
 
 .navbar p {
-	width: 100%;
-	color: #FFF2D2;
-	margin: 0;
-	margin-top: 20pt;
-	font-size: 30pt;
-	font-family: 'Sacramento', cursive;
-	text-shadow: 0 0px 10px #FFF2D2;
+  width: 100%;
+  color: #fff2d2;
+  margin: 0;
+  margin-top: 12pt;
+  font-size: 25pt;
+  font-family: "Sacramento", cursive;
+  text-shadow: 0 0px 10px #fff2d2;
 }
 
 .mainMenu {
-	width: 380px;
-	position: relative;
-	float: right;
-	z-index: 2;
-	display: inline-flex;
-	justify-content: space-between;
-	font-family: 'Lato', sans-serif;
-	text-transform: uppercase;
-	font-weight: bold;
-	padding: 10pt 0pt;
-	font-size: 12pt;
-	margin-top: 35px;
+  width: 380px;
+  position: relative;
+  float: right;
+  z-index: 2;
+  display: inline-flex;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10pt 0pt;
+  font-size: 12pt;
+  margin-top: 15px;
 }
 
 .mainMenu a {
-	color: #FFF2D2;
-	font-weight: lighter;
-	text-decoration: none;
-	transition: all .5s ease;
+  color: #fff2d2;
+  font-weight: lighter;
+  text-decoration: none;
+  transition: all 0.5s ease;
 }
 
 .mainMenu a:hover {
-	color: white;
-	cursor: pointer;
-	text-shadow: 0 0px 10px #FFF2D2;
+  color: white;
+  cursor: pointer;
+  text-shadow: 0 0px 10px #fff2d2;
 }
 
 @media screen and (max-width: 1250px) {
-	.navbar {
-		width: 90%;
-	}
+  .navbar {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 700px) {
-	.logo {
-		width: 4.5em;
-		margin-top: 1em;
-	}
+  .logo {
+    width: 4.5em;
+    margin-top: 1em;
+  }
 
-	.mainMenu {
-		font-size: 10pt;
-	}
+  .mainMenu {
+    font-size: 10pt;
+  }
 }
 
 @media screen and (max-width: 430px) {
+  header {
+    height: 5em;
+  }
 
-	header {
-		height: 5em;
-	}
+  .navbar p {
+    margin-top: 30px;
+    font-size: 20pt;
+  }
 
-	.navbar p {
-		margin-top: 30px;
-		font-size: 20pt;
-	}
-
-	.mainMenu {
-		width: 480px;
-		margin-top: 30px;
-	}
+  .mainMenu {
+    width: 480px;
+    margin-top: 30px;
+  }
 }
