@@ -1,55 +1,57 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Roboto");
-@import url("https://fonts.googleapis.com/css?family=Sacramento");
+@import url("https://fonts.googleapis.com/css?family=Lato");
 
 header {
   position: fixed;
+  margin: 0 auto;
+  background-color: #43467f;
   background-image: url("../media/seigaiha.png");
   background-repeat: repeat;
-  margin: 0;
   width: 100%;
   height: 4em;
-  z-index: 10;
-  background-color: #43467f;
   z-index: 500;
 }
 
-.navbar {
-  position: relative;
-  margin: 0 auto;
+.nav-bar {
   width: 90%;
 }
 
-.mainMenu {
-  width: 380px;
+.nav-links {
   position: relative;
-  float: right;
-  z-index: 2;
-  display: inline-flex;
-  justify-content: space-between;
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  font-size: 12pt;
   margin-top: 20px;
+
+  float: right;
+  display: inline-flex;
 }
 
-.mainMenu a {
+.nav-links a {
+  margin-left: 50px;
   color: #fff2d2;
+  font-family: "Lato", sans-serif;
+  font-size: 12pt;
   font-weight: lighter;
+  text-transform: uppercase;
   text-decoration: none;
   transition: all 0.5s ease;
 }
 
-.mainMenu a:hover {
+.nav-links a:hover {
   color: white;
   cursor: pointer;
   text-shadow: 0 0px 10px #fff2d2;
 }
 
-@media only screen and (max-width: 600px) {
-  .navbar {
-    min-width: 600px;
+@media only screen and (max-width: 360px) {
+  .nav-bar {
+    margin: 0 auto;
+    text-align: center;
+    min-width: 360px;
   }
-  .mainMenu {
-    width: 300px;
+
+  .nav-links {
+    float: none;
+  }
+
+  .nav-links a {
+    margin: 0 50px;
   }
 }

@@ -7,7 +7,7 @@ footer {
   background-image: url("../media/seigaiha.png");
 }
 
-.logos {
+.external-links {
   position: relative;
   margin: 0 auto;
   display: flex;
@@ -17,11 +17,11 @@ footer {
   padding: 2em 0em;
 }
 
-.logos .fab {
+.external-links .fab {
   color: #96a1d1;
 }
 
-.logos .fab:hover {
+.external-links .fab:hover {
   cursor: pointer;
   color: #fff2d2;
   text-shadow: 0 0px 5px #fff2d2;

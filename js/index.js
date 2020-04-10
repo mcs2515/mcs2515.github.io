@@ -21,19 +21,19 @@
   function init() {
     checkWidth();
     populateProjDiv();
+    listenForNavigationClick();
+  }
 
-    $("a[href='#projectSection']").click(function () {
-      $("html, body").animate({ scrollTop: 950 }, 1000);
-      return false;
-    });
+  function listenForNavigationClick() {
+    let navLinks = document.querySelectorAll('a[href^="#"]');
 
-    $("a[href='#copyright']").click(function () {
-      $("html, body").animate({ scrollTop: $(document).height() }, 2000);
-      return false;
-    });
-
-    $(".js-tilt").tilt({
-      perspective: 1500,
+    navLinks.forEach((link) => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
     });
   }
 

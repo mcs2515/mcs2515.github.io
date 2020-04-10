@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Lato|Oxygen");
 
 body {
   margin: 0;
@@ -32,6 +32,10 @@ h3 {
   letter-spacing: 2px;
   font-weight: bold;
   text-align: center;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 /* Extra small devices (phones, 600px and down) */
