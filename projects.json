@@ -6,7 +6,8 @@
     "location": "American Greetings",
     "date": "April 2020",
     "tags": "PixiJS",
-    "gitLink": "#"
+    "gitLink": "#",
+    "summary": "Created with two other programmers. Coded the uploaded image's transformations to correspond with the mouse and scale slider. Also, coded in hand gesture transformations for mobile devices."
   },
   {
     "name": "magical journey",
@@ -14,17 +15,19 @@
     "link": "https://www.bluemountain.com/ecards/mothers-day/magical-mothers-day-journey-interactive/card-3491451",
     "location": "American Greetings",
     "date": "April 2019",
-    "tags": "PixiJS GreenSock",
-    "gitLink": "#"
+    "tags": "PixiJS TypeScript GreenSock",
+    "gitLink": "#",
+    "summary": "Worked with three other programmers and communicated directly with the artist. Worked on converting name particles to base64 string, seamlessly switching between videos, and quality checking the e-card for issues."
   },
   {
-    "name": "blooming birthday game",
-    "img": "media/spot_the_diff.jpg",
-    "link": "https://www.bluemountain.com/ecards/birthday/blooming-birthday-spot-the-differences-game/card-3478566",
+    "name": "halloween hidden object game",
+    "img": "media/halloween_hog.jpg",
+    "link": "https://www.bluemountain.com/ecards/halloween/halloween-hidden-objects-game/card-3501609",
     "location": "American Greetings",
-    "date": "Dec 2019",
-    "tags": "PixiJS GreenSock",
-    "gitLink": "#"
+    "date": "Sep 2019",
+    "tags": "PixiJS TypeScript GreenSock",
+    "gitLink": "#",
+    "summary": "Collaborated with two other programmers and communicated directly with the artist. Responsible for optimizing the spritesheet ands particle effects, adding in animations, and quality checking the game for bugs."
   },
   {
     "name": "flux",
@@ -33,7 +36,8 @@
     "location": "RIT",
     "date": "May 2018",
     "tags": "Unity C#",
-    "gitLink": "https://github.com/mcs2515/Flux"
+    "gitLink": "https://github.com/mcs2515/Flux",
+    "summary": "With a team of seven members, we developed an endless runner game for users to play in an abstract world on their mobile devices. I created and weaved together the game's code with assets created by the team in Unity."
   },
   {
     "name": "peacock",
@@ -42,6 +46,7 @@
     "location": "RIT",
     "date": "Nov 2018",
     "tags": "Node.js MongoDB React",
-    "gitLink": "https://github.com/mcs2515/peacock"
+    "gitLink": "https://github.com/mcs2515/peacock",
+    "summary": "A place to save and extract prominent colors from an inspirational image. Users can upload to their libarary and share their images with others. Designed and coded whole web application "
   }
 ]

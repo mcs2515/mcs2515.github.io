@@ -69,7 +69,8 @@
 .proj-location-and-date {
   display: flex;
   justify-content: space-between;
-  margin-top: 18px;
+  margin-top: 14px;
+  margin-bottom: 18px;
 }
 
 .proj-location-and-date .date {
@@ -78,6 +79,10 @@
 
 .proj-location-and-date .location {
   position: left;
+}
+
+.proj-summary-div p {
+  line-height: 1.3;
 }
 
 .proj-box hr {
@@ -111,4 +116,8 @@
 .proj-tag {
   font-size: 13px;
   margin-left: 8px;
+}
+
+.last-statement {
+  margin-top: 5em;
 }

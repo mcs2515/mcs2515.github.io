@@ -51,17 +51,19 @@ footer {
   margin: 0 auto;
 }
 
-.contact h3 {
+.contact h3,
+.interests h3 {
   position: relative;
   margin: 0 auto;
-  margin-top: 1em;
+  margin-top: 3em;
   margin-bottom: 0.5em;
   color: #fcfcfc;
   text-align: left;
   width: 450px;
 }
 
-.contact p {
+.contact p,
+.interests p {
   position: relative;
   margin: 0 auto;
   width: 450px;
@@ -70,27 +72,4 @@ footer {
   font-family: "Open Sans", sans-serif;
   letter-spacing: 1px;
   line-height: 1.6;
-}
-
-.resume-btn {
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 3em;
-}
-
-.resume-btn a {
-  background-color: #4caf50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 3px;
-  font-family: "Open Sans", sans-serif;
-}
-
-.resume-btn a:hover {
-  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }

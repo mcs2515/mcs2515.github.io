@@ -19,7 +19,6 @@
   }
 
   function init() {
-    checkWidth();
     populateProjDiv();
     listenForNavigationClick();
   }
@@ -37,22 +36,6 @@
     });
   }
 
-  function checkWidth() {
-    let w = $(window).innerWidth();
-
-    if (w < 960) {
-      $(".imageThumb, [data-paroller-factor]").paroller({
-        factor: 0.05,
-        type: "foreground",
-      });
-    } else {
-      $(".imageThumb, [data-paroller-factor]").paroller({
-        factor: 0.1,
-        type: "foreground",
-      });
-    }
-  }
-
   function populateProjDiv() {
     for (var i = 0; i < projects.length; i++) {
       let idName = projects[i].name.replace(/ /g, "-");
@@ -62,15 +45,17 @@
         let img = createProjImg(projects[i]);
         let link = createProjLink(projects[i]);
         let locationAndDate = createLocationAndDate(projects[i]);
+        let summary = createSummary(projects[i]);
         let tagsAndGit = createProjTagsandGitLink(projects[i]);
 
         let detailsDiv = document.createElement("div");
-        detailsDiv.className = "proj-details capitalize";
+        detailsDiv.className = "proj-details";
 
         let hr = document.createElement("hr");
 
         detailsDiv.appendChild(link);
         detailsDiv.appendChild(locationAndDate);
+        detailsDiv.appendChild(summary);
 
         projectDiv.appendChild(img);
         projectDiv.appendChild(detailsDiv);
@@ -103,7 +88,7 @@
     let linkTag = document.createElement("a");
     linkTag.href = project.link;
     linkTag.target = "_blank";
-    linkTag.className = "proj-title";
+    linkTag.className = "proj-title capitalize";
     linkTag.innerHTML = project.name;
 
     return linkTag;
@@ -127,6 +112,23 @@
     return locationDateDiv;
   }
 
+  function createSummary(project) {
+    if (project.summary == undefined) return;
+
+    let summaryDiv = document.createElement("div");
+    summaryDiv.className = "proj-summary-div";
+
+    let summaryPara = document.createElement("p");
+    summaryPara.innerHTML = project.summary;
+    console.log(summaryPara);
+
+    summaryDiv.appendChild(summaryPara);
+
+    return summaryDiv;
+  }
+
+  //create a git div that has the project's git link and provide an git icon to click on if project has a git link.
+  //if git link is '#' then we hide the git icon
   function createGitLink(project) {
     if (project.gitLink == undefined) return;
 
