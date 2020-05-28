@@ -2,7 +2,7 @@
   {
     "name": "talking selfies",
     "img": "media/talking_selfie.jpg",
-    "link": "#",
+    "link": "https://www.americangreetings.com/cards/ecards/add-a-photo/smashups/_/N-17ydyorZg7qq5sZ1x91zju",
     "location": "American Greetings",
     "date": "April 2020",
     "tags": "PixiJS",
@@ -14,7 +14,7 @@
     "link": "https://www.bluemountain.com/ecards/mothers-day/magical-mothers-day-journey-interactive/card-3491451",
     "location": "American Greetings",
     "date": "April 2019",
-    "tags": "PixiJS",
+    "tags": "PixiJS GreenSock",
     "gitLink": "#"
   },
   {
@@ -23,7 +23,7 @@
     "link": "https://www.bluemountain.com/ecards/birthday/blooming-birthday-spot-the-differences-game/card-3478566",
     "location": "American Greetings",
     "date": "Dec 2019",
-    "tags": "PixiJS",
+    "tags": "PixiJS GreenSock",
     "gitLink": "#"
   },
   {

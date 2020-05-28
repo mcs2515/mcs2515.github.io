@@ -12,12 +12,24 @@ html {
   overflow: hidden;
 }
 
-.clouds-animate {
+.clouds-animate1 {
   position: absolute;
   margin: 0 auto;
   width: 100%;
-  height: 380px;
-  background-image: url("../media/white_clouds_pattern.png");
+  height: 210px;
+  background-image: url("../media/white_clouds_pattern1.png");
+  background-repeat: repeat-x;
+  animation: slide 120s linear infinite;
+  z-index: -1;
+}
+
+.clouds-animate2 {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: 190px;
+  margin-top: 190px;
+  background-image: url("../media/white_clouds_pattern2.png");
   background-repeat: repeat-x;
   animation: slide 60s linear infinite;
   z-index: -1;
