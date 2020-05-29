@@ -19,8 +19,25 @@
   }
 
   function init() {
+    checkWidthAndAjustParollerFactor();
     populateProjDiv();
     listenForNavigationClick();
+  }
+
+  function checkWidthAndAjustParollerFactor() {
+    let w = $(window).innerWidth();
+
+    if (w < 960) {
+      $(".imageThumb, [data-paroller-factor]").paroller({
+        factor: 0.05,
+        type: "foreground",
+      });
+    } else {
+      $(".imageThumb, [data-paroller-factor]").paroller({
+        factor: 0.1,
+        type: "foreground",
+      });
+    }
   }
 
   function listenForNavigationClick() {

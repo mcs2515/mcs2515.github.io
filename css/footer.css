@@ -15,7 +15,7 @@ footer {
   justify-content: space-between;
   width: 15em;
   padding: 2em 0em;
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 .external-links .fab {
@@ -25,7 +25,6 @@ footer {
 .external-links .fab:hover {
   cursor: pointer;
   color: #fff2d2;
-  text-shadow: 0 0px 5px #fff2d2;
 }
 
 .aboutme {
@@ -51,8 +50,7 @@ footer {
   margin: 0 auto;
 }
 
-.contact h3,
-.interests h3 {
+.contact h3 {
   position: relative;
   margin: 0 auto;
   margin-top: 3em;
@@ -62,8 +60,7 @@ footer {
   width: 450px;
 }
 
-.contact p,
-.interests p {
+.contact p {
   position: relative;
   margin: 0 auto;
   width: 450px;
