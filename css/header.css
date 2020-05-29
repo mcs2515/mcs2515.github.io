@@ -37,7 +37,7 @@ header {
 .nav-links a:hover {
   color: white;
   cursor: pointer;
-  text-shadow: 0 0px 10px #fff2d2;
+  text-shadow: 0 0px 5px #fff2d2;
 }
 
 @media only screen and (max-width: 360px) {
