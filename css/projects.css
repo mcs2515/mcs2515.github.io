@@ -64,6 +64,10 @@
     font-weight: bold;
 }
 
+.proj-title:hover {
+    color: #333;
+}
+
 .proj-details {
     text-align: left;
     font-size: 14px;
@@ -108,6 +112,10 @@
     color: #4c51ab;
 }
 
+.proj-git-div .fab:hover {
+    color: #333;
+}
+
 .proj-git-div-hide {
     opacity: 0;
     pointer-events: none;
@@ -144,4 +152,8 @@
     color: #4c51ab;
     text-decoration: none;
     display: block;
+}
+
+#portfolio-sec a:hover {
+    color: #333;
 }
