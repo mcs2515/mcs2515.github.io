@@ -1,5 +1,15 @@
 [
   {
+    "name": "creatacard",
+    "img": "media/cac_web.jpg",
+    "link": "https://www.americangreetings.com/creatacard",
+    "location": "American Greetings",
+    "date": "April 2025",
+    "tags": "VueJS PureMVC GreenSock",
+    "gitLink": "#",
+    "summary": "Implemented new features including video upload and envelope animations for the Creatacard product line. Converted old features from the PureMVC framework to VueJS all while writing component and e2e tests to ensure expected feature behaviors."
+  },
+  {
     "name": "talking selfies",
     "img": "media/talking_selfie.jpg",
     "link": "https://www.americangreetings.com/cards/ecards/add-a-photo/smashups/_/N-17ydyorZg7qq5sZ1x91zju",
@@ -15,7 +25,7 @@
     "link": "https://www.bluemountain.com/ecards/mothers-day/magical-mothers-day-journey-interactive/card-3491451",
     "location": "American Greetings",
     "date": "April 2019",
-    "tags": "PixiJS TypeScript GreenSock",
+    "tags": "TypeScript PixiJS GreenSock",
     "gitLink": "#",
     "summary": "Worked with three other programmers and communicated directly with the artist. Worked on converting name particles to base64 string, seamlessly switching between videos, and quality checking the e-card for issues."
   },
@@ -25,7 +35,7 @@
     "link": "https://www.bluemountain.com/ecards/halloween/halloween-hidden-objects-game/card-3501609",
     "location": "American Greetings",
     "date": "Sep 2019",
-    "tags": "PixiJS TypeScript GreenSock",
+    "tags": "TypeScript PixiJS GreenSock",
     "gitLink": "#",
     "summary": "Collaborated with two other programmers and communicated directly with the artist. Responsible for optimizing the spritesheet ands particle effects, adding in animations, and quality checking the game for bugs."
   },
@@ -42,10 +52,9 @@
   {
     "name": "peacock",
     "img": "media/peacock.jpg",
-    "link": "https://peacock-app.herokuapp.com/",
     "location": "RIT",
     "date": "Nov 2018",
-    "tags": "Node.js MongoDB React",
+    "tags": "MongoDB React",
     "gitLink": "https://github.com/mcs2515/peacock",
     "summary": "A place to save and extract prominent colors from an inspirational image. Users can upload to their libarary and share their images with others. Designed and coded whole web application "
   }
