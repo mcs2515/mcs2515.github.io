@@ -87,24 +87,36 @@
     let imgDiv = document.createElement("div");
     imgDiv.className = "image-link-div";
 
-    let linkTag = document.createElement("a");
-    linkTag.href = project.link;
-    linkTag.target = "_blank";
-
     let imgTag = document.createElement("img");
     imgTag.src = project.img;
+    
 
-    linkTag.appendChild(imgTag);
-    imgDiv.appendChild(linkTag);
+    if(project.link) {
+        let linkTag = document.createElement("a");
+        linkTag.href = project.link;
+        linkTag.target = "_blank";
 
+        linkTag.appendChild(imgTag);
+        imgDiv.appendChild(linkTag);
+    } else {
+        imgDiv.appendChild(imgTag);
+    }
+    
     return imgDiv;
   }
 
   //create text link to project
   function createProjLink(project) {
-    let linkTag = document.createElement("a");
-    linkTag.href = project.link;
-    linkTag.target = "_blank";
+    let linkTag;
+
+    if(project.link) {
+        linkTag = document.createElement("a");
+        linkTag.href = project.link;
+        linkTag.target = "_blank";
+    } else {
+        linkTag = document.createElement("p");
+    }
+
     linkTag.className = "proj-title capitalize";
     linkTag.innerHTML = project.name;
 
@@ -137,7 +149,6 @@
 
     let summaryPara = document.createElement("p");
     summaryPara.innerHTML = project.summary;
-    console.log(summaryPara);
 
     summaryDiv.appendChild(summaryPara);
 
