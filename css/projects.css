@@ -1,5 +1,8 @@
 .projects-wrap {
+    position: relative;
+    margin: 0 auto;
     width: 100%;
+    max-width: 1090px;
     padding-bottom: 5em;
     background-color: #fcfcfc;
     text-align: center;
@@ -14,7 +17,7 @@
 .projects-container {
     position: relative;
     margin: 0 auto;
-    width: 85%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     align-items: start;
@@ -24,7 +27,6 @@
 }
 
 .proj-box {
-    min-height: 542px;
     background: #efefef;
     background-image: url('../media/seigaiha_white.png');
     background-repeat: repeat;
@@ -84,16 +86,12 @@
     font-family: 'Lato', sans-serif;
 }
 
-.project-github-icon svg {
-    width: 2em;
-    height: auto;
-}
-.project-github-icon path {
-    fill: #4c51ab;
+.project-github-icon .fab {
+    color: #4c51ab;
 }
 
-.project-github-icon:hover path {
-    fill: #333;
+.project-github-icon .fab:hover {
+    color: #333;
 }
 
 .proj-tags-div {

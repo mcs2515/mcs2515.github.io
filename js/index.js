@@ -1,10 +1,26 @@
 const response = await fetch('projects.json');
 const projectData = await response.json();
 
-const iconResponse = await fetch('media/github.svg');
-const githubIcon = await iconResponse.text();
+const init = () => {
+    addEventListeners();
+    createProjects();
+};
 
-function createProjects() {
+const addEventListeners = () => {
+    const projectsBtn = document.querySelector('#projects');
+    projectsBtn?.addEventListener('click', () => {
+        const section = document.querySelector('.projects-wrap');
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    const aboutMe = document.querySelector('#about-me');
+    aboutMe?.addEventListener('click', () => {
+        const section = document.querySelector('.about-me-wrap');
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+};
+
+const createProjects = () => {
     projectData.forEach((project) => {
         const idName = project.name.replace(/ /g, '-');
         const projectDiv = document.querySelector('#' + idName);
@@ -31,9 +47,9 @@ function createProjects() {
             projectDiv.appendChild(footer);
         }
     });
-}
+};
 
-function createImageContainer(project) {
+const createImageContainer = (project) => {
     const image = document.createElement('img');
     image.src = project.img;
 
@@ -48,9 +64,9 @@ function createImageContainer(project) {
     }
 
     return image;
-}
+};
 
-function createTitleLink(project) {
+const createTitleLink = (project) => {
     let title;
 
     if (project.link) {
@@ -65,9 +81,9 @@ function createTitleLink(project) {
     title.innerText = project.name;
 
     return title;
-}
+};
 
-function createLocationAndDate(project) {
+const createLocationAndDate = (project) => {
     const container = document.createElement('div');
     container.className = 'proj-location-and-date';
 
@@ -86,9 +102,9 @@ function createLocationAndDate(project) {
     }
 
     return container;
-}
+};
 
-function createSummary(project) {
+const createSummary = (project) => {
     if (project.summary == undefined) {
         return;
     }
@@ -98,10 +114,10 @@ function createSummary(project) {
     summary.innerText = project.summary;
 
     return summary;
-}
+};
 
 // create git icon and project tags
-function createFooterContainer(project) {
+const createFooterContainer = (project) => {
     const container = document.createElement('div');
     container.className = 'proj-footer';
 
@@ -124,21 +140,25 @@ function createFooterContainer(project) {
     container.appendChild(tagDiv);
 
     return container;
-}
+};
 
-function createGitLink(project) {
+const createGitLink = (project) => {
     if (project.gitLink == undefined) {
         return;
     }
 
     const gitLink = document.createElement('a');
+    gitLink.className = 'project-github-icon';
     gitLink.href = project.gitLink;
     gitLink.target = '_blank';
 
-    gitLink.innerHTML = githubIcon;
-    gitLink.className = 'project-github-icon';
+    //use fontawesome's git icon
+    const iElement = document.createElement('i');
+    iElement.className = 'fab fa-github fa-2x';
+
+    gitLink.appendChild(iElement);
 
     return gitLink;
-}
+};
 
-window.onload = createProjects();
+window.onload = init();
