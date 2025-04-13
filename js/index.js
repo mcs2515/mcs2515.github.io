@@ -1,6 +1,9 @@
 const response = await fetch('projects.json');
 const projectData = await response.json();
 
+const iconResponse = await fetch('media/github.svg');
+const githubIcon = await iconResponse.text();
+
 function createProjects() {
     projectData.forEach((project) => {
         const idName = project.name.replace(/ /g, '-');
@@ -16,144 +19,126 @@ function createProjects() {
             const detailsDiv = document.createElement('div');
             detailsDiv.className = 'proj-details';
 
-            const hr = document.createElement('hr');
-
             detailsDiv.appendChild(title);
             detailsDiv.appendChild(locationAndDate);
             detailsDiv.appendChild(summary);
-
             projectDiv.appendChild(img);
             projectDiv.appendChild(detailsDiv);
+
+            const hr = document.createElement('hr');
             projectDiv.appendChild(hr);
+
             projectDiv.appendChild(footer);
         }
     });
 }
 
 function createImageContainer(project) {
-    const imgDiv = document.createElement('div');
-    imgDiv.className = 'image-link-div';
-
-    const imgTag = document.createElement('img');
-    imgTag.src = project.img;
+    const image = document.createElement('img');
+    image.src = project.img;
 
     // create an image link if link is provided else create a normal image
     if (project.link) {
-        const linkTag = document.createElement('a');
-        linkTag.href = project.link;
-        linkTag.target = '_blank';
+        const link = document.createElement('a');
+        link.href = project.link;
+        link.target = '_blank';
 
-        linkTag.appendChild(imgTag);
-        imgDiv.appendChild(linkTag);
-    } else {
-        imgDiv.appendChild(imgTag);
+        link.appendChild(image);
+        return link;
     }
 
-    return imgDiv;
+    return image;
 }
 
 function createTitleLink(project) {
-    let linkTag;
+    let title;
 
     if (project.link) {
-        linkTag = document.createElement('a');
-        linkTag.href = project.link;
-        linkTag.target = '_blank';
+        title = document.createElement('a');
+        title.href = project.link;
+        title.target = '_blank';
     } else {
-        linkTag = document.createElement('p');
+        title = document.createElement('p');
     }
 
-    linkTag.className = 'proj-title capitalize';
-    linkTag.innerHTML = project.name;
+    title.className = 'proj-title capitalize';
+    title.innerText = project.name;
 
-    return linkTag;
+    return title;
 }
 
 function createLocationAndDate(project) {
-    const locationDateDiv = document.createElement('div');
-    locationDateDiv.className = 'proj-location-and-date';
-
-    if (project.date) {
-        const dateDiv = document.createElement('div');
-        dateDiv.className = 'date';
-        dateDiv.innerHTML = project.date;
-        locationDateDiv.appendChild(dateDiv);
-    }
+    const container = document.createElement('div');
+    container.className = 'proj-location-and-date';
 
     if (project.location) {
-        const locationDiv = document.createElement('div');
-        locationDiv.className = 'location';
-        locationDiv.innerHTML = project.location;
-        locationDateDiv.appendChild(locationDiv);
+        const location = document.createElement('p');
+        location.className = 'location';
+        location.innerText = project.location;
+        container.appendChild(location);
     }
 
-    return locationDateDiv;
+    if (project.date) {
+        const date = document.createElement('p');
+        date.className = 'date';
+        date.innerText = project.date;
+        container.appendChild(date);
+    }
+
+    return container;
 }
 
 function createSummary(project) {
-    if (project.summary == undefined) return;
+    if (project.summary == undefined) {
+        return;
+    }
 
-    const summaryDiv = document.createElement('div');
-    summaryDiv.className = 'proj-summary-div';
+    const summary = document.createElement('p');
+    summary.className = 'proj-summary';
+    summary.innerText = project.summary;
 
-    const summaryPara = document.createElement('p');
-    summaryPara.innerHTML = project.summary;
-
-    summaryDiv.appendChild(summaryPara);
-
-    return summaryDiv;
+    return summary;
 }
 
 // create git icon and project tags
 function createFooterContainer(project) {
-    const footerDiv = document.createElement('div');
-    footerDiv.className = 'proj-footer';
+    const container = document.createElement('div');
+    container.className = 'proj-footer';
 
     const gitLink = createGitLink(project);
     if (gitLink != undefined) {
-        footerDiv.appendChild(gitLink);
+        container.appendChild(gitLink);
     }
 
-    const tags = project.tags.split(' ');
     const tagDiv = document.createElement('div');
-    tagDiv.className = 'proj-tags';
+    tagDiv.className = 'proj-tags-div';
 
-    tags.forEach((item) => {
-        const span = document.createElement('span');
-        span.className = 'proj-tag';
-        span.innerHTML = item;
+    project.tags.forEach((tag) => {
+        const text = document.createElement('p');
+        text.className = 'proj-tag';
+        text.innerText = tag;
 
-        tagDiv.appendChild(span);
+        tagDiv.appendChild(text);
     });
 
-    footerDiv.appendChild(tagDiv);
+    container.appendChild(tagDiv);
 
-    return footerDiv;
+    return container;
 }
 
 function createGitLink(project) {
-    if (project.gitLink == undefined) return;
-
-    const gitDiv = document.createElement('div');
-    gitDiv.className = 'proj-git-div';
+    if (project.gitLink == undefined) {
+        return;
+    }
 
     const gitLink = document.createElement('a');
-    gitLink.className = 'proj-git-link';
     gitLink.href = project.gitLink;
     gitLink.target = '_blank';
 
-    if (project.gitLink == '#') {
-        gitDiv.className = 'proj-git-div-hide';
-    }
+    gitLink.innerHTML = githubIcon;
+    gitLink.className = 'project-github-icon';
 
-    // use fontawesome's git icon
-    const iElement = document.createElement('i');
-    iElement.className = 'fab fa-github fa-2x';
-
-    gitLink.appendChild(iElement);
-    gitDiv.appendChild(gitLink);
-
-    return gitDiv;
+    return gitLink;
 }
 
 window.onload = createProjects();
