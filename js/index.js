@@ -1,43 +1,43 @@
 const response = await fetch('projects.json');
 const projectData = await response.json();
 
-function populateProjDiv() {
+function createProjects() {
     projectData.forEach((project) => {
         const idName = project.name.replace(/ /g, '-');
         const projectDiv = document.querySelector('#' + idName);
 
         if (projectDiv != null) {
-            const img = createProjImg(project);
-            const link = createProjLink(project);
+            const img = createImageContainer(project);
+            const title = createTitleLink(project);
             const locationAndDate = createLocationAndDate(project);
             const summary = createSummary(project);
-            const tagsAndGit = createProjTagsandGitLink(project);
+            const footer = createFooterContainer(project);
 
             const detailsDiv = document.createElement('div');
             detailsDiv.className = 'proj-details';
 
             const hr = document.createElement('hr');
 
-            detailsDiv.appendChild(link);
+            detailsDiv.appendChild(title);
             detailsDiv.appendChild(locationAndDate);
             detailsDiv.appendChild(summary);
 
             projectDiv.appendChild(img);
             projectDiv.appendChild(detailsDiv);
             projectDiv.appendChild(hr);
-            projectDiv.appendChild(tagsAndGit);
+            projectDiv.appendChild(footer);
         }
     });
 }
 
-// Create image link to project
-function createProjImg(project) {
+function createImageContainer(project) {
     const imgDiv = document.createElement('div');
     imgDiv.className = 'image-link-div';
 
     const imgTag = document.createElement('img');
     imgTag.src = project.img;
 
+    // create an image link if link is provided else create a normal image
     if (project.link) {
         const linkTag = document.createElement('a');
         linkTag.href = project.link;
@@ -52,8 +52,7 @@ function createProjImg(project) {
     return imgDiv;
 }
 
-// create text link to project
-function createProjLink(project) {
+function createTitleLink(project) {
     let linkTag;
 
     if (project.link) {
@@ -74,16 +73,19 @@ function createLocationAndDate(project) {
     const locationDateDiv = document.createElement('div');
     locationDateDiv.className = 'proj-location-and-date';
 
-    const dateDiv = document.createElement('div');
-    dateDiv.className = 'date';
-    dateDiv.innerHTML = project.date;
+    if (project.date) {
+        const dateDiv = document.createElement('div');
+        dateDiv.className = 'date';
+        dateDiv.innerHTML = project.date;
+        locationDateDiv.appendChild(dateDiv);
+    }
 
-    const locationDiv = document.createElement('div');
-    locationDiv.className = 'location';
-    locationDiv.innerHTML = project.location;
-
-    locationDateDiv.appendChild(locationDiv);
-    locationDateDiv.appendChild(dateDiv);
+    if (project.location) {
+        const locationDiv = document.createElement('div');
+        locationDiv.className = 'location';
+        locationDiv.innerHTML = project.location;
+        locationDateDiv.appendChild(locationDiv);
+    }
 
     return locationDateDiv;
 }
@@ -100,6 +102,33 @@ function createSummary(project) {
     summaryDiv.appendChild(summaryPara);
 
     return summaryDiv;
+}
+
+// create git icon and project tags
+function createFooterContainer(project) {
+    const footerDiv = document.createElement('div');
+    footerDiv.className = 'proj-footer';
+
+    const gitLink = createGitLink(project);
+    if (gitLink != undefined) {
+        footerDiv.appendChild(gitLink);
+    }
+
+    const tags = project.tags.split(' ');
+    const tagDiv = document.createElement('div');
+    tagDiv.className = 'proj-tags';
+
+    tags.forEach((item) => {
+        const span = document.createElement('span');
+        span.className = 'proj-tag';
+        span.innerHTML = item;
+
+        tagDiv.appendChild(span);
+    });
+
+    footerDiv.appendChild(tagDiv);
+
+    return footerDiv;
 }
 
 function createGitLink(project) {
@@ -127,31 +156,4 @@ function createGitLink(project) {
     return gitDiv;
 }
 
-// create a div to populate with span elements
-function createProjTagsandGitLink(project) {
-    const footerDiv = document.createElement('div');
-    footerDiv.className = 'proj-footer';
-
-    const gitLink = createGitLink(project);
-    if (gitLink != undefined) {
-        footerDiv.appendChild(gitLink);
-    }
-
-    const tags = project.tags.split(' ');
-    const tagDiv = document.createElement('div');
-    tagDiv.className = 'proj-tags';
-
-    tags.forEach((item) => {
-        const span = document.createElement('span');
-        span.className = 'proj-tag';
-        span.innerHTML = item;
-
-        tagDiv.appendChild(span);
-    });
-
-    footerDiv.appendChild(tagDiv);
-
-    return footerDiv;
-}
-
-window.onload = populateProjDiv();
+window.onload = createProjects();
