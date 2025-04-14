@@ -52,6 +52,6 @@
         "date": "Nov 2018",
         "tags": ["MongoDB", " React"],
         "gitLink": "https://github.com/mcs2515/peacock",
-        "summary": "A place to save and extract prominent colors from an inspirational image. Users can upload to their libarary and share their images with others. Designed and coded whole web application "
+        "summary": "Web app allows users sign in, upload an image, and have the app extract prominent colors to create a color palette that can be shared and or liked by other users. "
     }
 ]

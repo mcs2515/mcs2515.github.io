@@ -43,9 +43,20 @@ footer {
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
     line-height: 1.6;
+    text-align: center;
 }
 
 .about-me-wrap img {
     display: block;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+    footer svg {
+        margin-top: -1px;
+    }
+
+    .about-me-wrap {
+        padding: 0px 20px;
+    }
 }

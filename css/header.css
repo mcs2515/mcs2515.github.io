@@ -11,7 +11,7 @@ header {
     z-index: 500;
 }
 
-.nav-bar {
+.nav-container {
     position: relative;
     margin: 0 auto;
     display: flex;
@@ -20,12 +20,18 @@ header {
     width: 100%;
     height: 100%;
     max-width: 1090px;
-    padding: 0px 10px;
+    padding: 0px;
+}
+
+.nav-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links a,
 button {
-    margin-left: 50px;
+    padding: 0px 20px;
     color: #fff2d2;
     font-family: 'Lato', sans-serif;
     font-size: 12pt;
@@ -44,18 +50,8 @@ button:hover {
     text-shadow: 0 0px 5px #fff2d2;
 }
 
-@media only screen and (max-width: 360px) {
-    .nav-bar {
-        margin: 0 auto;
-        text-align: center;
-        min-width: 360px;
-    }
-
-    .nav-links {
-        float: none;
-    }
-
-    .nav-links a {
-        margin: 0 50px;
+@media screen and (max-width: 480px) {
+    .nav-container {
+        justify-content: center;
     }
 }

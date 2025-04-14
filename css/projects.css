@@ -19,9 +19,9 @@
     margin: 0 auto;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     align-items: start;
-    column-gap: 40px;
+    column-gap: 30px;
     row-gap: 55px;
     z-index: 100;
 }
@@ -31,7 +31,7 @@
     background-image: url('../media/seigaiha_white.png');
     background-repeat: repeat;
     color: #545454;
-    box-shadow: 0 10px 15px rgba(104, 104, 104, 0.4);
+    box-shadow: 0px 0px 15px rgba(104, 104, 104, 0.4);
     border-radius: 8px;
 }
 
@@ -129,4 +129,23 @@
 
 #portfolio-sec a:hover {
     color: #333;
+}
+
+@media screen and (max-width: 480px) {
+    .proj-title,
+    #portfolio-sec {
+        display: block;
+    }
+
+    .projects-container {
+        max-width: calc(100% - 40px);
+    }
+
+    #portfolio-sec {
+        display: block;
+    }
+
+    #portfolio-sec p {
+        font-size: 16px;
+    }
 }
