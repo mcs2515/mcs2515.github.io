@@ -2,6 +2,9 @@ const response = await fetch('projects.json');
 const projectData = await response.json();
 
 const init = () => {
+    //initialize paroller.js
+    $('[data-paroller-factor]').paroller();
+
     addEventListeners();
     createProjects();
 };
