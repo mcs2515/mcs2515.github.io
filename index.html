@@ -6,13 +6,6 @@
         <title>Portfolio</title>
         <link rel="shortcut icon" type="image/png" href="media/favicon.png" />
 
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-            crossorigin="anonymous"
-        />
-
         <link rel="stylesheet" href="css/hover-min.css" />
         <link rel="stylesheet" href="css/header.css" />
         <link rel="stylesheet" href="css/index.css" />
@@ -21,24 +14,34 @@
         <link rel="stylesheet" href="css/projects.css" />
         <link rel="stylesheet" href="css/footer.css" />
 
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+            crossorigin="anonymous"
+        />
+
         <!--Jquery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/jquery.paroller.min.js"></script>
+
+        <script type="module" src="js/index.js"></script>
     </head>
 
     <body>
         <header>
-            <section class="nav-bar">
+            <div class="nav-container">
                 <nav class="nav-links">
-                    <a href="media/smith_megan_resume.pdf" target="_blank"
-                        >Resum&eacute;
+                    <button id="projects">Projects</button>
+                    <button id="about-me">About Me</button>
+                    <a href="media/smith_megan_resume.pdf" target="_blank">
+                        Resum&eacute;
                     </a>
-                    <a href="#project-title">Projects</a>
-                    <a href="#external-links">About Me</a>
                 </nav>
-            </section>
+            </div>
         </header>
 
-        <section class="content">
+        <div class="content">
             <div class="clouds-animate1"></div>
             <div class="clouds-animate2"></div>
             <div class="statement-grid">
@@ -90,7 +93,6 @@
             <div class="projects-wrap">
                 <div class="project-title" id="project-title">
                     <h3>LET'S SEE THE PROJECTS</h3>
-                    <i class="fas fa-arrow-down"></i>
                 </div>
 
                 <div class="projects-container">
@@ -125,7 +127,7 @@
                     </a>
                 </div>
             </div>
-        </section>
+        </div>
         <footer>
             <svg
                 class="svg-pattern"
@@ -136,7 +138,7 @@
             >
                 <path d="M0 0 L50 100 L100 0 Z" fill="#fcfcfc"></path>
             </svg>
-            <div class="aboutme">
+            <div class="about-me-wrap">
                 <img src="media/sesamayo.png" width="100" height="100" />
                 <h3>ABOUT ME</h3>
                 <p>
@@ -144,15 +146,10 @@
                     software and web developer living in New Hampshire with my
                     two cats and partner. I have a passion for creating
                     interactive applications that brings awe and smiles to
-                    viewers. Thanks for visiting!
+                    viewers. In my spare time I enjoy playing JRPGs and reading
+                    fantasy books. Thanks for visiting!
                 </p>
             </div>
-            <div class="contact">
-                <h3>Contact</h3>
-                <p>Email: megan.cs601[at]gmail.com</p>
-                <p>Cell: 585.905.4078</p>
-            </div>
-
             <div class="external-links" id="external-links">
                 <a
                     href="https://www.linkedin.com/in/mcsmith601"
@@ -160,7 +157,7 @@
                 >
                     <i class="fab fa-linkedin fa-2x"></i>
                 </a>
-                <a href="https://github.com/mcs2515" target="_blank">
+                <a href="https://github.com/megancs601" target="_blank">
                     <i class="fab fa-github fa-2x"></i>
                 </a>
                 <a href="https://www.instagram.com/sesamayo/" target="_blank">
@@ -168,7 +165,5 @@
                 </a>
             </div>
         </footer>
-        <script src="js/jquery.paroller.min.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>

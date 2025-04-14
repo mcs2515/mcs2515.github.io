@@ -1,72 +1,62 @@
 footer {
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-  background-color: #363a77;
-  color: #fff2d2;
-  background-image: url("../media/seigaiha.png");
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #363a77;
+    color: #fff2d2;
+    background-image: url('../media/seigaiha.png');
 }
 
 .external-links {
-  position: relative;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 15em;
-  padding: 2em 0em;
-  margin-top: 2em;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 15em;
+    padding: 2em 0em;
+    margin-top: 2em;
 }
 
 .external-links .fab {
-  color: #96a1d1;
+    color: #96a1d1;
 }
 
 .external-links .fab:hover {
-  cursor: pointer;
-  color: #fff2d2;
+    cursor: pointer;
+    color: #fff2d2;
 }
 
-.aboutme {
-  margin-top: 3em;
+.about-me-wrap {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1090px;
+    margin-top: 3em;
+    font-size: 16px;
 }
-.aboutme h3 {
-  color: #fcfcfc;
-}
-
-.aboutme p {
-  position: relative;
-  margin: 0 auto;
-  width: 450px;
-  color: #fcfcfc;
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 1px;
-  line-height: 1.6;
+.about-me-wrap h3 {
+    color: #fcfcfc;
 }
 
-.aboutme img {
-  display: block;
-  margin: 0 auto;
+.about-me-wrap p {
+    color: #fcfcfc;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    text-align: center;
 }
 
-.contact h3 {
-  position: relative;
-  margin: 0 auto;
-  margin-top: 3em;
-  margin-bottom: 0.5em;
-  color: #fcfcfc;
-  text-align: left;
-  width: 450px;
+.about-me-wrap img {
+    display: block;
+    margin: 0 auto;
 }
 
-.contact p {
-  position: relative;
-  margin: 0 auto;
-  width: 450px;
-  color: #fcfcfc;
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 1px;
-  line-height: 1.6;
+@media screen and (max-width: 480px) {
+    footer svg {
+        margin-top: -1px;
+    }
+
+    .about-me-wrap {
+        padding: 0px 20px;
+    }
 }

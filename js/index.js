@@ -1,213 +1,167 @@
-(function () {
-  "use strict";
+const response = await fetch('projects.json');
+const projectData = await response.json();
 
-  var projects;
+const init = () => {
+    //initialize paroller.js
+    $('[data-paroller-factor]').paroller();
 
-  //reads in the project json
-  function readProjectJSON() {
-    let requestURL = "projects.json";
+    addEventListeners();
+    createProjects();
+};
 
-    let request = new XMLHttpRequest();
-    request.open("GET", requestURL);
-    request.responseType = "json";
-    request.send();
-
-    request.onload = function () {
-      projects = request.response;
-      init();
-    };
-  }
-
-  function init() {
-    checkWidthAndAjustParollerFactor();
-    populateProjDiv();
-    listenForNavigationClick();
-  }
-
-  function checkWidthAndAjustParollerFactor() {
-    let w = $(window).innerWidth();
-
-    if (w < 960) {
-      $(".imageThumb, [data-paroller-factor]").paroller({
-        factor: 0.05,
-        type: "foreground",
-      });
-    } else {
-      $(".imageThumb, [data-paroller-factor]").paroller({
-        factor: 0.1,
-        type: "foreground",
-      });
-    }
-  }
-
-  function listenForNavigationClick() {
-    let navLinks = document.querySelectorAll('a[href^="#"]');
-
-    navLinks.forEach((link) => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth",
-        });
-      });
+const addEventListeners = () => {
+    const projectsBtn = document.querySelector('#projects');
+    projectsBtn?.addEventListener('click', () => {
+        const section = document.querySelector('.projects-wrap');
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
-  }
 
-  function populateProjDiv() {
-    for (var i = 0; i < projects.length; i++) {
-      let idName = projects[i].name.replace(/ /g, "-");
-      let projectDiv = document.querySelector("#" + idName);
+    const aboutMe = document.querySelector('#about-me');
+    aboutMe?.addEventListener('click', () => {
+        const section = document.querySelector('.about-me-wrap');
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+};
 
-      if (projectDiv != null) {
-        let img = createProjImg(projects[i]);
-        let link = createProjLink(projects[i]);
-        let locationAndDate = createLocationAndDate(projects[i]);
-        let summary = createSummary(projects[i]);
-        let tagsAndGit = createProjTagsandGitLink(projects[i]);
+const createProjects = () => {
+    projectData.forEach((project) => {
+        const idName = project.name.replace(/ /g, '-');
+        const projectDiv = document.querySelector('#' + idName);
 
-        let detailsDiv = document.createElement("div");
-        detailsDiv.className = "proj-details";
+        if (projectDiv != null) {
+            const img = createImageContainer(project);
+            const title = createTitleLink(project);
+            const locationAndDate = createLocationAndDate(project);
+            const summary = createSummary(project);
+            const footer = createFooterContainer(project);
 
-        let hr = document.createElement("hr");
+            const detailsDiv = document.createElement('div');
+            detailsDiv.className = 'proj-details';
 
-        detailsDiv.appendChild(link);
-        detailsDiv.appendChild(locationAndDate);
-        detailsDiv.appendChild(summary);
+            detailsDiv.appendChild(title);
+            detailsDiv.appendChild(locationAndDate);
+            detailsDiv.appendChild(summary);
+            projectDiv.appendChild(img);
+            projectDiv.appendChild(detailsDiv);
 
-        projectDiv.appendChild(img);
-        projectDiv.appendChild(detailsDiv);
-        projectDiv.appendChild(hr);
-        projectDiv.appendChild(tagsAndGit);
-      }
+            const hr = document.createElement('hr');
+            projectDiv.appendChild(hr);
+
+            projectDiv.appendChild(footer);
+        }
+    });
+};
+
+const createImageContainer = (project) => {
+    const image = document.createElement('img');
+    image.src = project.img;
+
+    // create an image link if link is provided else create a normal image
+    if (project.link) {
+        const link = document.createElement('a');
+        link.href = project.link;
+        link.target = '_blank';
+
+        link.appendChild(image);
+        return link;
     }
-  }
 
-  //Create image link to project
-  function createProjImg(project) {
-    let imgDiv = document.createElement("div");
-    imgDiv.className = "image-link-div";
+    return image;
+};
 
-    let imgTag = document.createElement("img");
-    imgTag.src = project.img;
-    
+const createTitleLink = (project) => {
+    let title;
 
-    if(project.link) {
-        let linkTag = document.createElement("a");
-        linkTag.href = project.link;
-        linkTag.target = "_blank";
-
-        linkTag.appendChild(imgTag);
-        imgDiv.appendChild(linkTag);
+    if (project.link) {
+        title = document.createElement('a');
+        title.href = project.link;
+        title.target = '_blank';
     } else {
-        imgDiv.appendChild(imgTag);
-    }
-    
-    return imgDiv;
-  }
-
-  //create text link to project
-  function createProjLink(project) {
-    let linkTag;
-
-    if(project.link) {
-        linkTag = document.createElement("a");
-        linkTag.href = project.link;
-        linkTag.target = "_blank";
-    } else {
-        linkTag = document.createElement("p");
+        title = document.createElement('p');
     }
 
-    linkTag.className = "proj-title capitalize";
-    linkTag.innerHTML = project.name;
+    title.className = 'proj-title capitalize';
+    title.innerText = project.name;
 
-    return linkTag;
-  }
+    return title;
+};
 
-  function createLocationAndDate(project) {
-    let locationDateDiv = document.createElement("div");
-    locationDateDiv.className = "proj-location-and-date";
+const createLocationAndDate = (project) => {
+    const container = document.createElement('div');
+    container.className = 'proj-location-and-date';
 
-    let dateDiv = document.createElement("div");
-    dateDiv.className = "date";
-    dateDiv.innerHTML = project.date;
+    if (project.location) {
+        const location = document.createElement('p');
+        location.className = 'location';
+        location.innerText = project.location;
+        container.appendChild(location);
+    }
 
-    let locationDiv = document.createElement("div");
-    locationDiv.className = "location";
-    locationDiv.innerHTML = project.location;
+    if (project.date) {
+        const date = document.createElement('p');
+        date.className = 'date';
+        date.innerText = project.date;
+        container.appendChild(date);
+    }
 
-    locationDateDiv.appendChild(locationDiv);
-    locationDateDiv.appendChild(dateDiv);
+    return container;
+};
 
-    return locationDateDiv;
-  }
+const createSummary = (project) => {
+    if (project.summary == undefined) {
+        return;
+    }
 
-  function createSummary(project) {
-    if (project.summary == undefined) return;
+    const summary = document.createElement('p');
+    summary.className = 'proj-summary';
+    summary.innerText = project.summary;
 
-    let summaryDiv = document.createElement("div");
-    summaryDiv.className = "proj-summary-div";
+    return summary;
+};
 
-    let summaryPara = document.createElement("p");
-    summaryPara.innerHTML = project.summary;
+// create git icon and project tags
+const createFooterContainer = (project) => {
+    const container = document.createElement('div');
+    container.className = 'proj-footer';
 
-    summaryDiv.appendChild(summaryPara);
+    const gitLink = createGitLink(project);
+    if (gitLink != undefined) {
+        container.appendChild(gitLink);
+    }
 
-    return summaryDiv;
-  }
+    const tagDiv = document.createElement('div');
+    tagDiv.className = 'proj-tags-div';
 
-  //create a git div that has the project's git link and provide an git icon to click on if project has a git link.
-  //if git link is '#' then we hide the git icon
-  function createGitLink(project) {
-    if (project.gitLink == undefined) return;
+    project.tags.forEach((tag) => {
+        const text = document.createElement('p');
+        text.className = 'proj-tag';
+        text.innerText = tag;
 
-    let gitDiv = document.createElement("div");
-    gitDiv.className = "proj-git-div";
+        tagDiv.appendChild(text);
+    });
 
-    let gitLink = document.createElement("a");
-    gitLink.className = "proj-git-link";
+    container.appendChild(tagDiv);
+
+    return container;
+};
+
+const createGitLink = (project) => {
+    if (project.gitLink == undefined) {
+        return;
+    }
+
+    const gitLink = document.createElement('a');
+    gitLink.className = 'project-github-icon';
     gitLink.href = project.gitLink;
-    gitLink.target = "_blank";
-
-    if (project.gitLink == "#") {
-      gitDiv.className = "proj-git-div-hide";
-    }
+    gitLink.target = '_blank';
 
     //use fontawesome's git icon
-    let iElement = document.createElement("i");
-    iElement.className = "fab fa-github fa-2x";
+    const iElement = document.createElement('i');
+    iElement.className = 'fab fa-github fa-2x';
 
     gitLink.appendChild(iElement);
-    gitDiv.appendChild(gitLink);
 
-    return gitDiv;
-  }
+    return gitLink;
+};
 
-  //create a div to populate with span elements
-  function createProjTagsandGitLink(project) {
-    let footerDiv = document.createElement("div");
-    footerDiv.className = "proj-footer";
-
-    let gitLink = createGitLink(project);
-    if (gitLink != undefined) {
-      footerDiv.appendChild(gitLink);
-    }
-
-    let tags = project.tags.split(" ");
-    let tagDiv = document.createElement("div");
-    tagDiv.className = "proj-tags";
-
-    tags.forEach((item) => {
-      let span = document.createElement("span");
-      span.className = "proj-tag";
-      span.innerHTML = item;
-
-      tagDiv.appendChild(span);
-    });
-
-    footerDiv.appendChild(tagDiv);
-
-    return footerDiv;
-  }
-
-  window.onload = readProjectJSON;
-})();
+window.onload = init();

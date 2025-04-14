@@ -1,57 +1,57 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 header {
-  position: fixed;
-  margin: 0 auto;
-  background-color: #43467f;
-  background-image: url("../media/seigaiha.png");
-  background-repeat: repeat;
-  width: 100%;
-  height: 4em;
-  z-index: 500;
+    position: fixed;
+    margin: 0 auto;
+    background-color: #43467f;
+    background-image: url('../media/seigaiha.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 4em;
+    z-index: 500;
 }
 
-.nav-bar {
-  width: 90%;
+.nav-container {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    max-width: 1090px;
+    padding: 0px;
 }
 
 .nav-links {
-  position: relative;
-  margin-top: 20px;
-
-  float: right;
-  display: inline-flex;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-links a {
-  margin-left: 50px;
-  color: #fff2d2;
-  font-family: "Lato", sans-serif;
-  font-size: 12pt;
-  font-weight: lighter;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: all 0.5s ease;
+.nav-links a,
+button {
+    padding: 0px 20px;
+    color: #fff2d2;
+    font-family: 'Lato', sans-serif;
+    font-size: 12pt;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    background: none;
+    border: none;
 }
 
-.nav-links a:hover {
-  color: white;
-  cursor: pointer;
-  text-shadow: 0 0px 5px #fff2d2;
+.nav-links a:hover,
+button:hover {
+    color: white;
+    cursor: pointer;
+    text-shadow: 0 0px 5px #fff2d2;
 }
 
-@media only screen and (max-width: 360px) {
-  .nav-bar {
-    margin: 0 auto;
-    text-align: center;
-    min-width: 360px;
-  }
-
-  .nav-links {
-    float: none;
-  }
-
-  .nav-links a {
-    margin: 0 50px;
-  }
+@media screen and (max-width: 480px) {
+    .nav-container {
+        justify-content: center;
+    }
 }

@@ -1,61 +1,57 @@
 [
-  {
-    "name": "creatacard",
-    "img": "media/cac_web.jpg",
-    "link": "https://www.americangreetings.com/creatacard",
-    "location": "American Greetings",
-    "date": "April 2025",
-    "tags": "VueJS PureMVC GreenSock",
-    "gitLink": "#",
-    "summary": "Implemented new features including video upload and envelope animations for the Creatacard product line. Converted old features from the PureMVC framework to VueJS all while writing component and e2e tests to ensure expected feature behaviors."
-  },
-  {
-    "name": "talking selfies",
-    "img": "media/talking_selfie.jpg",
-    "link": "https://www.americangreetings.com/cards/ecards/add-a-photo/smashups/_/N-17ydyorZg7qq5sZ1x91zju",
-    "location": "American Greetings",
-    "date": "April 2020",
-    "tags": "Canvas HammerJS",
-    "gitLink": "#",
-    "summary": "Was responsible for coding the image's transformations to correspond with the mouse and scale slider. Also coded in hand gestures to transform the image on all types of mobile devices. Worked on with two other developers."
-  },
-  {
-    "name": "magical journey",
-    "img": "media/magical_journey.jpg",
-    "link": "https://www.bluemountain.com/ecards/mothers-day/magical-mothers-day-journey-interactive/card-3491451",
-    "location": "American Greetings",
-    "date": "April 2019",
-    "tags": "TypeScript PixiJS GreenSock",
-    "gitLink": "#",
-    "summary": "Worked with three other programmers and communicated directly with the artist. Worked on converting name particles to base64 string, seamlessly switching between videos, and quality checking the e-card for issues."
-  },
-  {
-    "name": "halloween hidden object game",
-    "img": "media/halloween_hog.jpg",
-    "link": "https://www.bluemountain.com/ecards/halloween/halloween-hidden-objects-game/card-3501609",
-    "location": "American Greetings",
-    "date": "Sep 2019",
-    "tags": "TypeScript PixiJS GreenSock",
-    "gitLink": "#",
-    "summary": "Collaborated with two other programmers and communicated directly with the artist. Responsible for optimizing the spritesheet ands particle effects, adding in animations, and quality checking the game for bugs."
-  },
-  {
-    "name": "flux",
-    "img": "media/flux_game.jpg",
-    "link": "https://teamflux.github.io/",
-    "location": "RIT",
-    "date": "May 2018",
-    "tags": "Unity C#",
-    "gitLink": "https://github.com/mcs2515/Flux",
-    "summary": "With a team of seven members, we developed an endless runner game for users to play in an abstract world on their mobile devices. I created and weaved together the game's code with assets created by the team in Unity."
-  },
-  {
-    "name": "peacock",
-    "img": "media/peacock.jpg",
-    "location": "RIT",
-    "date": "Nov 2018",
-    "tags": "MongoDB React",
-    "gitLink": "https://github.com/mcs2515/peacock",
-    "summary": "A place to save and extract prominent colors from an inspirational image. Users can upload to their libarary and share their images with others. Designed and coded whole web application "
-  }
+    {
+        "name": "creatacard",
+        "img": "media/cac_web.jpg",
+        "link": "https://www.americangreetings.com/creatacard",
+        "location": "American Greetings",
+        "date": "April 2025",
+        "tags": ["VueJS", "PureMVC", "GreenSock"],
+        "summary": "Implemented new features including video upload and envelope animations for the Creatacard product line. Converted old features from the PureMVC framework to VueJS all while writing component and e2e tests to ensure expected feature behaviors."
+    },
+    {
+        "name": "talking selfies",
+        "img": "media/talking_selfie.jpg",
+        "link": "https://www.americangreetings.com/cards/ecards/add-a-photo/smashups/_/N-17ydyorZg7qq5sZ1x91zju",
+        "location": "American Greetings",
+        "date": "April 2020",
+        "tags": ["Canvas", " HammerJS"],
+        "summary": "Was responsible for coding the image's transformations to correspond with the mouse and scale slider. Also coded in hand gestures to transform the image on all types of mobile devices. Worked on with two other developers."
+    },
+    {
+        "name": "magical journey",
+        "img": "media/magical_journey.jpg",
+        "link": "https://www.bluemountain.com/ecards/mothers-day/magical-mothers-day-journey-interactive/card-3491451",
+        "location": "American Greetings",
+        "date": "April 2019",
+        "tags": ["TypeScript", " PixiJS ", "GreenSock"],
+        "summary": "Worked with three other programmers and communicated directly with the artist. Worked on converting name particles to base64 string, seamlessly switching between videos, and quality checking the e-card for issues."
+    },
+    {
+        "name": "halloween hidden object game",
+        "img": "media/halloween_hog.jpg",
+        "link": "https://www.bluemountain.com/ecards/halloween/halloween-hidden-objects-game/card-3501609",
+        "location": "American Greetings",
+        "date": "Sep 2019",
+        "tags": ["TypeScript", " PixiJS", " GreenSock"],
+        "summary": "Collaborated with two other programmers and communicated directly with the artist. Responsible for optimizing the spritesheet ands particle effects, adding in animations, and quality checking the game for bugs."
+    },
+    {
+        "name": "flux",
+        "img": "media/flux_game.jpg",
+        "link": "https://teamflux.github.io/",
+        "location": "RIT",
+        "date": "May 2018",
+        "tags": ["Unity", " C#"],
+        "gitLink": "https://github.com/mcs2515/Flux",
+        "summary": "With a team of seven members, we developed an endless runner game for users to play in an abstract world on their mobile devices. I created and weaved together the game's code with assets created by the team in Unity."
+    },
+    {
+        "name": "peacock",
+        "img": "media/peacock.jpg",
+        "location": "RIT",
+        "date": "Nov 2018",
+        "tags": ["MongoDB", " React"],
+        "gitLink": "https://github.com/mcs2515/peacock",
+        "summary": "Web app allows users sign in, upload an image, and have the app extract prominent colors to create a color palette that can be shared and or liked by other users. "
+    }
 ]
