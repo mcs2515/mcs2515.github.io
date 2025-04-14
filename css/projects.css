@@ -1,9 +1,9 @@
 .projects-wrap {
     position: relative;
     margin: 0 auto;
-    width: 100%;
     max-width: 1090px;
-    padding-bottom: 5em;
+    padding: 0px 20px;
+    margin-bottom: 5em;
     background-color: #fcfcfc;
     text-align: center;
 }
@@ -135,10 +135,6 @@
     .proj-title,
     #portfolio-sec {
         display: block;
-    }
-
-    .projects-container {
-        max-width: calc(100% - 40px);
     }
 
     #portfolio-sec {
