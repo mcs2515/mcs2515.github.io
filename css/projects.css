@@ -43,24 +43,24 @@
     border-radius: 8px 8px 0px 0px;
 }
 
-.proj-title {
+.proj-details {
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+}
+
+.proj-details a:hover {
+    color: #333;
+}
+
+.proj-details .proj-title {
     margin: 0;
     font-size: 18px;
     color: #4c51ab;
     text-decoration: none;
     font-family: 'Oxygen', sans-serif;
     font-weight: bold;
-}
-
-.proj-title a:hover {
-    color: #333;
-}
-
-.proj-details {
-    text-align: left;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    padding: 20px;
 }
 
 .proj-location-and-date {

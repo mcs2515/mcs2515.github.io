@@ -55,6 +55,9 @@ const createProjects = () => {
 const createImageContainer = (project) => {
     const image = document.createElement('img');
     image.src = project.img;
+    image.alt = project.name
+        ? `image of ${project.name} project`
+        : 'image of project';
 
     // create an image link if link is provided else create a normal image
     if (project.link) {
