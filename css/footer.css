@@ -2,9 +2,8 @@ footer {
     position: relative;
     margin: 0 auto;
     width: 100%;
-    background-color: #363a77;
-    color: #fff2d2;
-    background-image: url('../media/seigaiha.png');
+    color: var(--cream);
+    background-image: var(--waves);
 }
 
 .external-links {
@@ -19,12 +18,12 @@ footer {
 }
 
 .external-links .fab {
-    color: #96a1d1;
+    color: var(--purple);
 }
 
 .external-links .fab:hover {
     cursor: pointer;
-    color: #fff2d2;
+    color: var(--cream);
 }
 
 .about-me-wrap {
@@ -34,12 +33,13 @@ footer {
     margin-top: 3em;
     font-size: 16px;
 }
+
 .about-me-wrap h3 {
-    color: #fcfcfc;
+    color: var(--white);
 }
 
 .about-me-wrap p {
-    color: #fcfcfc;
+    color: var(--white);
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
     line-height: 1.6;

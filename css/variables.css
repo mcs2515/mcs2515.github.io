@@ -1,0 +1,10 @@
+:root {
+    --white: #fcfcfc;
+    --purple: #96a1d1;
+    --dark-purple: #4c51ab;
+    --grey: #545454;
+    --dark-grey: #333;
+    --cream: #fff2d2;
+    --waves: url('../media/seigaiha.png');
+    --waves-light: url('../media/seigaiha_white.png');
+}

@@ -7,12 +7,12 @@ body {
 }
 
 body {
-    background-color: #fcfcfc;
+    background-color: var(--white);
 }
 
 h2 {
     font-family: 'Lato', sans-serif;
-    color: #4c51ab;
+    color: var(--dark-purple);
     font-size: 25pt;
     letter-spacing: 2px;
     font-weight: bold;
@@ -21,7 +21,7 @@ h2 {
 
 h3 {
     font-family: 'Lato', sans-serif;
-    color: #545454;
+    color: var(--grey);
     font-size: 18px;
     letter-spacing: 2px;
     font-weight: bold;

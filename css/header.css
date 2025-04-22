@@ -3,8 +3,7 @@
 header {
     position: fixed;
     margin: 0 auto;
-    background-color: #43467f;
-    background-image: url('../media/seigaiha.png');
+    background-image: var(--waves);
     background-repeat: repeat;
     width: 100%;
     height: 4em;
@@ -36,7 +35,7 @@ header {
 .nav-links a,
 button {
     padding: 0px 20px;
-    color: #fff2d2;
+    color: var(--cream);
     font-family: 'Lato', sans-serif;
     font-size: 12pt;
     font-weight: lighter;
@@ -49,9 +48,9 @@ button {
 
 .nav-links a:hover,
 button:hover {
-    color: white;
+    color: var(--white);
     cursor: pointer;
-    text-shadow: 0 0px 5px #fff2d2;
+    text-shadow: 0 0px 5px var(--cream);
 }
 
 @media screen and (max-width: 480px) {

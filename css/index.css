@@ -67,7 +67,7 @@ html {
     max-width: 400px;
     letter-spacing: 1px;
     font-family: 'Oxygen', sans-serif;
-    color: #4c51ab;
+    color: var(--dark-purple);
     font-size: 1.16em;
     line-height: 1.7em;
 }
