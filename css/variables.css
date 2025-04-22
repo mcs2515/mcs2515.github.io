@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Oxygen');
+
 :root {
     --white: #fcfcfc;
     --purple: #96a1d1;
@@ -7,4 +9,9 @@
     --cream: #fff2d2;
     --waves: url('../media/seigaiha.png');
     --waves-light: url('../media/seigaiha_white.png');
+    --lato: 'Lato', sans-serif;
+    --oxygen: 'Oxygen', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+    --paragraph-size: 1em;
+    --max-width: 1090px;
 }

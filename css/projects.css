@@ -1,7 +1,7 @@
 .projects-wrap {
     position: relative;
     margin: 0 auto;
-    max-width: 1090px;
+    max-width: var(--max-width);
     padding: 0px 20px;
     margin-bottom: 5em;
     background-color: var(--white);
@@ -27,9 +27,8 @@
 }
 
 .proj-box {
-    background: #efefef;
+    background: var(--white);
     background-image: var(--waves-light);
-    background-repeat: repeat;
     color: var(--grey);
     box-shadow: 0px 0px 15px rgba(104, 104, 104, 0.4);
     border-radius: 8px;
@@ -45,8 +44,8 @@
 
 .proj-details {
     text-align: left;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
+    font-size: var(--paragraph-size);
+    font-family: var(--open-sans);
     padding: 20px;
 }
 
@@ -59,7 +58,7 @@
     font-size: 18px;
     color: var(--dark-purple);
     text-decoration: none;
-    font-family: 'Oxygen', sans-serif;
+    font-family: var(--oxygen);
     font-weight: bold;
 }
 
@@ -83,7 +82,7 @@
     display: flex;
     padding: 15px 20px;
     justify-content: flex-end;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--lato);
 }
 
 .project-github-icon .fab {
@@ -111,7 +110,7 @@
 
 #portfolio-sec p {
     margin: 0 auto;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--lato);
     color: var(--grey);
     font-size: 18px;
     letter-spacing: 2px;
@@ -120,7 +119,7 @@
 }
 
 #portfolio-sec a {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--lato);
     font-weight: bold;
     color: var(--dark-purple);
     text-decoration: none;
@@ -137,11 +136,7 @@
         display: block;
     }
 
-    #portfolio-sec {
-        display: block;
-    }
-
     #portfolio-sec p {
-        font-size: 16px;
+        font-size: var(--paragraph-size);
     }
 }

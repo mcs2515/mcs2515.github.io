@@ -29,9 +29,8 @@ footer {
 .about-me-wrap {
     position: relative;
     margin: 0 auto;
-    max-width: 1090px;
+    max-width: var(--max-width);
     margin-top: 3em;
-    font-size: 16px;
 }
 
 .about-me-wrap h3 {
@@ -40,7 +39,8 @@ footer {
 
 .about-me-wrap p {
     color: var(--white);
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--open-sans);
+    font-size: var(--paragraph-size);
     letter-spacing: 1px;
     line-height: 1.6;
     text-align: center;

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Oxygen');
-
 html,
 body {
     margin: 0;
@@ -11,7 +9,7 @@ body {
 }
 
 h2 {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--lato);
     color: var(--dark-purple);
     font-size: 25pt;
     letter-spacing: 2px;
@@ -20,7 +18,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--lato);
     color: var(--grey);
     font-size: 18px;
     letter-spacing: 2px;

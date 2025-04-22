@@ -66,8 +66,9 @@ html {
     text-align: center;
     max-width: 400px;
     letter-spacing: 1px;
-    font-family: 'Oxygen', sans-serif;
+    font-family: var(--oxygen);
     color: var(--dark-purple);
     font-size: 1.16em;
     line-height: 1.7em;
+    padding: 0px 20px;
 }
