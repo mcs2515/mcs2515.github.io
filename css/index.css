@@ -1,73 +1,73 @@
 html {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .content {
-  position: relative;
-  margin: 0 auto;
-  padding-top: 4em;
-  width: 100%;
-  overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 4em;
+    width: 100%;
+    overflow: hidden;
 }
 
-.clouds-animate1 {
-  position: absolute;
-  margin: 0 auto;
-  width: 100%;
-  height: 210px;
-  background-image: url("../media/white_clouds_pattern1.png");
-  background-repeat: repeat-x;
-  animation: slide 120s linear infinite;
-  z-index: -1;
+#clouds-animate1 {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 210px;
+    background-image: url('../media/white_clouds_pattern1.png');
+    background-repeat: repeat-x;
+    animation: slide 120s linear infinite;
+    z-index: -1;
 }
 
-.clouds-animate2 {
-  position: absolute;
-  margin: 0 auto;
-  width: 100%;
-  height: 190px;
-  margin-top: 190px;
-  background-image: url("../media/white_clouds_pattern2.png");
-  background-repeat: repeat-x;
-  animation: slide 60s linear infinite;
-  z-index: -1;
+#clouds-animate2 {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 190px;
+    margin-top: 190px;
+    background-image: url('../media/white_clouds_pattern2.png');
+    background-repeat: repeat-x;
+    animation: slide 60s linear infinite;
+    z-index: -1;
 }
 
 @keyframes slide {
-  0% {
-    background-position: 0, 0;
-  }
-  100% {
-    background-position: 1152px, 0;
-  }
+    0% {
+        background-position: 0, 0;
+    }
+    100% {
+        background-position: 1152px, 0;
+    }
 }
 
 .statement-grid {
-  position: relative;
-  margin: 0 auto;
-  padding-top: 8em;
-  max-width: 600px;
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-items: center;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 8em;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
 .statement-grid img {
-  position: relative;
-  width: 10em;
-  height: auto;
-  margin: 0;
+    position: relative;
+    width: 10em;
+    height: auto;
+    margin: 0;
 }
 
 .statement-grid p {
-  text-align: center;
-  max-width: 400px;
-  letter-spacing: 1px;
-  font-family: "Oxygen", sans-serif;
-  color: #4c51ab;
-  font-size: 1.16em;
-  line-height: 1.7em;
+    text-align: center;
+    max-width: 400px;
+    letter-spacing: 1px;
+    font-family: 'Oxygen', sans-serif;
+    color: #4c51ab;
+    font-size: 1.16em;
+    line-height: 1.7em;
 }
