@@ -13,5 +13,6 @@
     --oxygen: 'Oxygen', sans-serif;
     --open-sans: 'Open Sans', sans-serif;
     --paragraph-size: 1em;
-    --max-width: 1090px;
+    --max-width: 68.125em;
+    --line-height: 1.7em;
 }

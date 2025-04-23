@@ -1,62 +1,49 @@
 footer {
     position: relative;
     margin: 0 auto;
-    width: 100%;
     color: var(--cream);
     background-image: var(--waves);
+    padding: 2em 1em;
 }
 
-.external-links {
+#external-links {
     position: relative;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 15em;
-    padding: 2em 0em;
-    margin-top: 2em;
+    margin-top: 2.5em;
+
+    .fab {
+        color: var(--purple);
+
+        &:hover {
+            cursor: pointer;
+            color: var(--white);
+        }
+    }
 }
 
-.external-links .fab {
-    color: var(--purple);
-}
-
-.external-links .fab:hover {
-    cursor: pointer;
-    color: var(--cream);
-}
-
-.about-me-wrap {
+#about-me-wrap {
     position: relative;
     margin: 0 auto;
     max-width: var(--max-width);
-    margin-top: 3em;
-}
 
-.about-me-wrap h3 {
-    color: var(--white);
-}
-
-.about-me-wrap p {
-    color: var(--white);
-    font-family: var(--open-sans);
-    font-size: var(--paragraph-size);
-    letter-spacing: 1px;
-    line-height: 1.6;
-    text-align: center;
-}
-
-.about-me-wrap img {
-    display: block;
-    margin: 0 auto;
-}
-
-@media screen and (max-width: 480px) {
-    footer svg {
-        margin-top: -1px;
+    h3 {
+        color: var(--white);
     }
 
-    .about-me-wrap {
-        padding: 0px 20px;
+    p {
+        color: var(--white);
+        font-family: var(--open-sans);
+        font-size: var(--paragraph-size);
+        letter-spacing: 1px;
+        line-height: var(--line-height);
+        text-align: center;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
     }
 }

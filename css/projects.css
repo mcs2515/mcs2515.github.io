@@ -68,7 +68,7 @@
 }
 
 .proj-summary {
-    line-height: 1.5;
+    line-height: var(--line-height);
 }
 
 .proj-box hr {

@@ -18,7 +18,7 @@ const addEventListeners = () => {
 
     const aboutMe = document.querySelector('#about-me');
     aboutMe?.addEventListener('click', () => {
-        const section = document.querySelector('.about-me-wrap');
+        const section = document.querySelector('#about-me-wrap');
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 };
