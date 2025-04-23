@@ -1,7 +1,6 @@
 footer {
     position: relative;
     margin: 0 auto;
-    color: var(--cream);
     background-image: var(--waves);
     padding: 2em 1em;
 }
