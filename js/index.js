@@ -24,8 +24,16 @@ const addEventListeners = () => {
     });
 
     const nav = document.querySelector('header');
-    window.addEventListener('scroll', () => {
+    document.addEventListener('scroll', () => {
         adjustNav(nav);
+    });
+
+    // show nav bar when focus is set to any of the items
+    const navItems = document.querySelectorAll('nav li');
+    navItems.forEach((item) => {
+        item.children[0].addEventListener('focus', () => {
+            nav.classList.remove('hide');
+        });
     });
 };
 
@@ -33,11 +41,9 @@ const adjustNav = (nav) => {
     if (window.scrollY > previousScrollY) {
         //scrolling down
         nav.classList.add('hide');
-        nav.setAttribute('aria-hidden', 'true');
     } else if (window.scrollY < previousScrollY) {
         //scrolling up
         nav.classList.remove('hide');
-        nav.setAttribute('aria-hidden', 'false');
     }
 
     previousScrollY = window.scrollY;
