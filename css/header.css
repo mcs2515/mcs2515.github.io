@@ -1,61 +1,59 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
 header {
     position: fixed;
     margin: 0 auto;
-    background-color: #43467f;
-    background-image: url('../media/seigaiha.png');
-    background-repeat: repeat;
+    background-image: var(--waves);
     width: 100%;
     height: 4em;
     z-index: 500;
+    top: 0em;
+    transition: 0.3s ease-in-out;
+
+    &.hide {
+        top: -4em;
+    }
 }
 
-.nav-container {
+nav {
     position: relative;
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    max-width: 1090px;
-    padding: 0px;
-}
-
-.nav-links {
+    max-width: var(--max-width);
     display: flex;
     justify-content: flex-end;
-    margin: 0;
     padding: 0;
-}
 
-.nav-links ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-}
+    ul {
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+    }
 
-.nav-links a,
-button {
-    padding: 0px 20px;
-    color: #fff2d2;
-    font-family: 'Lato', sans-serif;
-    font-size: 12pt;
-    font-weight: lighter;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all 0.5s ease;
-    background: none;
-    border: none;
-}
+    a,
+    button {
+        padding: 0px 20px;
+        font-family: var(--lato);
+        font-size: 1em;
+        color: var(--white);
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 0.5s ease;
+        background: none;
+        border: none;
 
-.nav-links a:hover,
-button:hover {
-    color: white;
-    cursor: pointer;
-    text-shadow: 0 0px 5px #fff2d2;
+        &:hover {
+            color: var(--white);
+            cursor: pointer;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 6px;
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {
-    .nav-container {
+    nav {
         justify-content: center;
     }
 }

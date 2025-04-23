@@ -1,20 +1,19 @@
-.projects-wrap {
+#projects-wrap {
     position: relative;
     margin: 0 auto;
-    max-width: 1090px;
+    max-width: var(--max-width);
     padding: 0px 20px;
-    margin-bottom: 5em;
-    background-color: #fcfcfc;
+    background-color: var(--white);
     text-align: center;
+
+    h3 {
+        position: relative;
+        margin: 5em auto;
+        color: var(--grey);
+    }
 }
 
-.project-title h3 {
-    position: relative;
-    margin: 5em auto;
-    display: inline-flex;
-}
-
-.projects-container {
+#projects-grid {
     position: relative;
     margin: 0 auto;
     width: 100%;
@@ -26,122 +25,96 @@
     z-index: 100;
 }
 
-.proj-box {
-    background: #efefef;
-    background-image: url('../media/seigaiha_white.png');
-    background-repeat: repeat;
-    color: #545454;
-    box-shadow: 0px 0px 15px rgba(104, 104, 104, 0.4);
-    border-radius: 8px;
+.project {
+    background: var(--white);
+    background-image: var(--waves-light);
+    color: var(--grey);
+    box-shadow: 0px 0px 1em rgba(104, 104, 104, 0.4);
+    border-radius: 0.5em;
+
+    img {
+        width: 100%;
+        height: auto;
+        transition: all 0.5s ease-in-out;
+        overflow: hidden;
+        border-radius: 0.5em 0.5em 0 0;
+    }
+
+    .project__details {
+        text-align: left;
+        font-size: var(--paragraph-size);
+        font-family: var(--open-sans);
+        padding: 20px;
+
+        .project__title {
+            margin: 0;
+            font-size: 1.1em;
+            color: var(--dark-purple);
+            text-decoration: none;
+            font-family: var(--oxygen);
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        .project__description {
+            margin: 1em 0 0 0;
+            line-height: var(--line-height);
+        }
+
+        .project__location-and-date {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a:hover {
+            color: var(--dark-grey);
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 6px;
+        }
+    }
+
+    hr {
+        border: 0;
+        height: 1px;
+        background: #ddd;
+        margin: 0 1em;
+    }
+
+    .project__footer {
+        display: flex;
+        padding: 1em;
+        justify-content: flex-end;
+        font-family: var(--lato);
+
+        .project__tag {
+            margin: 0;
+            margin-left: 8px;
+        }
+    }
 }
 
-.proj-box img {
-    width: 100%;
-    height: auto;
-    transition: all 0.5s ease-in-out;
-    overflow: hidden;
-    border-radius: 8px 8px 0px 0px;
-}
-
-.proj-details {
-    text-align: left;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    padding: 20px;
-}
-
-.proj-details a:hover {
-    color: #333;
-}
-
-.proj-details .proj-title {
-    margin: 0;
-    font-size: 18px;
-    color: #4c51ab;
-    text-decoration: none;
-    font-family: 'Oxygen', sans-serif;
+#portfolio-wrap {
+    position: relative;
+    margin: 5em auto;
+    font-size: 1.125em;
+    font-family: var(--lato);
     font-weight: bold;
-}
-
-.proj-location-and-date {
-    display: flex;
-    justify-content: space-between;
-}
-
-.proj-summary {
-    line-height: 1.5;
-}
-
-.proj-box hr {
-    border: 0;
-    height: 1px;
-    background: #ddd;
-    margin: 0px 20px;
-}
-
-.proj-footer {
-    display: flex;
-    padding: 15px 20px;
-    justify-content: flex-end;
-    font-family: 'Lato', sans-serif;
-}
-
-.project-github-icon .fab {
-    color: #4c51ab;
-}
-
-.project-github-icon .fab:hover {
-    color: #333;
-}
-
-.proj-tags-div {
-    display: flex;
-    align-items: center;
-}
-
-.proj-tag {
-    margin: 0;
-    margin-left: 8px;
-}
-
-#portfolio-sec {
-    margin-top: 5em;
-    display: inline-flex;
-}
-
-#portfolio-sec p {
-    margin: 0 auto;
-    font-family: 'Lato', sans-serif;
-    color: #545454;
-    font-size: 18px;
     letter-spacing: 2px;
-    font-weight: bold;
-    text-align: center;
-}
 
-#portfolio-sec a {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    color: #4c51ab;
-    text-decoration: none;
-    display: block;
-}
-
-#portfolio-sec a:hover {
-    color: #333;
-}
-
-@media screen and (max-width: 480px) {
-    .proj-title,
-    #portfolio-sec {
-        display: block;
+    p {
+        color: var(--grey);
     }
 
-    #portfolio-sec {
-        display: block;
-    }
+    a {
+        color: var(--dark-purple);
+        text-decoration: none;
 
-    #portfolio-sec p {
-        font-size: 16px;
+        &:hover {
+            color: var(--grey);
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 6px;
+        }
     }
 }
