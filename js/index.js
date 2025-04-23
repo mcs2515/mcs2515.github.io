@@ -12,7 +12,7 @@ const init = () => {
 const addEventListeners = () => {
     const projectsBtn = document.querySelector('#projects');
     projectsBtn?.addEventListener('click', () => {
-        const section = document.querySelector('.projects-wrap');
+        const section = document.querySelector('#projects-wrap');
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 
@@ -24,31 +24,30 @@ const addEventListeners = () => {
 };
 
 const createProjects = () => {
-    projectData.forEach((project) => {
-        const idName = project.name.replace(/ /g, '-');
-        const projectDiv = document.querySelector('#' + idName);
+    const projectsGrid = document.querySelector('#projects-grid');
 
-        if (projectDiv != null) {
-            const img = createImageContainer(project);
-            const title = createTitleLink(project);
-            const locationAndDate = createLocationAndDate(project);
-            const summary = createSummary(project);
-            const footer = createFooterContainer(project);
+    projectData.forEach((_project) => {
+        const project = document.createElement('div');
+        project.className = 'project hvr-float';
 
-            const detailsDiv = document.createElement('div');
-            detailsDiv.className = 'proj-details';
+        const img = createImageContainer(_project);
+        const title = createTitleLink(_project);
+        const description = createDescription(_project);
+        const footer = createFooterContainer(_project);
 
-            detailsDiv.appendChild(title);
-            detailsDiv.appendChild(locationAndDate);
-            detailsDiv.appendChild(summary);
-            projectDiv.appendChild(img);
-            projectDiv.appendChild(detailsDiv);
+        const detailsDiv = document.createElement('div');
+        detailsDiv.className = 'project__details';
 
-            const hr = document.createElement('hr');
-            projectDiv.appendChild(hr);
+        detailsDiv.appendChild(title);
+        detailsDiv.appendChild(description);
+        project.appendChild(img);
+        project.appendChild(detailsDiv);
 
-            projectDiv.appendChild(footer);
-        }
+        const hr = document.createElement('hr');
+        project.appendChild(hr);
+
+        project.appendChild(footer);
+        projectsGrid.appendChild(project);
     });
 };
 
@@ -60,9 +59,9 @@ const createImageContainer = (project) => {
         : 'image of project';
 
     // create an image link if link is provided else create a normal image
-    if (project.link) {
+    if (project.link || project.gitLink) {
         const link = document.createElement('a');
-        link.href = project.link;
+        link.href = project.link || project.gitLink;
         link.target = '_blank';
 
         link.appendChild(image);
@@ -75,96 +74,45 @@ const createImageContainer = (project) => {
 const createTitleLink = (project) => {
     let title;
 
-    if (project.link) {
+    if (project.link || project.gitLink) {
         title = document.createElement('a');
-        title.href = project.link;
+        title.href = project.link || project.gitLink;
         title.target = '_blank';
     } else {
         title = document.createElement('p');
     }
 
-    title.className = 'proj-title capitalize';
+    title.className = 'project__title';
     title.innerText = project.name;
 
     return title;
 };
 
-const createLocationAndDate = (project) => {
-    const container = document.createElement('div');
-    container.className = 'proj-location-and-date';
-
-    if (project.location) {
-        const location = document.createElement('p');
-        location.className = 'location';
-        location.innerText = project.location;
-        container.appendChild(location);
-    }
-
-    if (project.date) {
-        const date = document.createElement('p');
-        date.className = 'date';
-        date.innerText = project.date;
-        container.appendChild(date);
-    }
-
-    return container;
-};
-
-const createSummary = (project) => {
-    if (project.summary == undefined) {
+const createDescription = (project) => {
+    if (project.description == undefined) {
         return;
     }
 
-    const summary = document.createElement('p');
-    summary.className = 'proj-summary';
-    summary.innerText = project.summary;
+    const description = document.createElement('p');
+    description.className = 'project__description';
+    description.innerText = project.description;
 
-    return summary;
+    return description;
 };
 
 // create git icon and project tags
 const createFooterContainer = (project) => {
     const container = document.createElement('div');
-    container.className = 'proj-footer';
-
-    const gitLink = createGitLink(project);
-    if (gitLink != undefined) {
-        container.appendChild(gitLink);
-    }
-
-    const tagDiv = document.createElement('div');
-    tagDiv.className = 'proj-tags-div';
+    container.className = 'project__footer';
 
     project.tags.forEach((tag) => {
         const text = document.createElement('p');
-        text.className = 'proj-tag';
+        text.className = 'project__tag';
         text.innerText = tag;
-
-        tagDiv.appendChild(text);
+        container.appendChild(text);
     });
 
-    container.appendChild(tagDiv);
-
     return container;
-};
-
-const createGitLink = (project) => {
-    if (project.gitLink == undefined) {
-        return;
-    }
-
-    const gitLink = document.createElement('a');
-    gitLink.className = 'project-github-icon';
-    gitLink.href = project.gitLink;
-    gitLink.target = '_blank';
-
-    //use fontawesome's git icon
-    const iElement = document.createElement('i');
-    iElement.className = 'fab fa-github fa-2x';
-
-    gitLink.appendChild(iElement);
-
-    return gitLink;
 };
 
 window.onload = init();
