@@ -14,7 +14,7 @@
         "link": "https://www.americangreetings.com/cards/ecards/add-a-photo/smashups/_/N-17ydyorZg7qq5sZ1x91zju",
         "location": "American Greetings",
         "date": "April 2020",
-        "tags": ["Canvas", " HammerJS"],
+        "tags": ["Canvas", "HammerJS"],
         "description": "Was responsible for coding the image's transformations to correspond with the mouse and scale slider. Also coded in hand gestures to transform the image on all types of mobile devices. Worked on with two other developers."
     },
     {
@@ -23,7 +23,7 @@
         "link": "https://www.bluemountain.com/ecards/mothers-day/magical-mothers-day-journey-interactive/card-3491451",
         "location": "American Greetings",
         "date": "April 2019",
-        "tags": ["TypeScript", " PixiJS ", "GreenSock"],
+        "tags": ["TypeScript", "PixiJS", "GreenSock"],
         "description": "Worked with three other programmers and communicated directly with the artist. Worked on converting name particles to base64 string, seamlessly switching between videos, and quality checking the e-card for issues."
     },
     {
@@ -32,7 +32,7 @@
         "link": "https://www.bluemountain.com/ecards/halloween/halloween-hidden-objects-game/card-3501609",
         "location": "American Greetings",
         "date": "Sep 2019",
-        "tags": ["TypeScript", " PixiJS", " GreenSock"],
+        "tags": ["TypeScript", "PixiJS", "GreenSock"],
         "description": "Collaborated with two other programmers and communicated directly with the artist. Responsible for optimizing the spritesheet ands particle effects, adding in animations, and quality checking the game for bugs."
     },
     {
@@ -41,7 +41,7 @@
         "link": "https://teamflux.github.io/",
         "location": "RIT",
         "date": "May 2018",
-        "tags": ["Unity", " C#"],
+        "tags": ["Unity", "C#"],
         "gitLink": "https://github.com/mcs2515/Flux",
         "description": "With a team of seven members, we developed an endless runner game for users to play in an abstract world on their mobile devices. I created and weaved together the game's code with assets created by the team in Unity."
     },
@@ -50,7 +50,7 @@
         "img": "media/peacock.jpg",
         "location": "RIT",
         "date": "Nov 2018",
-        "tags": ["MongoDB", " React"],
+        "tags": ["MongoDB", "React"],
         "gitLink": "https://github.com/mcs2515/peacock",
         "description": "Web app allows users sign in, upload an image, and have the app extract prominent colors to create a color palette that can be shared and or liked by other users. "
     }
