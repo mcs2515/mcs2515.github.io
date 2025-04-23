@@ -1,5 +1,6 @@
 const response = await fetch('projects.json');
 const projectData = await response.json();
+let previousScrollY = 0;
 
 const init = () => {
     //initialize paroller.js
@@ -21,6 +22,25 @@ const addEventListeners = () => {
         const section = document.querySelector('#about-me-wrap');
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
+
+    const nav = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+        adjustNav(nav);
+    });
+};
+
+const adjustNav = (nav) => {
+    if (window.scrollY > previousScrollY) {
+        //scrolling down
+        nav.classList.add('hide');
+        nav.setAttribute('aria-hidden', 'true');
+    } else if (window.scrollY < previousScrollY) {
+        //scrolling up
+        nav.classList.remove('hide');
+        nav.setAttribute('aria-hidden', 'false');
+    }
+
+    previousScrollY = window.scrollY;
 };
 
 const createProjects = () => {
